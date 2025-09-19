@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "validate:styles": "ts-node --transpile-only scripts/validate-style.ts",
+    "build:manifest": "ts-node --transpile-only scripts/build-manifest.ts && pnpm run validate:styles",
+    "dev": "vite",
+    "tauri:dev": "cargo tauri dev",
+    "tauri:build": "cargo tauri build"
+  }
+}
