@@ -67,7 +67,17 @@ async function main() {
   }
 
   for (const file of files) {
-    if (path.basename(file).startsWith("_")) continue; // ignore template
+    const rel = path.relative(root, file);
+    if (rel.startsWith('archive' + path.sep)) {
+      console.log("INFO: " + rel + " (skipped archive)");
+      continue;
+    }
+
+    const base = path.basename(file);
+    if (base.startsWith("_")) { // ignore template
+      console.log("INFO: " + rel + " (skipped template)");
+      continue;
+    }
     const raw = fs.readFileSync(file, "utf8");
     const { data, content } = matter(raw);
 
