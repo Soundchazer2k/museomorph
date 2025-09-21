@@ -16,6 +16,9 @@ type Manifest = {
       group: string;
       display_name: string;
       file: string;
+      artist?: string;
+      movement?: string;
+      style_scope?: string;
       ratios: string[];
       modes: string[];
       safety_profile: string[];
@@ -70,10 +73,16 @@ async function main() {
   const files = await glob("styles/*.md", { cwd: root, absolute: true, nodir: true });
   const manifest: Manifest = { collections: [], styles: {} };
   const collections = new Map<string, string[]>(); // group -> [ids]
+  let indexed = 0;
+  let skipped = 0;
 
   for (const abs of files) {
     const base = path.basename(abs);
-    if (base.startsWith("_")) continue; // ignore template
+    if (base.startsWith("_")) {
+      console.log("INFO: " + path.relative(root, abs) + " (skipped template)");
+      skipped++;
+      continue;
+    }
 
     const raw = fs.readFileSync(abs, "utf8");
     const { data, content } = matter(raw);
@@ -90,12 +99,13 @@ async function main() {
 
     if (!id || !group || !display_name) {
       console.warn(`⚠️  Skipping ${base}: missing id/group/display_name`);
+      skipped++;
       continue;
     }
 
     const sections_index = extractH2Titles(content);
 
-    manifest.styles[id] = {
+    const entry: Manifest["styles"][string] = {
       id,
       group,
       display_name,
@@ -108,8 +118,21 @@ async function main() {
       about,
     };
 
+    if (typeof data.artist === "string" && data.artist.trim()) {
+      entry.artist = data.artist;
+    }
+    if (typeof data.movement === "string" && data.movement.trim()) {
+      entry.movement = data.movement;
+    }
+    if (typeof data.style_scope === "string" && data.style_scope.trim()) {
+      entry.style_scope = data.style_scope;
+    }
+
+    manifest.styles[id] = entry;
+
     if (!collections.has(group)) collections.set(group, []);
     collections.get(group)!.push(id);
+    indexed++;
   }
 
   // Sort collections & styles for stable output
@@ -120,6 +143,7 @@ async function main() {
   // Pretty-print
   fs.writeFileSync(outPath, JSON.stringify(manifest, null, 2), "utf8");
   console.log(`✅ Wrote ${path.relative(root, outPath)}`);
+  console.log("Indexed: " + indexed + "  Skipped: " + skipped + "  Collections: " + manifest.collections.length);
 }
 
 main().catch((err) => {
