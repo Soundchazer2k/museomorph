@@ -16,6 +16,9 @@ export const FrontmatterSchema = z.object({
   id: z.string().min(1).regex(/^[a-z0-9_\-]+$/, "id should be lowercase/slug-like"),
   group: z.string().min(1),
   display_name: z.string().min(1),
+  artist: z.string().min(1).optional(),
+  movement: z.string().min(1).optional(),
+  style_scope: z.enum(["single-artist", "movement"]).default("single-artist"),
 
   ratios: z.array(z.string().regex(ratioPattern)).min(1),
   modes: z.array(z.string().min(1)).min(1),
@@ -34,6 +37,10 @@ export const FrontmatterSchema = z.object({
   about: z.string().min(1, "Please include a short educational blurb (2–6 sentences)."),
 
   notes: z.string().optional(),
+
+  // NEW: Ratio review workflow
+  ratios_status: z.enum(["provisional", "approved"]).default("provisional"),
+  ratios_notes: z.string().min(10, "Explain your ratio choice (historical/format rationale).").optional(),
 });
 
 export type Frontmatter = z.infer<typeof FrontmatterSchema>;
@@ -48,3 +55,4 @@ export const REQUIRED_SECTIONS = [
   "## 7) Composition & Lighting Patterns",
   "## 8) Typography & Text Integration (If Historically Present)",
 ] as const;
+
