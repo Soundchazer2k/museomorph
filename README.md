@@ -61,56 +61,11 @@ MuseoMorph is a **playful art lab**: fun first, but also a way to appreciate the
 
 ## 📂 Repo Structure
 
-```text
-museomorph/
-├── styles/                  # Markdown prompt frameworks (source of truth)
-│   ├── impressionism_art_analysis.md
-│   ├── dutch_golden_age_profiles.md
-│   ├── modern_age_comic_prompts.md
-│   └── ...
-├── scripts/                 # Build utilities
-│   └── build-manifest.ts    # Generates manifest.json from /styles
-├── src/                     # Frontend (Vite + TSX React)
-│   ├── ui/                  # Museum-style UI components
-│   ├── lib/                 # Prompt composer, markdown loader
-│   └── App.tsx
-├── src-tauri/               # Tauri backend (Rust)
-│   ├── cmd.rs               # Image generation + key storage
-│   └── Cargo.toml
-├── docs/                    # Documentation (PRD, guides, design notes)
-│   └── PRD.md
-├── manifest.json            # Auto-generated style manifest
-├── package.json
-└── README.md
-```
-
-------
-
-## 🤝 Contributing
-
-MuseoMorph grows through community effort:
-
-- Add new **Markdown style frameworks**.
-- Improve educational blurbs.
-- Refine prompts when drift is reported.
-- Open issues for prompt or output oddities.
-
-------
-
-## 🙏 Acknowledgments
-
-MuseoMorph builds on the work of many:
-
-- **Google Gemini / NanoBanana** for providing the core image model.
-- **Intel YuNet (ONNX)** for lightweight, open-source face detection.
-- **Tauri, Vite, TypeScript, and Rust** for the cross-platform app framework.
-- **Open-source contributors** who refine styles and markdowns.
-- And above all: **the artists themselves** — past and present — whose craft, innovation, and toil inspire this project. MuseoMorph is created out of love and respect for their work, and with the hope that more people will discover and appreciate it.
-
-------
-
-## 📜 License
-
-Open source under MIT/Apache-2.0.
- All style frameworks are for **educational and playful purposes only** — not reproductions, not forgeries.
+- `index.html` – Vite entry point served during dev/build.
+- `public/` – static assets copied verbatim into output.
+- `src/` – React + Vite UI shell that surfaces collections from the generated manifest.
+- `src-tauri/` – Rust backend bootstrapped for the Tauri desktop wrapper.
+- `scripts/` – Node/TypeScript utilities for manifest generation and validation.
+- `styles/` – curated Markdown prompt frameworks consumed by the app.
+- `styles-source/` – long-form research notes and drafting material for prompts.
 

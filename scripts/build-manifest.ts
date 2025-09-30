@@ -1,5 +1,5 @@
 // scripts/build-manifest.ts
-// Scans /styles/*.md → builds manifest.json with collections + style metadata.
+// Scans /styles/**/*.md → builds manifest.json with collections + style metadata.
 // Run: pnpm run build:manifest
 
 import fs from "node:fs";
@@ -65,21 +65,30 @@ async function main() {
   const root = process.cwd();
   const stylesDir = path.join(root, "styles");
   const outPath = path.join(root, "manifest.json");
+  const publicDir = path.join(root, "public");
+  const publicOutPath = path.join(publicDir, "manifest.json");
 
   if (!fs.existsSync(stylesDir)) {
     throw new Error(`styles/ not found at ${stylesDir}`);
   }
 
-  const files = await glob("styles/*.md", { cwd: root, absolute: true, nodir: true });
+  const files = await glob("styles/**/*.md", { cwd: root, absolute: true, nodir: true });
   const manifest: Manifest = { collections: [], styles: {} };
   const collections = new Map<string, string[]>(); // group -> [ids]
   let indexed = 0;
   let skipped = 0;
 
   for (const abs of files) {
+    const rel = path.relative(root, abs);
     const base = path.basename(abs);
     if (base.startsWith("_")) {
-      console.log("INFO: " + path.relative(root, abs) + " (skipped template)");
+      console.log("INFO: " + rel + " (skipped template)");
+      skipped++;
+      continue;
+    }
+
+    if (rel.includes(`${path.sep}archive${path.sep}`) || rel.startsWith(`archive${path.sep}`)) {
+      console.log("INFO: " + rel + " (skipped archive)");
       skipped++;
       continue;
     }
@@ -109,7 +118,7 @@ async function main() {
       id,
       group,
       display_name,
-      file: path.relative(root, abs).replace(/\\/g, "/"),
+      file: rel.replace(/\\/g, "/"),
       ratios,
       modes,
       safety_profile,
@@ -142,7 +151,10 @@ async function main() {
 
   // Pretty-print
   fs.writeFileSync(outPath, JSON.stringify(manifest, null, 2), "utf8");
+  fs.mkdirSync(publicDir, { recursive: true });
+  fs.writeFileSync(publicOutPath, JSON.stringify(manifest, null, 2), "utf8");
   console.log(`✅ Wrote ${path.relative(root, outPath)}`);
+  console.log(`✅ Wrote ${path.relative(root, publicOutPath)}`);
   console.log("Indexed: " + indexed + "  Skipped: " + skipped + "  Collections: " + manifest.collections.length);
 }
 

@@ -38,7 +38,7 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 
 ### 5. Key Features & Requirements
 
-- **Markdown-Driven Styles:** Styles loaded from `/styles/*.md`, parsed into manifest.json.
+- **Markdown-Driven Styles:** Styles loaded from `styles/**/*.md`, parsed into manifest.json.
 - **Universal Framework Compliance:** Sections 1–8 enforced with flags, ratios, constraints.
 - **Photo Input:** Single or multiple images.
 - **Face Detection:** YuNet ONNX (Apache 2.0), CPU-only; manual selection is default, auto available as toggle.

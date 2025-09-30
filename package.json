@@ -1,9 +1,35 @@
 {
+  "name": "museomorph",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "validate:styles": "ts-node --transpile-only scripts/validate-style.ts",
-    "build:manifest": "ts-node --transpile-only scripts/build-manifest.ts && pnpm run validate:styles",
+    "validate:styles": "ts-node --project tsconfig.scripts.json --transpile-only scripts/validate-style.ts",
+    "validate:styles:strict": "ts-node --project tsconfig.scripts.json --transpile-only scripts/validate-style.ts --strict",
+    "build:manifest": "ts-node --project tsconfig.scripts.json --transpile-only scripts/build-manifest.ts && pnpm run validate:styles",
     "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
     "tauri:dev": "cargo tauri dev",
     "tauri:build": "cargo tauri build"
+  },
+  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef",
+  "dependencies": {
+    "@tauri-apps/api": "^1.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^1.6.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "glob": "^11.0.3",
+    "gray-matter": "^4.0.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "vite": "^5.4.0",
+    "vitest": "^1.6.0",
+    "zod": "^4.1.9"
   }
 }

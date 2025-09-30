@@ -18,7 +18,7 @@
 
 ## 2) Source of Truth & File Boundaries
 
-- `/styles/*.md` = production; one artist or narrow style per file.
+- `/styles/<collection>/<style>.md` = production; each directory is a `group` slug, each file stays single-artist or single-style.
 - `/archive/` = deprecated or multi-artist drafts (ignored by tooling).
 - `/styles/_TEMPLATE.md` = scaffold (must keep the 8 sections).
 - `/docs/PRD.md` = intent.
@@ -27,7 +27,7 @@
 - `/scripts/*.ts` = validator + manifest (uses **`tsconfig.scripts.json`**).
 - `.github/workflows/validate.yml` = CI.
 
-**Never** combine multiple artists in one `/styles/*.md`. If a source contains many voices, **split** into siblings.
+**Never** combine multiple artists in one style file. If a source contains many voices, **split** into siblings and place them under the matching `group` folder (create a new folder when a novel `group` slug is introduced).
 
 ## 3) Validation & Build
 
@@ -76,7 +76,7 @@ modes: ["…","…"]           # 2–3 meaningful toggles (e.g., "Cover","Splash
 
 - **Inputs:** `/styles-source/<file>.md`
 
-- **Outputs:** `/styles/<artist_or_style>.md` (new files), manifest updated
+- **Outputs:** `styles/<group_slug>/<artist_or_style>.md` (new files), manifest updated
 
 - **Rules:** one artist/style per file; preserve unique voice; add `about` (2–6 sentences); fill all 8 sections; ratios = provisional + notes.
 
@@ -96,7 +96,7 @@ modes: ["…","…"]           # 2–3 meaningful toggles (e.g., "Cover","Splash
 
 ## 8) Anti-flattening rules (important)
 
-- If a `/styles/*.md` body appears to include >=2 well-known artist names within a **single** file, **warn** and propose a split (don’t merge styles that share a `group`).
+- If a `styles/<collection>/<style>.md` body appears to include ≥2 well-known artist names within a **single** file, **warn** and propose a split (don’t merge styles that share a `group`).
 - In `manifest.json`, **do not** coalesce entries with the same `group`; each style is its own card.
 
 ## 9) Build-Manifest expectations (repo-specific)

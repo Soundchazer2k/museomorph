@@ -28,7 +28,7 @@ This guide explains how to:
 
 - **Interpretation, not reproduction.** No signatures, logos, brand marks, or presentation frames in outputs.
 - **Respect for artists & history.** Each style should include a short educational blurb (era, figures, themes).
-- **Markdown is the source of truth.** The app parses styles from `/styles/*.md` and builds a manifest.
+- **Markdown is the source of truth.** The app parses styles from `styles/**/*.md` and builds a manifest.
 - **Frictionless for users.** Keep options minimal; encode complexity in the prompt scaffold.
 - **Open source, privacy-first.** Runs locally; users bring their own API key.
 
@@ -36,24 +36,29 @@ This guide explains how to:
 
 ## Add a New Style (Markdown)
 
-1. Create a new file under:
+1. Decide which `group` your style belongs to (matches the `group` frontmatter). Create or reuse the folder slug under `styles/`, then add your file:
 
    ```
-   /styles/<your_style_id>.md
+   /styles/<group_slug>/<your_style_id>.md
    ```
 
    Example:
 
    ```
-   /styles/dutch_golden_age_profiles.md
-   /styles/modern_age_comic_prompts.md
+   /styles/dutch_golden_age/rembrandt_chiaroscuro_portrait.md
+   /styles/modern_age_comics/jim_lee_crosshatch_superhero.md
    ```
+
+   > **Tip:** slugify the folder name (lowercase, `_` between words). If you introduce a brand-new `group`, create the matching folder before saving the style.
 
 2. Start with **frontmatter** (YAML) followed by the **Required Sections** (see below).
 
 3. Keep your tone *museum-grade but approachable*. Avoid slang or subjective claims—focus on verifiable technique, materials, composition, and guardrails.
 
 4. **Educational blurb is semi-mandatory.** Add 2–6 sentences that help a curious reader understand the style/movement/artist.
+
+5. Refer to `/docs/Universal_Prompt_Framework_v4.2.md` for full section definitions and constraints. Use `/styles/_TEMPLATE.md` as your working scaffold.
+   - Need ratios for stained glass, murals, Orphism, or new comic eras? See the freshly expanded tables in `/docs/ratio_policy.md` before locking your list.
 
 ------
 
@@ -166,7 +171,7 @@ Your Markdown body follows the frontmatter and **must** include these H2 heading
    pnpm run build:manifest
    ```
 
-   This scans `/styles/*.md` and generates `manifest.json`. Fix any reported schema/section errors.
+  This scans `styles/**/*.md` and generates `manifest.json`. Fix any reported schema/section errors.
 
 3. **Run the app (dev)**
 
@@ -199,7 +204,7 @@ Your Markdown body follows the frontmatter and **must** include these H2 heading
 
 Before opening a PR, verify:
 
--  File added under `/styles/<id>.md` with valid **frontmatter**
+-  File added under `styles/<group_slug>/<id>.md` with valid **frontmatter**
 -  All **8 sections** present and in order (see above)
 -  **Educational blurb** (`about`) included (2–6 sentences)
 -  **Safety constraints** are explicit in Section 6
