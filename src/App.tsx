@@ -422,11 +422,10 @@ function CollectionCard({
   manifest: Manifest;
   onNavigate: (to: string) => void;
 }) {
-  const previewStyles = collection.styles
-    .slice(0, 3)
-    .map((styleId) => manifest.styles[styleId])
-    .filter((entry): entry is StyleEntry => Boolean(entry));
   const total = collection.styles.length;
+  const imageSlug = collection.id.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '');
+  const imageSrc = resolveWithBase(`collection/${imageSlug}.png`);
+  const [artSrc, setArtSrc] = useState<string>(imageSrc);
 
   return (
     <article
@@ -441,18 +440,19 @@ function CollectionCard({
         }
       }}
     >
-      <div className="collection-card__header">
-        <h3>{collection.id}</h3>
-        <span className="collection-count">{total} style{total === 1 ? '' : 's'}</span>
+      <div className="collection-card__art">
+        <img
+          src={artSrc}
+          alt={`${collection.id} highlight artwork`}
+          onError={() => setArtSrc(HERO_IMAGE_FALLBACK)}
+          loading="lazy"
+        />
+        <div className="collection-card__overlay">
+          <h3>{collection.id}</h3>
+          <span>{total} style{total === 1 ? '' : 's'}</span>
+        </div>
       </div>
-      <ul className="collection-preview">
-        {previewStyles.map((style) => (
-          <li key={style.id}>{style.display_name}</li>
-        ))}
-      </ul>
-      <span className="collection-link" aria-hidden="true">
-        View collection →
-      </span>
+      <span className="collection-card__cta" aria-hidden="true">View gallery →</span>
     </article>
   );
 }
