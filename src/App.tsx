@@ -1,18 +1,19 @@
-import { Fragment, useEffect, useMemo, useState } from 'react';
-import type { DragEvent } from 'react';
+import { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
+import type { DragEvent, Dispatch, SetStateAction } from 'react';
 import './App.css';
+import { ApiKeyModal } from './components/ApiKeyModal';
+import { loadNanoBananaApiKey } from './lib/nanobanana/apiKey';
+import { generateArtwork } from './lib/nanobanana/client';
+import { chooseNanoBananaRatio } from './lib/nanobanana/ratios';
+import type { RatioDecision } from './lib/nanobanana/ratios';
+import { buildPrompt } from './lib/prompt/buildPrompt';
+import type { ParsedStyleMarkdown, ManifestStyleEntry as PromptManifestStyle } from './lib/prompt/types';
+import { parseStyleMarkdown as parsePromptMarkdown } from './lib/prompt/parseStyle';
 
 type ManifestCollection = { id: string; styles: string[] };
 
-type StyleEntry = {
-  id: string;
-  file: string;
-  group: string;
-  display_name: string;
+type StyleEntry = PromptManifestStyle & {
   about?: string;
-  artist?: string;
-  movement?: string;
-  style_scope?: string;
   hero_image?: string;
   ratios: string[];
   modes: string[];
@@ -132,12 +133,21 @@ function useManifest() {
 export default function App() {
   const { manifest, error, loading } = useManifest();
   const { route, navigate } = useMuseoRoute();
+  const [apiKey, setApiKey] = useState<string | null>(null);
+  const [apiKeyModalOpen, setApiKeyModalOpen] = useState(false);
+  const [apiKeyLoaded, setApiKeyLoaded] = useState(false);
   const [theme, setTheme] = useState(() => {
     if (typeof window === 'undefined') return 'light';
     const stored = window.localStorage.getItem('museomorph-theme');
     if (stored === 'light' || stored === 'dark') return stored;
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
   });
+
+  useEffect(() => {
+    loadNanoBananaApiKey()
+      .then((key) => setApiKey(key))
+      .finally(() => setApiKeyLoaded(true));
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -158,29 +168,66 @@ export default function App() {
       case 'collection':
         return <CollectionView manifest={manifest} collectionId={route.id} onNavigate={navigate} />;
       case 'style':
-        return <StyleView manifest={manifest} styleId={route.id} onNavigate={navigate} />;
+        return (
+          <StyleView
+            manifest={manifest}
+            styleId={route.id}
+            onNavigate={navigate}
+            apiKey={apiKey}
+            apiKeyLoaded={apiKeyLoaded}
+            onRequestApiKeyModal={() => setApiKeyModalOpen(true)}
+          />
+        );
       default:
         return null;
     }
-  }, [error, loading, manifest, navigate, route]);
+  }, [apiKey, apiKeyLoaded, error, loading, manifest, navigate, route]);
 
   return (
     <div className="app-shell">
-      <MuseumNav onNavigate={navigate} theme={theme} onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')} />
+      <MuseumNav
+        onNavigate={navigate}
+        theme={theme}
+        onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        onRequestApiKeyModal={() => setApiKeyModalOpen(true)}
+        hasApiKey={Boolean(apiKey)}
+        apiKeyLoaded={apiKeyLoaded}
+      />
       <main className="app-main" role="main">
         {content}
       </main>
       <MuseumFooter />
+      <ApiKeyModal
+        open={apiKeyModalOpen}
+        onClose={() => setApiKeyModalOpen(false)}
+        onKeySaved={(key) => setApiKey(key)}
+      />
     </div>
   );
 }
 
-function MuseumNav({ onNavigate, theme, onToggleTheme }: { onNavigate: (to: string) => void; theme: string; onToggleTheme: () => void }) {
+function MuseumNav({
+  onNavigate,
+  theme,
+  onToggleTheme,
+  onRequestApiKeyModal,
+  hasApiKey,
+  apiKeyLoaded,
+}: {
+  onNavigate: (to: string) => void;
+  theme: string;
+  onToggleTheme: () => void;
+  onRequestApiKeyModal: () => void;
+  hasApiKey: boolean;
+  apiKeyLoaded: boolean;
+}) {
   return (
     <header className="museum-nav">
-      <div className="nav-brand" onClick={() => onNavigate('/')}
+      <div
+        className="nav-brand"
         role="button"
         tabIndex={0}
+        onClick={() => onNavigate('/')}
         onKeyDown={(evt) => {
           if (evt.key === 'Enter' || evt.key === ' ') {
             evt.preventDefault();
@@ -196,6 +243,14 @@ function MuseumNav({ onNavigate, theme, onToggleTheme }: { onNavigate: (to: stri
         <a href="/docs/PRD.md" target="_blank" rel="noreferrer">PRD</a>
         <a href="/docs/ratio_policy.md" target="_blank" rel="noreferrer">Ratio Policy</a>
       </nav>
+      <button
+        type="button"
+        className="nav-secondary"
+        onClick={onRequestApiKeyModal}
+        disabled={!apiKeyLoaded}
+      >
+        {hasApiKey ? 'Update API key' : 'Add API key'}
+      </button>
       <button
         type="button"
         className="theme-toggle"
@@ -562,10 +617,16 @@ function StyleView({
   manifest,
   styleId,
   onNavigate,
+  apiKey,
+  apiKeyLoaded,
+  onRequestApiKeyModal,
 }: {
   manifest: Manifest;
   styleId: string;
   onNavigate: (to: string) => void;
+  apiKey: string | null;
+  apiKeyLoaded: boolean;
+  onRequestApiKeyModal: () => void;
 }) {
   const style = manifest.styles[styleId];
 
@@ -576,6 +637,7 @@ function StyleView({
   const [selectedRatio, setSelectedRatio] = useState<string>('');
   const [selectedMode, setSelectedMode] = useState<string>('');
   const [creativeAddOn, setCreativeAddOn] = useState('');
+  const [parsedMarkdown, setParsedMarkdown] = useState<ParsedStyleMarkdown | null>(null);
 
   useEffect(() => {
     if (!style) return;
@@ -586,6 +648,7 @@ function StyleView({
     setSelectedRatio(style.ratios[0] ?? '');
     setSelectedMode(style.modes[0] ?? '');
     setCreativeAddOn('');
+    setParsedMarkdown(null);
 
     const styleUrl = resolveWithBase(style.file);
     fetch(styleUrl)
@@ -597,6 +660,17 @@ function StyleView({
       })
       .then((text) => {
         setSections(parseMarkdownSections(text));
+        try {
+          setParsedMarkdown(parsePromptMarkdown(text));
+        } catch (err) {
+          console.error('Failed to parse style markdown', err);
+          setParsedMarkdown({
+            frontmatter: {},
+            preface: undefined,
+            rendererAdapter: undefined,
+            sections: {},
+          });
+        }
         setLoading(false);
       })
       .catch((err: Error) => {
@@ -660,6 +734,10 @@ function StyleView({
         creativeAddOn={creativeAddOn}
         onCreativeChange={setCreativeAddOn}
         coreInstruction={sections?.find((section) => section.title.includes('Core Instruction'))?.body ?? ''}
+        apiKey={apiKey}
+        apiKeyLoaded={apiKeyLoaded}
+        onRequestApiKeyModal={onRequestApiKeyModal}
+        parsedMarkdown={parsedMarkdown}
       />
 
       <section className="style-pillars">
@@ -797,6 +875,23 @@ function CuratorNotes({ sections }: { sections: MarkdownSection[] }) {
   );
 }
 
+function fileToBase64(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const result = reader.result;
+      if (typeof result !== 'string') {
+        reject(new Error('Failed to read file as base64.'));
+        return;
+      }
+      const base64 = result.includes(',') ? result.split(',')[1] ?? '' : result;
+      resolve(base64);
+    };
+    reader.onerror = () => reject(reader.error ?? new Error('Unknown file reader error.'));
+    reader.readAsDataURL(file);
+  });
+}
+
 function StyleComposer({
   style,
   uploads,
@@ -808,10 +903,14 @@ function StyleComposer({
   creativeAddOn,
   onCreativeChange,
   coreInstruction,
+  apiKey,
+  apiKeyLoaded,
+  onRequestApiKeyModal,
+  parsedMarkdown,
 }: {
   style: StyleEntry;
   uploads: File[];
-  setUploads: (files: File[]) => void;
+  setUploads: Dispatch<SetStateAction<File[]>>;
   selectedRatio: string;
   onRatioChange: (ratio: string) => void;
   selectedMode: string;
@@ -819,12 +918,41 @@ function StyleComposer({
   creativeAddOn: string;
   onCreativeChange: (value: string) => void;
   coreInstruction: string;
+  apiKey: string | null;
+  apiKeyLoaded: boolean;
+  onRequestApiKeyModal: () => void;
+  parsedMarkdown: ParsedStyleMarkdown | null;
 }) {
-  const handleFiles = (files: FileList | null) => {
+  const [isGenerating, setIsGenerating] = useState(false);
+  const [generationError, setGenerationError] = useState<string | null>(null);
+  const [resultImage, setResultImage] = useState<string | null>(null);
+  const [resultMimeType, setResultMimeType] = useState<string | null>(null);
+  const [isResultPreviewOpen, setIsResultPreviewOpen] = useState(false);
+  const [ratioDecisionState, setRatioDecisionState] = useState<RatioDecision | null>(null);
+  const [tokenCost, setTokenCost] = useState<number | null>(null);
+
+  const activeRatioDecision = useMemo(() => {
+    const fallback = style.ratios[0] ?? '1:1';
+    const ratio = selectedRatio || fallback;
+    try {
+      return chooseNanoBananaRatio(ratio);
+    } catch (error) {
+      console.warn('Failed to reconcile ratio', error);
+      return null;
+    }
+  }, [selectedRatio, style.ratios]);
+
+  const handleFiles = (files: FileList | File[] | null) => {
     if (!files) return;
-    const next = Array.from(files).filter((file) => /^image\//.test(file.type));
-    if (!next.length) return;
-    setUploads([...uploads, ...next]);
+    const list = Array.isArray(files) ? files : Array.from(files);
+    const filtered = list.filter((file) => {
+      if (!file.type) {
+        return /\.(jpe?g|png|gif|webp|tiff|tif|avif|heic|heif)$/i.test(file.name);
+      }
+      return file.type.startsWith('image/');
+    });
+    if (!filtered.length) return;
+    setUploads((prev) => [...prev, ...filtered]);
   };
 
   const handleDrop = (event: DragEvent<HTMLDivElement>) => {
@@ -833,21 +961,147 @@ function StyleComposer({
   };
 
   const removeFile = (index: number) => {
-    setUploads(uploads.filter((_, idx) => idx !== index));
+    setUploads((prev) => prev.filter((_, idx) => idx !== index));
   };
+
+  const handleDownload = useCallback(() => {
+    if (!resultImage) return;
+    const [, subtype = 'png'] = (resultMimeType ?? 'image/png').split('/');
+    const extension = subtype === 'jpeg' ? 'jpg' : subtype;
+    const link = document.createElement('a');
+    link.href = resultImage;
+    link.download = `museomorph-nanobanana.${extension}`;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }, [resultImage, resultMimeType]);
+
+  useEffect(() => {
+    if (!isResultPreviewOpen) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsResultPreviewOpen(false);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isResultPreviewOpen]);
+
+  const handleCommission = useCallback(async () => {
+    if (!parsedMarkdown) {
+      setGenerationError('Style framework is still loading.');
+      return;
+    }
+    if (!activeRatioDecision) {
+      setGenerationError('Unable to reconcile the requested ratio with NanoBanana.');
+      return;
+    }
+    if (!apiKeyLoaded) {
+      setGenerationError('Checking NanoBanana key…');
+      return;
+    }
+    if (!apiKey) {
+      setGenerationError('Add your NanoBanana API key to continue.');
+      onRequestApiKeyModal();
+      return;
+    }
+    if (uploads.length === 0) {
+      setGenerationError('Upload at least one reference photo.');
+      return;
+    }
+
+    setIsGenerating(true);
+    setGenerationError(null);
+    setResultImage(null);
+    setResultMimeType(null);
+    setIsResultPreviewOpen(false);
+    setRatioDecisionState(null);
+    setTokenCost(null);
+
+    try {
+      const uploadPayloads = await Promise.all(
+        uploads.map(async (file) => ({
+          name: file.name,
+          mimeType: file.type || 'image/png',
+          dataBase64: await fileToBase64(file),
+        })),
+      );
+
+      const userDirectives = creativeAddOn
+        .split(/\n+/)
+        .map((line) => line.trim())
+        .filter(Boolean);
+
+      const promptResult = buildPrompt({
+        style: style as PromptManifestStyle,
+        markdown: parsedMarkdown,
+        ratio: activeRatioDecision.chosen,
+        mode: selectedMode || undefined,
+        subjectCount: Math.max(uploads.length, 1),
+        userDirectives,
+        additionalContext: coreInstruction || undefined,
+      });
+
+      const response = await generateArtwork({
+        prompt: promptResult.prompt,
+        ratio: activeRatioDecision.chosen,
+        ratioDecision: activeRatioDecision,
+        mode: selectedMode || undefined,
+        subjectCount: Math.max(uploads.length, 1),
+        userDirectives,
+        uploads: uploadPayloads,
+      });
+
+      const dataUrl = `data:${response.mimeType};base64,${response.imageBase64}`;
+      setResultImage(dataUrl);
+      setResultMimeType(response.mimeType);
+      setRatioDecisionState(activeRatioDecision);
+      setTokenCost(response.tokenCost);
+      console.info('NanoBanana ratio decision', {
+        requested: activeRatioDecision.requested,
+        chosen: activeRatioDecision.chosen,
+        reason: activeRatioDecision.reason,
+      });
+    } catch (error) {
+      setGenerationError(error instanceof Error ? error.message : String(error));
+    } finally {
+      setIsGenerating(false);
+    }
+  }, [
+    activeRatioDecision,
+    apiKey,
+    apiKeyLoaded,
+    coreInstruction,
+    creativeAddOn,
+    onRequestApiKeyModal,
+    parsedMarkdown,
+    selectedMode,
+    style,
+    uploads,
+  ]);
 
   return (
     <section className="composer-panel">
       <div className="composer-intro">
         <h2>Curator’s Panel</h2>
-        <p>{style.about}</p>
+        {style.about && <p>{style.about}</p>}
+        {activeRatioDecision && activeRatioDecision.reason === 'nearest_supported' && (
+          <p className="composer-note">
+            NanoBanana renders at {activeRatioDecision.chosen} for this request (requested {activeRatioDecision.requested}).
+          </p>
+        )}
+        {apiKeyLoaded && !apiKey && (
+          <p className="composer-note warning">Add your NanoBanana API key to enable generation.</p>
+        )}
       </div>
       <div className="composer-controls">
         <div
           className="upload-dropzone"
           onDragOver={(event) => {
             event.preventDefault();
-            event.dataTransfer.dropEffect = 'copy';
+            if (event.dataTransfer) {
+              event.dataTransfer.dropEffect = 'copy';
+            }
           }}
           onDrop={handleDrop}
         >
@@ -909,11 +1163,77 @@ function StyleComposer({
         <button
           type="button"
           className="composer-cta"
-          onClick={() => console.log({ style: style.id, uploads, selectedRatio, selectedMode, creativeAddOn })}
+          onClick={handleCommission}
+          disabled={isGenerating || !parsedMarkdown}
         >
-          Commission artwork
+          {isGenerating ? 'Commissioning…' : 'Commission artwork'}
         </button>
+        {!parsedMarkdown && (
+          <p className="composer-note">Style framework is loading…</p>
+        )}
+        {generationError && <p className="composer-error">{generationError}</p>}
       </aside>
+      {resultImage && (
+        <div className="composer-result">
+          <h3>Generated artwork</h3>
+          <button
+            type="button"
+            className="composer-result__preview"
+            onClick={() => setIsResultPreviewOpen(true)}
+          >
+            <img src={resultImage} alt="" />
+            <span className="sr-only">Open full-size preview</span>
+          </button>
+          <div className="composer-result__actions">
+            <button type="button" onClick={() => setIsResultPreviewOpen(true)}>
+              View full size
+            </button>
+            <button type="button" onClick={handleDownload}>
+              Download image
+            </button>
+          </div>
+          <dl>
+            {ratioDecisionState && (
+              <div>
+                <dt>Aspect ratio</dt>
+                <dd>
+                  {ratioDecisionState.chosen}
+                  {ratioDecisionState.reason === 'nearest_supported' && ` (requested ${ratioDecisionState.requested})`}
+                </dd>
+              </div>
+            )}
+            {typeof tokenCost === 'number' && (
+              <div>
+                <dt>Token cost</dt>
+                <dd>{tokenCost}</dd>
+              </div>
+            )}
+          </dl>
+        </div>
+      )}
+      {isResultPreviewOpen && resultImage && (
+        <div
+          className="composer-result__modal"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Full-size generated artwork"
+          onClick={() => setIsResultPreviewOpen(false)}
+        >
+          <div
+            className="composer-result__modal-content"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              className="composer-result__modal-close"
+              onClick={() => setIsResultPreviewOpen(false)}
+            >
+              Close
+            </button>
+            <img src={resultImage} alt="NanoBanana generated artwork, full size" />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
