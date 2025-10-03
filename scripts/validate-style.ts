@@ -12,6 +12,13 @@ import {
 
 type Problem = { file: string; message: string };
 
+function slugify(input: string): string {
+  return input
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/^_+|_+$/g, "");
+}
+
 function hasAllSectionsInOrder(mdBody: string): { ok: boolean; problems: string[] } {
   const problems: string[] = [];
   let lastIndex = -1;
@@ -58,27 +65,40 @@ async function main() {
     process.exit(2);
   }
 
-  const files = await glob("styles/*.md", { cwd: root, absolute: true, nodir: true });
+  const files = await glob("styles/**/*.md", { cwd: root, absolute: true, nodir: true });
   const problems: Problem[] = [];
+  const warnings: Problem[] = [];
 
   if (files.length === 0) {
-    console.warn("⚠️  No style markdowns found in styles/*.md");
+    console.warn("⚠️  No style markdowns found in styles/**/*.md");
     process.exit(0);
   }
 
   for (const file of files) {
-    if (path.basename(file).startsWith("_")) continue; // ignore template
+    const rel = path.relative(root, file);
+    if (rel.includes(`${path.sep}archive${path.sep}`) || rel.startsWith(`archive${path.sep}`)) {
+      console.log("INFO: " + rel + " (skipped archive)");
+      continue;
+    }
+
+    const base = path.basename(file);
+    if (base.startsWith("_")) { // ignore template
+      console.log("INFO: " + rel + " (skipped template)");
+      continue;
+    }
     const raw = fs.readFileSync(file, "utf8");
     const { data, content } = matter(raw);
 
     // Frontmatter validation
     const parsed = FrontmatterSchema.safeParse(data);
     if (!parsed.success) {
+      const formatted = parsed.error.format();
+      const detail = formatted
+        ? JSON.stringify(formatted, null, 2)
+        : String(parsed.error);
       problems.push({
         file,
-        message: "Frontmatter invalid:\n" + parsed.error.format
-          ? JSON.stringify(parsed.error.format(), null, 2)
-          : String(parsed.error),
+        message: `Frontmatter invalid:\n${detail}`,
       });
     } else {
       // extra guardrails (tiny lints)
@@ -95,6 +115,25 @@ async function main() {
       for (const s of fm.safety_profile) {
         if (!AllowedSafety.includes(s as any)) {
           problems.push({ file, message: `Unknown safety rule "${s}"` });
+        }
+      }
+
+      const expectedDir = path.join("styles", slugify(fm.group));
+      const actualDir = path.dirname(rel).replace(/\\/g, "/");
+      if (!actualDir.startsWith(expectedDir)) {
+        problems.push({
+          file,
+          message: `Group "${fm.group}" should live under ${expectedDir}/ — found in ${actualDir}/`,
+        });
+      }
+
+      if (typeof fm.artist === "string") {
+        const artist = fm.artist.trim();
+        if (artist && (artist.includes(",") || /\s(?:and|&|\+|x)\s/i.test(artist))) {
+          warnings.push({
+            file,
+            message: `Frontmatter.artist looks multi-artist ("${artist}"). Split styles per artist to avoid mixing voices.`,
+          });
         }
       }
     }
@@ -117,6 +156,13 @@ async function main() {
       console.error(`• ${path.relative(root, p.file)}\n  ${p.message}\n`);
     }
     process.exit(1);
+  }
+
+  if (warnings.length) {
+    console.warn(`\n⚠️  Validation warnings (${warnings.length}):\n`);
+    for (const w of warnings) {
+      console.warn(`• ${path.relative(root, w.file)}\n  ${w.message}\n`);
+    }
   }
 
   console.log("✅ All style markdowns passed validation.");
