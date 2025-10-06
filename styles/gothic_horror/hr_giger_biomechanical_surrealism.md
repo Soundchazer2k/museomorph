@@ -1,24 +1,24 @@
 ---
 id: hr_giger_biomechanical_surrealism
 group: Gothic Horror
-movement: Biomechanical Surrealism
+movement: Biomechanical Surrealism (1960s-1990s)
 artist: H. R. Giger
 display_name: H. R. Giger — Biomechanical Surrealism
 style_scope: single-artist
+
 ratios:
-  - '2:3'
   - '3:4'
+  - '2:3'
   - '4:3'
-  - '4:5'
-  - '16:9'
 ratios_status: provisional
 ratios_notes: >
-  Giger’s airbrushed nightmares sprawl across posters, squares, and
-  panoramas—compose within 2:3, 3:4, 4:3, 4:5, or 16:9 depending on the
-  cathedral of bone and steel.
+  Giger’s airbrushed nightmares live on tall 3:4 and 2:3 panels, with 4:3 used for
+  architectural panoramas—stay inside those mechanical grids.
 modes:
   - Biomechanical Portrait
-  - Xenomorphic Environment
+  - Architectural Machine Cathedral
+  - Panoramic Hivescape
+
 safety_profile:
   - no_nudity
   - no_gore
@@ -26,14 +26,31 @@ safety_profile:
   - no_watermarks
   - minors_modest
   - gender_respect
-about: >
-  H. R. Giger welded flesh and machinery into erotic nightmares—airbrushed
-  spinal columns, uterus pods, and cathedral-scale turbines. The result is both
-  sacred and surgical. We honor that biomechanical liturgy while designing new
-  organisms, altars, and dystopian habitats.
-hero_image: null
----
 
+composition_constraints:
+  max_subjects: 2
+  subject_interaction: allowed
+  crowd_scenes: false
+  animals_allowed: false
+  text_allowed: no
+
+hero_image: null
+
+about: >
+  Giger fused flesh and alloy with airbrushed gradients, Swiss draftsmanship, and
+  cathedral-scale biomechs. This card keeps his ratios, hieratic posing, and
+  technological-organic fusion cues.
+
+sections_index:
+  '1': Core Instruction & Likeness Mandate
+  '2': Canvas Strategy & Aspect Ratio Control
+  '3': Style Context & Material Authenticity
+  '4': Technical Method & Mark-Making
+  '5': Wardrobe, Props & Setting Conventions
+  '6': Safety & IP Constraints (Hard Rules)
+  '7': Composition & Lighting Patterns
+  '8': Typography & Text Integration (If Historically Present)
+---
 # H.R. Giger Biomechanical Surrealist Style Prompt
 
 ------
@@ -59,6 +76,7 @@ hero_image: null
 ------
 
 ## 📋 Framework Sections
+
 ## 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
@@ -72,6 +90,7 @@ hero_image: null
 - **Mode Selector:** Museum surrealist art for technological transformation visualization.
 
 ------
+
 ## 2) Canvas Strategy & Aspect Ratio Control
 
 **MANDATORY RATIO SELECTION:**
@@ -95,6 +114,7 @@ hero_image: null
 - **Format Justification:** Ratio serves architectural precision and technological detail hierarchy
 
 ------
+
 ## 3) Style Context & Material Authenticity
 
 - **Influences:** Swiss Surrealism, Bauhaus precision, Ernst Fuchs, Salvador Dalí, architectural draftsmanship, technical illustration tradition
@@ -110,6 +130,7 @@ hero_image: null
 - **Tone Tag:** Technological, architectural, precisely surreal, biomechanically evolved, coldly beautiful
 
 ------
+
 ## 4) Technical Method & Mark-Making
 
 - **Airbrush technique:** Professional dual-action airbrush with 0.2-0.35mm needle creating seamless gradations, acrylic paint thinned to milk consistency with authentic paint flow characteristics and subtle application irregularities
@@ -124,6 +145,7 @@ hero_image: null
 - **Scale proportions:** Precise architectural measurements with biomechanical elements following technical drawing conventions
 
 ------
+
 ## 5) Wardrobe, Props & Setting Conventions
 
 - **Wardrobe tracks:** Technological integration garments, architectural clothing forms, biomechanical accessories with precise geometric construction
@@ -143,6 +165,7 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 ```
 
 ------
+
 ## 6) Safety & IP Constraints (Hard Rules)
 
 **❌ Canvas Negatives (≥2):**
@@ -158,6 +181,7 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - "professional airbrush technique", "canvas board surface interaction", "Swiss precision aesthetics"
 
 ------
+
 ## 7) Composition & Lighting Patterns
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
@@ -182,6 +206,7 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with architectural elements supporting the format
 
 ------
+
 ## 8) Typography & Text Integration (If Historically Present)
 
 - **Binary:** Omit text entirely for pure visual biomechanical exploration
@@ -190,3 +215,4 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - **Biomechanical Emphasis:** Visual narrative through technological detail and architectural precision rather than textual elements
 
 ------
+

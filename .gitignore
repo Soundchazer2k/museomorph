@@ -1,3 +1,5 @@
 archive/*.jpg
 node_modules/
 dist/
+public/styles/
+tmp.txt

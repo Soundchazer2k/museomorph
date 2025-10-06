@@ -1,24 +1,25 @@
 ---
-id: bernie_wrightson_gothic_ink
+id: bernie_wrightson_gothic_illustration
 group: Gothic Horror
-movement: American Gothic Horror Illustration
+movement: 20th-Century Gothic Pen-and-Ink
 artist: Bernie Wrightson
-display_name: Bernie Wrightson — Gothic Pen-and-Ink Horror
+display_name: Bernie Wrightson — Gothic Pen-and-Ink Illustration
 style_scope: single-artist
+
 ratios:
-  - '2:3'
   - '3:4'
+  - '2:3'
   - '4:3'
-  - '4:5'
-  - '16:9'
 ratios_status: provisional
 ratios_notes: >
-  Wrightson’s horror spreads ranged from tall comic covers to 4:5 plates and
-  Cinemascope splash pages—choose whichever of 2:3, 3:4, 4:3, 4:5, or 16:9 best
-  serves the terror.
+  Wrightson staged horror spreads for book interiors—portrait trims like 3:4 and
+  2:3, plus 4:3 panoramas for haunted architecture. Stick to those literary
+  proportions.
 modes:
-  - Macabre Illustration
-  - Horror Narrative Scene
+  - Character Spotlight Illustration
+  - Environmental Horror Spread
+  - Spectral Encounter Vignette
+
 safety_profile:
   - no_nudity
   - no_gore
@@ -26,15 +27,34 @@ safety_profile:
   - no_watermarks
   - minors_modest
   - gender_respect
-about: >
-  Bernie Wrightson crosshatched nightmares until the ink looked alive—rotting
-  architecture, tortured anatomy, and candlelit chiaroscuro that would make Poe
-  shiver. His Frankenstein portfolio set the bar for dramatic linework.
-  MuseoMorph carries that operatic dread into new crypts, laboratories, and
-  cursed bloodlines.
-hero_image: null
----
 
+composition_constraints:
+  max_subjects: 3
+  subject_interaction: allowed
+  crowd_scenes: false
+  animals_allowed: true
+  animal_types:
+    - mythical
+  max_animals: 1
+  text_allowed: yes
+
+hero_image: null
+
+about: >
+  Bernie Wrightson cross-hatched living nightmares with Gillott nibs, building
+  cathedral-dark atmospheres around skeletal heroes and spectral villains. This
+  card retains his engraver linework, theatrical lighting, and book-plate ratios.
+
+sections_index:
+  '1': Core Instruction & Likeness Mandate
+  '2': Canvas Strategy & Aspect Ratio Control
+  '3': Style Context & Material Authenticity
+  '4': Technical Method & Mark-Making
+  '5': Wardrobe, Props & Setting Conventions
+  '6': Safety & IP Constraints (Hard Rules)
+  '7': Composition & Lighting Patterns
+  '8': Typography & Text Integration (If Historically Present)
+---
 # Bernie Wrightson Gothic Horror Illustration Style Prompt
 
 ------
@@ -59,6 +79,7 @@ hero_image: null
 ------
 
 ## 📋 Framework Sections
+
 ## 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
@@ -72,6 +93,7 @@ hero_image: null
 - **Mode Selector:** Gothic horror book illustration for macabre narrative visualization.
 
 ------
+
 ## 2) Canvas Strategy & Aspect Ratio Control
 
 **MANDATORY RATIO SELECTION:**
@@ -95,6 +117,7 @@ hero_image: null
 - **Format Justification:** Ratio serves theatrical staging of gothic horror narrative
 
 ------
+
 ## 3) Style Context & Material Authenticity
 
 - **Influences:** German Expressionism, Romantic horror literature (Poe, Shelley), Medieval danse macabre, Gustave Doré engraving tradition, EC Comics horror atmosphere
@@ -110,6 +133,7 @@ hero_image: null
 - **Tone Tag:** Ominous, psychologically unsettling, grotesquely dramatic, melancholic, theatrically macabre
 
 ------
+
 ## 4) Technical Method & Mark-Making
 
 - **Line quality:** Gillott 291 nib characteristics with variable pressure creating 0.2-1.5mm line weights, authentic india ink flow with slight bleeding on bristol board texture
@@ -122,6 +146,7 @@ hero_image: null
 - **Detail hierarchy:** Primary subject 100% detail resolution, secondary elements 60%, atmospheric elements 30%
 
 ------
+
 ## 5) Wardrobe, Props & Setting Conventions
 
 - **Wardrobe tracks:** Tattered Victorian/Edwardian garments, decaying aristocratic attire, burial shrouds, monastic robes with period-accurate construction showing decay and age
@@ -141,6 +166,7 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 ```
 
 ------
+
 ## 6) Safety & IP Constraints (Hard Rules)
 
 **❌ Canvas Negatives (≥2):**
@@ -156,6 +182,7 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - "authentic pen-and-ink line quality", "bristol board texture interaction", "Gillott 291 nib characteristics"
 
 ------
+
 ## 7) Composition & Lighting Patterns
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
@@ -180,6 +207,7 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with gothic architectural elements supporting the format
 
 ------
+
 ## 8) Typography & Text Integration (If Historically Present)
 
 - **Binary:** Omit text entirely for pure visual storytelling
@@ -188,3 +216,4 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - **Gothic Horror Emphasis:** Visual narrative through atmospheric detail and character expression rather than textual elements
 
 ---
+

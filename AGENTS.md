@@ -22,7 +22,7 @@
 - `/archive/` = deprecated or multi-artist drafts (ignored by tooling).
 - `/styles/_TEMPLATE.md` = scaffold (must keep the 8 sections).
 - `/docs/PRD.md` = intent.
-- `/docs/Universal_Prompt_Framework_v4.2.md` = section canon.
+- `/docs/Universal_Museum-Grade_Prompt_Framework_v4.3_(NanoBanana_Edition).md` = section canon.
 - `/docs/ratio_policy.md` = ratio canon.
 - `/scripts/*.ts` = validator + manifest (uses **`tsconfig.scripts.json`**).
 - `.github/workflows/validate.yml` = CI.
@@ -82,7 +82,7 @@ modes: ["…","…"]           # 2–3 meaningful toggles (e.g., "Cover","Splash
 
 - **Agent prompt:**
 
-  > Parse the source, split into per-artist v4.2 styles, show diffs for each new file, wait for approval, then write + validate + build and paste outputs. Do **not** delete the original; move it to `/styles-archive/` if requested.
+  > Parse the source, split into per-artist v4.3 styles, show diffs for each new file, wait for approval, then write + validate + build and paste outputs. Do **not** delete the original; move it to `/styles-archive/` if requested.
 
 ### 7.2 Script hardening / policy enforcement
 
