@@ -3,21 +3,23 @@ id: harry_clarke_gothic_illustration
 group: Gothic Horror
 movement: Art Nouveau Gothic Illustration
 artist: Harry Clarke
-display_name: Harry Clarke — Art Nouveau Gothic Illustration
+display_name: Harry Clarke — Illuminated Gothic Illustration
 style_scope: single-artist
+
 ratios:
-  - '2:3'
   - '3:4'
+  - '2:3'
   - '4:3'
-  - '4:5'
-  - '16:9'
 ratios_status: provisional
 ratios_notes: >
-  Clarke’s stained-glass-inspired panels flex between narrow book plates and
-  tall windows—2:3, 3:4, 4:3, 4:5, or 16:9 all map to his ornate frames.
+  Clarke designed literary plates on tall 3:4 or 2:3 sheets, with 4:3 reserved
+  for elaborate border work—stay within those trims to honor his stained-glass
+  geometry.
 modes:
-  - Stained-Glass Panel
-  - Gothic Story Panel
+  - Illuminated Manuscript Plate
+  - Art Nouveau Fantasy Scene
+  - Decorative Border Vignette
+
 safety_profile:
   - no_nudity
   - no_gore
@@ -25,14 +27,34 @@ safety_profile:
   - no_watermarks
   - minors_modest
   - gender_respect
-about: >
-  Harry Clarke ornamented Poe and Perrault with razor-thin ink, jeweled color,
-  and Gothic filigree that feels like leaded glass. His figures float amid
-  patterns sharp enough to cut. MuseoMorph sustains that iridescent menace while
-  unveiling new fables, saints, and sinuous borders.
-hero_image: null
----
 
+composition_constraints:
+  max_subjects: 3
+  subject_interaction: allowed
+  crowd_scenes: false
+  animals_allowed: true
+  animal_types:
+    - mythical
+  max_animals: 1
+  text_allowed: yes
+
+hero_image: null
+
+about: >
+  Harry Clarke mixes Art Nouveau ornament with gothic menace—razor-thin lead
+  lines, stippled blacks, and jewel-toned pattern grids. This card carries over
+  his ratios, illuminated borders, and stained-glass logic.
+
+sections_index:
+  '1': Core Instruction & Likeness Mandate
+  '2': Canvas Strategy & Aspect Ratio Control
+  '3': Style Context & Material Authenticity
+  '4': Technical Method & Mark-Making
+  '5': Wardrobe, Props & Setting Conventions
+  '6': Safety & IP Constraints (Hard Rules)
+  '7': Composition & Lighting Patterns
+  '8': Typography & Text Integration (If Historically Present)
+---
 # Harry Clarke Gothic Horror Illustration Style Prompt
 
 ------
@@ -58,6 +80,7 @@ hero_image: null
 ------
 
 ## 📋 Framework Sections
+
 ## 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
@@ -71,6 +94,7 @@ hero_image: null
 - **Mode Selector:** Literary fantasy book illustration for narrative visualization.
 
 ------
+
 ## 2) Canvas Strategy & Aspect Ratio Control
 
 **MANDATORY RATIO SELECTION:**
@@ -94,6 +118,7 @@ hero_image: null
 - **Format Justification:** Ratio serves decorative precision and narrative illustration hierarchy
 
 ------
+
 ## 3) Style Context & Material Authenticity
 
 - **Influences:** Irish Arts and Crafts Movement, Art Nouveau, Art Deco, French Symbolist movement, medieval illuminated manuscripts, stained glass craftsmanship tradition
@@ -109,6 +134,7 @@ hero_image: null
 - **Tone Tag:** Decoratively intricate, fantastically literary, symbolically rich, craftsman-precise, mysteriously beautiful
 
 ------
+
 ## 4) Technical Method & Mark-Making
 
 - **Dip pen technique:** Flexible nib creating variable line weights from 0.5-3mm, India ink flow with authentic bristol board interaction and organic line variation
@@ -121,6 +147,7 @@ hero_image: null
 - **Stained glass translation anchor:** Two-dimensional interpretation of three-dimensional glass techniques maintaining lead line structural logic
 
 ------
+
 ## 5) Wardrobe, Props & Setting Conventions
 
 - **Wardrobe tracks:** Art Nouveau period fantasy garments, medieval-influenced robes, decorative costume elements with stained glass pattern integration
@@ -140,6 +167,7 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 ```
 
 ------
+
 ## 6) Safety & IP Constraints (Hard Rules)
 
 **❌ Canvas Negatives (≥2):**
@@ -155,6 +183,7 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - "authentic dip pen technique", "bristol board surface interaction", "Edgar Allan Poe atmospheric authenticity"
 
 ------
+
 ## 7) Composition & Lighting Patterns
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
@@ -179,6 +208,7 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with decorative elements supporting the format
 
 ------
+
 ## 8) Typography & Text Integration (If Historically Present)
 
 - **Binary:** Allow selective text integration for literary illustration authenticity
@@ -194,3 +224,4 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - **Historical accuracy:** Typography matching 1910s-1920s Irish Arts and Crafts standards with illuminated manuscript influence
 
 ------
+

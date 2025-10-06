@@ -36,6 +36,94 @@ const HERO_IMAGE_FALLBACK = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/
 
 const HERO_IMAGE_FILES = ['hero_1.png', 'hero_2.png', 'hero_3.png', 'hero_4.png', 'hero_5.png'];
 
+const DEFAULT_RATIO_CANVAS_MAX = 1024;
+
+function parseRatioDimensions(ratio: string): { width: number; height: number } {
+  const match = ratio.trim().match(/^(\d+)\s*:\s*(\d+)$/);
+  if (!match) {
+    return { width: 1, height: 1 };
+  }
+  const width = Number(match[1]) || 1;
+  const height = Number(match[2]) || 1;
+  return { width, height };
+}
+
+function computePixelDimensions(ratio: string, maxDimension = DEFAULT_RATIO_CANVAS_MAX): { width: number; height: number } {
+  const { width: ratioWidth, height: ratioHeight } = parseRatioDimensions(ratio);
+  if (ratioWidth <= 0 || ratioHeight <= 0) {
+    return { width: maxDimension, height: maxDimension };
+  }
+
+  if (ratioWidth >= ratioHeight) {
+    const width = maxDimension;
+    const height = Math.max(1, Math.round((maxDimension / ratioWidth) * ratioHeight));
+    return { width, height };
+  }
+  const height = maxDimension;
+  const width = Math.max(1, Math.round((maxDimension / ratioHeight) * ratioWidth));
+  return { width, height };
+}
+
+async function createBlankCanvasDataUrl(width: number, height: number): Promise<string> {
+  const canvas = document.createElement('canvas');
+  canvas.width = width;
+  canvas.height = height;
+  const context = canvas.getContext('2d');
+  if (context) {
+    context.clearRect(0, 0, width, height);
+  }
+  return canvas.toDataURL('image/png');
+}
+
+async function normalizeImageToCanvas(file: File, width: number, height: number): Promise<File> {
+  if (!width || !height) {
+    return file;
+  }
+
+  const imageUrl = URL.createObjectURL(file);
+  try {
+    const image = await new Promise<HTMLImageElement>((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = (event) => reject(event);
+      img.src = imageUrl;
+    });
+
+    const canvas = document.createElement('canvas');
+    canvas.width = width;
+    canvas.height = height;
+    const context = canvas.getContext('2d');
+    if (!context) {
+      return file;
+    }
+    context.clearRect(0, 0, width, height);
+
+    const scale = Math.max(width / image.width, height / image.height);
+    const drawWidth = Math.max(1, Math.round(image.width * scale));
+    const drawHeight = Math.max(1, Math.round(image.height * scale));
+    const dx = Math.round((width - drawWidth) / 2);
+    const dy = Math.round((height - drawHeight) / 2);
+
+    context.drawImage(image, dx, dy, drawWidth, drawHeight);
+
+    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, 'image/png'));
+    if (!blob) {
+      return file;
+    }
+
+    const baseName = file.name.replace(/\.[^.]+$/, '');
+    const normalizedName = `${baseName || 'upload'}_normalized.png`;
+    return new File([blob], normalizedName, { type: 'image/png' });
+  } finally {
+    URL.revokeObjectURL(imageUrl);
+  }
+}
+
+function dataUrlToBase64(dataUrl: string): string {
+  const parts = dataUrl.split(',');
+  return parts[1] ?? '';
+}
+
 type MuseoRoute =
   | { type: 'home' }
   | { type: 'collection'; id: string }
@@ -1019,9 +1107,33 @@ function StyleComposer({
     setTokenCost(null);
 
     try {
+      const { width: targetWidth, height: targetHeight } = computePixelDimensions(activeRatioDecision.chosen);
+
+      const normalizedUploads = await Promise.all(
+        uploads.map(async (file, index) => {
+          try {
+            const normalized = await normalizeImageToCanvas(file, targetWidth, targetHeight);
+            return normalized;
+          } catch (error) {
+            console.warn('Failed to normalize upload', { file: file.name, error });
+            return file;
+          }
+        }),
+      );
+
+      const ratioTemplateBase64 = await (async () => {
+        try {
+          const templateDataUrl = await createBlankCanvasDataUrl(targetWidth, targetHeight);
+          return dataUrlToBase64(templateDataUrl);
+        } catch (error) {
+          console.warn('Failed to create ratio template', error);
+          return null;
+        }
+      })();
+
       const uploadPayloads = await Promise.all(
-        uploads.map(async (file) => ({
-          name: file.name,
+        normalizedUploads.map(async (file, index) => ({
+          name: file.name || `upload-${index + 1}.png`,
           mimeType: file.type || 'image/png',
           dataBase64: await fileToBase64(file),
         })),
@@ -1050,6 +1162,13 @@ function StyleComposer({
         subjectCount: Math.max(uploads.length, 1),
         userDirectives,
         uploads: uploadPayloads,
+        ratioTemplate: ratioTemplateBase64
+          ? {
+              name: `ratio-template-${targetWidth}x${targetHeight}.png`,
+              mimeType: 'image/png',
+              dataBase64: ratioTemplateBase64,
+            }
+          : undefined,
       });
 
       const dataUrl = `data:${response.mimeType};base64,${response.imageBase64}`;

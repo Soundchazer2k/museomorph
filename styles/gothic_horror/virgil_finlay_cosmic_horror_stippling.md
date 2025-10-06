@@ -1,23 +1,25 @@
 ---
-id: virgil_finlay_cosmic_stippling
+id: virgil_finlay_cosmic_horror_stippling
 group: Gothic Horror
-movement: Weird Fiction Stippling Illustration
+movement: Weird Fiction Magazine Illustration (1930s-1950s)
 artist: Virgil Finlay
 display_name: Virgil Finlay — Cosmic Horror Stippling
 style_scope: single-artist
+
 ratios:
-  - '2:3'
   - '3:4'
+  - '2:3'
   - '4:3'
-  - '4:5'
-  - '16:9'
 ratios_status: provisional
 ratios_notes: >
-  Finlay’s pulp interiors and covers bounced across 2:3 magazines, 3:4 plates,
-  and 16:9 foldouts—pick the frame that lets the stippling breathe.
+  Finlay cut his stippled nightmares for pulp interiors—portrait trims like 3:4
+  and 2:3, plus 4:3 spreads for cosmic vistas. Stay within those inexpensive
+  paper ratios.
 modes:
-  - Cosmic Stippling Portrait
-  - Magazine Interior Scene
+  - Weird Fiction Interior Plate
+  - Eldritch Portrait Study
+  - Cosmic Vista Spread
+
 safety_profile:
   - no_nudity
   - no_gore
@@ -25,14 +27,34 @@ safety_profile:
   - no_watermarks
   - minors_modest
   - gender_respect
-about: >
-  Virgil Finlay dotted entire universes into being—stippled nebulae, drenched
-  chiaroscuro, and Art Deco halos around eldritch horrors. His scratchboard
-  precision defined Weird Tales. We keep that cosmic pointillism while charting
-  new cults, constellations, and sanity-shattering vistas.
-hero_image: null
----
 
+composition_constraints:
+  max_subjects: 3
+  subject_interaction: allowed
+  crowd_scenes: false
+  animals_allowed: true
+  animal_types:
+    - mythical
+  max_animals: 1
+  text_allowed: yes
+
+hero_image: null
+
+about: >
+  Virgil Finlay dotted the void with scratchboard halos, translating Lovecraftian
+  dread into microscopic stipple gradients. This scaffold keeps his pulp ratios,
+  ink physics, and cosmic insignificance cues.
+
+sections_index:
+  '1': Core Instruction & Likeness Mandate
+  '2': Canvas Strategy & Aspect Ratio Control
+  '3': Style Context & Material Authenticity
+  '4': Technical Method & Mark-Making
+  '5': Wardrobe, Props & Setting Conventions
+  '6': Safety & IP Constraints (Hard Rules)
+  '7': Composition & Lighting Patterns
+  '8': Typography & Text Integration (If Historically Present)
+---
 # Virgil Finlay Lovecraftian Cosmic Horror Stippling Illustration Style Prompt
 
 ------
@@ -58,6 +80,7 @@ hero_image: null
 ------
 
 ## 📋 Framework Sections
+
 ## 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
@@ -71,6 +94,7 @@ hero_image: null
 - **Mode Selector:** Weird fiction magazine interior illustration for cosmic horror narrative visualization.
 
 ------
+
 ## 2) Canvas Strategy & Aspect Ratio Control
 
 **MANDATORY RATIO SELECTION:**
@@ -94,6 +118,7 @@ hero_image: null
 - **Format Justification:** Ratio serves dramatic weird fiction illustration and cosmic horror layout hierarchy
 
 ------
+
 ## 3) Style Context & Material Authenticity
 
 - **Influences:** American weird fiction tradition, H.P. Lovecraft cosmic horror aesthetic, Gothic Revival architecture, Gustave Doré engraving techniques, Pablo Picasso modernist influence, Edgar Allan Poe atmospheric terror
@@ -109,6 +134,7 @@ hero_image: null
 - **Tone Tag:** Cosmically atmospheric, meticulously crafted, psychologically unsettling, otherworldly dramatic, weird-fiction-authentically detailed
 
 ------
+
 ## 4) Technical Method & Mark-Making
 
 - **Lithographic pen technique:** 290 lithographic pen (ultra-fine point) with India ink, individual dot application requiring pen-tip wiping after each stipple for authentic pointillist texture
@@ -121,6 +147,7 @@ hero_image: null
 - **Tool specificity anchor:** 290 lithographic pen point so fine that most artists cannot use it, requiring months of searching for properly flowing pens
 
 ------
+
 ## 5) Wardrobe, Props & Setting Conventions
 
 - **Wardrobe tracks:** 1930s-1950s period occult investigator clothing, scholarly academic attire, weird fiction character garments with cosmic horror aesthetic and period authenticity
@@ -140,6 +167,7 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 ```
 
 ------
+
 ## 6) Safety & IP Constraints (Hard Rules)
 
 **❌ Canvas Negatives (≥2):**
@@ -155,6 +183,7 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 - "authentic 290 lithographic pen technique", "scratchboard surface interaction", "wood pulp reproduction optimization"
 
 ------
+
 ## 7) Composition & Lighting Patterns
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
@@ -179,6 +208,7 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with stippling elements supporting the format
 
 ------
+
 ## 8) Typography & Text Integration (If Historically Present)
 
 - **Binary:** Omit text entirely for pure visual narrative storytelling
@@ -187,3 +217,4 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 - **Cosmic Horror Emphasis:** Visual narrative through stippling detail and scratchboard precision rather than textual elements
 
 ------
+

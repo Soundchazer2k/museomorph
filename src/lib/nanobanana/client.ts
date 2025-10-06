@@ -16,6 +16,7 @@ export interface GenerateArtworkRequest {
   userDirectives: string[];
   uploads: UploadPayload[];
   additionalContext?: string;
+  ratioTemplate?: UploadPayload;
 }
 
 export interface GenerateArtworkResponse {

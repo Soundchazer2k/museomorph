@@ -57,7 +57,7 @@ This guide explains how to:
 
 4. **Educational blurb is semi-mandatory.** Add 2–6 sentences that help a curious reader understand the style/movement/artist.
 
-5. Refer to `/docs/Universal_Prompt_Framework_v4.2.md` for full section definitions and constraints. Use `/styles/_TEMPLATE.md` as your working scaffold.
+5. Refer to `/docs/Universal_Museum-Grade_Prompt_Framework_v4.3_(NanoBanana_Edition).md` for full section definitions and constraints. Use `/styles/_TEMPLATE.md` as your working scaffold.
    - Need ratios for stained glass, murals, Orphism, or new comic eras? See the freshly expanded tables in `/docs/ratio_policy.md` before locking your list.
 
 ------

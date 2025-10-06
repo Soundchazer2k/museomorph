@@ -43,6 +43,8 @@ struct GenerateArtworkRequest {
     user_directives: Vec<String>,
     uploads: Vec<UploadPayload>,
     additional_context: Option<String>,
+    #[serde(default)]
+    ratio_template: Option<UploadPayload>,
 }
 
 #[derive(Serialize)]
@@ -107,6 +109,19 @@ async fn generate_nanobanana_image(
             "inlineData": {
                 "mimeType": upload.mime_type,
                 "data": upload.data_base64,
+            }
+        }));
+    }
+
+    if let Some(template) = &request.ratio_template {
+        Base64Standard
+            .decode(template.data_base64.as_bytes())
+            .map_err(|err| format!("Invalid base64 data for {}: {}", template.name, err))?;
+
+        parts.push(json!({
+            "inlineData": {
+                "mimeType": template.mime_type.clone(),
+                "data": template.data_base64.clone(),
             }
         }));
     }

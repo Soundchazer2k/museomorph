@@ -2,7 +2,7 @@
 
 ### 1. Project Overview
 
-MuseoMorph is a **playful art lab** delivered as a cross-platform desktop app (Windows, macOS, Linux) that transforms a submitted photograph into an artwork rendered in the visual language of a chosen artist, movement, or technique. Unlike generic style-transfer filters, MuseoMorph emphasizes *art-historical authenticity*. It uses structured Markdown prompt frameworks (e.g., Universal Museum-Grade Prompt Framework v4.2) to encode artist-specific characteristics such as pigments, brushwork, medium, palette constraints, and compositional strategies.
+MuseoMorph is a **playful art lab** delivered as a cross-platform desktop app (Windows, macOS, Linux) that transforms a submitted photograph into an artwork rendered in the visual language of a chosen artist, movement, or technique. Unlike generic style-transfer filters, MuseoMorph emphasizes *art-historical authenticity*. It uses structured Markdown prompt frameworks (e.g., Universal Museum-Grade Prompt Framework v4.3) to encode artist-specific characteristics such as pigments, brushwork, medium, palette constraints, and compositional strategies.
 
 Users supply their own image generation API keys (starting with Google’s NanoBanana/Gemini) to locally generate results. The app presents a **museum-inspired interface** with curated collections, style detail pages, and optional educational blurbs, balancing fun, accessibility, and art appreciation.
 
@@ -72,7 +72,7 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 
 - **Qualitative:** Users feel authenticity, delight, and fun; flows are frictionless; app feels like a playful art lab, not a technical tool.
 - **Community Signals:** GitHub stars, style contributions, organic sharing of results.
-- **Internal Rubric:** Developers validate authenticity with internal tests; framework evolves (v4.2 → future).
+- **Internal Rubric:** Developers validate authenticity with internal tests; framework evolves (v4.3 → future).
 - **No User Burden:** No in-app surveys, ratings, or forced feedback loops.
 
 ------
@@ -82,7 +82,7 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 - **Assumptions:**
   - Non-commercial, leisure-focused; cost target = $0.
   - Users provide their own API keys; local-first runtime.
-  - Markdown frameworks (e.g., Universal Prompt v4.2) serve as prompt source of truth.
+  - Markdown frameworks (e.g., Universal Prompt v4.3, NanoBanana Edition) serve as prompt source of truth.
 - **Technical Constraints:**
   - Provider limits resolution, latency, fidelity.
   - Face detection = YuNet ONNX, CPU-only; fallback to manual.

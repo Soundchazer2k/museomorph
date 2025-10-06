@@ -67,12 +67,14 @@ async function main() {
   const outPath = path.join(root, "manifest.json");
   const publicDir = path.join(root, "public");
   const publicOutPath = path.join(publicDir, "manifest.json");
+  const publicStylesDir = path.join(publicDir, "styles");
 
   if (!fs.existsSync(stylesDir)) {
     throw new Error(`styles/ not found at ${stylesDir}`);
   }
 
   const files = await glob("styles/**/*.md", { cwd: root, absolute: true, nodir: true });
+  fs.rmSync(publicStylesDir, { recursive: true, force: true });
   const manifest: Manifest = { collections: [], styles: {} };
   const collections = new Map<string, string[]>(); // group -> [ids]
   let indexed = 0;
@@ -142,6 +144,11 @@ async function main() {
     if (!collections.has(group)) collections.set(group, []);
     collections.get(group)!.push(id);
     indexed++;
+
+    const publicRel = path.relative(stylesDir, abs);
+    const publicDest = path.join(publicStylesDir, publicRel);
+    fs.mkdirSync(path.dirname(publicDest), { recursive: true });
+    fs.copyFileSync(abs, publicDest);
   }
 
   // Sort collections & styles for stable output
@@ -153,6 +160,7 @@ async function main() {
   fs.writeFileSync(outPath, JSON.stringify(manifest, null, 2), "utf8");
   fs.mkdirSync(publicDir, { recursive: true });
   fs.writeFileSync(publicOutPath, JSON.stringify(manifest, null, 2), "utf8");
+  console.log(`✅ Copied styles markdown into ${path.relative(root, publicStylesDir)}/`);
   console.log(`✅ Wrote ${path.relative(root, outPath)}`);
   console.log(`✅ Wrote ${path.relative(root, publicOutPath)}`);
   console.log("Indexed: " + indexed + "  Skipped: " + skipped + "  Collections: " + manifest.collections.length);

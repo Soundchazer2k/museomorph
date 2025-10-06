@@ -3,10 +3,12 @@
 ------
 
 # Francisco Goya Black Paintings Style Prompt
+
 ## 1) Core Instruction & Likeness Mandate
 
 **CANVAS OVERRIDE:** Recompose to exactly **4:3 ratio** - ignore source image dimensions completely. Redraw in **Goya's Black Paintings style circa 1820-1823** for **oil painting on plaster transferred to canvas**. Identity via silhouette/gesture/expression with psychological intensity. **IP Safeguard Declaration:** Create original designs avoiding copyrighted elements, focusing on universal human psychological themes. **Face-Treatment Flag:** `oil-fat-over-lean` with `impasto-sculptural` and `alla-prima-direct` **Pose Flag:** `psychological-tension` **Canvas Control Flag:** `adaptive-extend` **Style Dominance:** Goya's late period psychological expressionism supersedes all decorative or harmonious elements **Mode Selector:** Gallery painting for private contemplation
-## 2) Canvas Strategy & Aspect Ratio Control
+
+## 2) Canvas Strategy & Spatial Logic
 
 **MANDATORY RATIO:** `4:3` (classical landscape format matching Goya's wall proportions)
 
@@ -16,7 +18,8 @@
 - **Spatial Allocation:** Subject placement in psychological tension zones, off-center for compositional modernity
 - **Background Treatment:** Fill with "avernal darkness" extending seamlessly from center
 - **Format Justification:** 3:4 portrait ratio serves Goya's intimate psychological studies and allows for figure dominance with atmospheric depth
-## 3) Style Context & Material Authenticity
+
+## 3) Artistic Style & Context
 
 **Influences:** Goya's Black Paintings (1820-1823), Romantic pessimism, post-illness psychological transformation, Spanish political turmoil **Medium/Production method:** Oil paint applied al secco directly onto plaster walls using broad strokes, large brushes, palette knives, and possibly sponges. Thick impasto with 3-5mm paint thickness, no preparatory drawings. **Thematic purpose:** Private psychological expression of deepest fears, political disillusionment, and human darkness **Hallmark motifs:**
 
@@ -25,10 +28,12 @@
 - Off-center compositional imbalance (150% modern asymmetry)
 - Thick, agitated brushwork showing tool marks and palette knife scraping
 - Psychological facial distortion with bulging eyes and gaping mouths **Period framing:** Spain 1820-1823, liberal constitutional period, political repression, Goya's deafness and isolation **Tone Tag:** Pessimistic, nightmarish, psychologically violent **Production Era Authenticity:** Oil on plaster al secco technique with characteristic cracking and transfer damage from 1874 canvas mounting
-## 4) Technical Method & Mark-Making
+
+## 4) Technical Execution
 
 **Paint application:** Thick impasto 3-5mm deep with visible palette knife marks, broad brush strokes applied rapidly and aggressively, fat-over-lean oil technique with linseed oil binding **Color mixing:** Earth palette - yellow ochre, brown ochre, light red, burnt sienna, four varieties of black (bone, ivory, lamp, peach), lead white, minimal vermillion accents **Texture specifications:** Rough, craggy surface texture simulating plaster substrate, aggressive tool marks from palette knives and large bristle brushes **Edge treatment:** Lost edges dissolving into darkness, hard edges only for psychological emphasis **Stroke economy:** Economical but expressive - maximum psychological impact with minimum strokes, directional brushwork following form and emotion **Surface depth:** Heavy impasto creating sculptural relief, paint thickness variations creating tactile surface **Detail hierarchy:** Sparse detail work, concentrated in psychologically critical areas (eyes, mouths, hands) **Material authenticity:** Authentic oil paint behavior with linseed oil flow characteristics, no modern acrylic smoothness **Scale proportions:** Anatomical distortions for psychological effect - neck elongation 120%, head size variations, bulging eyes 150% normal scale **Tool marks:** Visible palette knife scraping, bristle brush texture, sponge dabbing marks in atmospheric areas
-## 5) Wardrobe, Props & Setting Conventions
+
+## 5) Fashion & Attire - Wardrobe Matrix + Prop Selector
 
 **Wardrobe tracks:**
 
@@ -43,7 +48,8 @@ violence: [cudgel, rope, knife, gallows]
 political: [constitution_papers, royal_decree, chains, crown]
 mortality: [human_skull, hourglass, wilted_flowers, coffin]
 ```
-## 6) Safety & IP Constraints (Hard Rules)
+
+## 6) Constraints
 
 **❌ Canvas Negatives:**
 
@@ -58,7 +64,8 @@ mortality: [human_skull, hourglass, wilted_flowers, coffin]
 - "thick impasto 3-5mm paint thickness", "palette knife texture marks"
 - "deep atmospheric shadow with 90% coverage", "psychological intensity zones"
 - "earth pigment palette authentic to 1820s", "oil on plaster al secco technique"
-## 7) Composition & Lighting Patterns
+
+## 7) Composition & Background
 
 **4:3 LANDSCAPE COMPOSITION REQUIREMENTS:**
 
@@ -81,17 +88,20 @@ mortality: [human_skull, hourglass, wilted_flowers, coffin]
 - **Frame/Band:** Omit entirely - no decorative framing
 - **Production Context:** Al secco technique on plaster substrate with 1874 transfer damage characteristics
 - **Ratio Enforcement:** Composition designed for 4:3 theatrical viewing, horizontal psychological narrative
-## 8) Typography & Text Integration (If Historically Present)
+
+## 8) Typography & Text Integration
 
 **Binary:** Omit text entirely - Goya's Black Paintings contained no text elements **Historical accuracy:** No typography - these were private wall paintings, not public works **Production Method:** Pure visual expression without textual explanation
 
 ------
 
 # Caspar David Friedrich Romantic Sublime Style Prompt
+
 ## 1) Core Instruction & Likeness Mandate
 
 **CANVAS OVERRIDE:** Recompose to exactly **4:3 ratio** - ignore source image dimensions completely. Redraw in **Friedrich's German Romantic landscape style circa 1810-1830** for **oil painting on fine primed canvas**. Identity via silhouette/gesture/expression with spiritual contemplation. **IP Safeguard Declaration:** Create original designs avoiding copyrighted elements, focusing on universal sublime landscape themes. **Face-Treatment Flag:** `oil-fat-over-lean` with `glazing-layers-buildup` **Pose Flag:** `psychological-tension` (Rückenfigur contemplation) **Canvas Control Flag:** `adaptive-extend` **Style Dominance:** Friedrich's sublime spiritual landscapes supersede all decorative or conventional beauty elements **Mode Selector:** Gallery painting for transcendental contemplation
-## 2) Canvas Strategy & Aspect Ratio Control
+
+## 2) Canvas Strategy & Spatial Logic
 
 **MANDATORY RATIO:** `4:3` (classical landscape format matching Friedrich's compositional preferences)
 
@@ -101,7 +111,8 @@ mortality: [human_skull, hourglass, wilted_flowers, coffin]
 - **Spatial Allocation:** Rückenfigur placement in lower third, vast sky dominating upper two-thirds
 - **Background Treatment:** Fill with graduated atmospheric effects extending to infinite horizon
 - **Format Justification:** 4:3 ratio serves Friedrich's horizontal sublime landscapes and allows for proper sky-to-earth proportions essential to the spiritual experience
-## 3) Style Context & Material Authenticity
+
+## 3) Artistic Style & Context
 
 **Influences:** German Romanticism, Kantian sublime, Lutheran spirituality, Gothic revival, Northern European landscape tradition **Medium/Production method:** Oil paint applied in thin transparent washes over detailed underdrawing on fine primed canvas. Multiple glazing layers with precise stippling and controlled brushwork. **Thematic purpose:** Spiritual contemplation through nature's sublime power, existential meditation on humanity's place in the infinite **Hallmark motifs:**
 
@@ -110,10 +121,12 @@ mortality: [human_skull, hourglass, wilted_flowers, coffin]
 - Gothic ruins and church spires as spiritual anchors in natural vastness
 - Dramatic sky-to-earth ratios (70% sky, 30% earth)
 - Sfumato effects in distant mountains and fog-filled valleys **Period framing:** German Romantic period 1810-1830, post-Napoleonic spiritual awakening, Lutheran mysticism **Tone Tag:** Sublime, contemplative, spiritually transcendent **Production Era Authenticity:** Early 19th century oil glazing techniques with period-appropriate pigment limitations and canvas preparation
-## 4) Technical Method & Mark-Making
+
+## 4) Technical Execution
 
 **Paint application:** Thin transparent washes built up in multiple glazing layers, oil-fat-over-lean technique with linseed oil medium **Color mixing:** Early period - iron-based yellows, smalt blues, lead white, earth pigments; Later period - chromium yellows, cobalt blue, cadmium accents **Texture specifications:** Smooth, precise surface achieved through controlled stippling and delicate brushwork, minimal visible impasto **Edge treatment:** Soft sfumato transitions in atmospheric areas, precise linear definition in foreground elements **Stroke economy:** Economical precise strokes following detailed underdrawing, stippling technique for translucent mist effects **Surface depth:** Multiple transparent glazes creating luminous atmospheric depth, careful tonal gradations **Detail hierarchy:** Precise detail in foreground diminishing to atmospheric suggestion in distance **Material authenticity:** Period-accurate glazing with natural pigments, avoiding modern synthetic consistency **Scale proportions:** Figures reduced to 5-10% of canvas height to emphasize sublime scale relationships **Underdrawing authority:** Detailed preliminary drawing in pencil/ink establishing architectural and landscape structure **Atmospheric technique:** Smalt stippling for translucent mist effects, graduated tonal washes for infinite depth
-## 5) Wardrobe, Props & Setting Conventions
+
+## 5) Fashion & Attire - Wardrobe Matrix + Prop Selector
 
 **Wardrobe tracks:**
 
@@ -128,7 +141,8 @@ scholarly: [sketching_pad, natural_history_book, compass, walking_stick]
 memorial: [gravestone, church_ruins, ancient_oak, abandoned_shrine]
 natural: [weathered_rock, fallen_tree, mountain_cairn, seashells]
 ```
-## 6) Safety & IP Constraints (Hard Rules)
+
+## 6) Constraints
 
 **❌ Canvas Negatives:**
 
@@ -143,7 +157,8 @@ natural: [weathered_rock, fallen_tree, mountain_cairn, seashells]
 - "atmospheric graduated tones", "sfumato mist effects with stippled technique"
 - "Rückenfigur contemplative positioning", "spiritual transcendence through nature"
 - "period-accurate glazing layers", "detailed underdrawing precision", "infinite atmospheric perspective"
-## 7) Composition & Lighting Patterns
+
+## 7) Composition & Background
 
 **4:3 LANDSCAPE COMPOSITION REQUIREMENTS:**
 
@@ -166,103 +181,503 @@ natural: [weathered_rock, fallen_tree, mountain_cairn, seashells]
 - **Frame/Band:** Omit entirely - no decorative framing elements
 - **Production Context:** Oil glazing on fine canvas appropriate to German Romantic period techniques
 - **Ratio Enforcement:** Composition designed for 4:3 sublime landscape viewing with proper sky-earth proportions
-## 8) Typography & Text Integration (If Historically Present)
+
+## 8) Typography & Text Integration
 
 **Binary:** Omit text entirely - Friedrich's landscapes were pure visual spiritual experiences **Historical accuracy:** No typography - these were contemplative paintings without textual elements **Production Method:** Pure atmospheric visual communication without linguistic interference
 
 ------
 
-- ### 1) Core Instruction & Likeness Mandate
+- **Material Authenticity Anchor:**
 
+  - All tones created through visible directional linework — parallel lines, cross-hatching, stippling
+
+  - NO continuous-tone photographic gradients, NO digital smoothing
   
-
-  - **Identity via silhouette/gesture/expression with \*psychological dread and spectral presence\*.** (Instead of literary grandeur, focus on fear and the otherworldly).
-  - **IP Safeguard Declaration:** Keep as is, focusing on universal human psychological themes and avoiding copyrighted elements.
-  - **Face-Treatment Flag:** `engrave-hatch with skeletal-gauntness and haunted-eyes`
-  - **Pose Flag:** `gestural-fluid (contorted-agony or spectral-glide)`
-  - **Style Dominance:** Doré's theatrical literary illustration **with an emphasis on the grotesque and the supernatural** supersedes photographic realism.
-  - **Mode Selector:** Book illustration for **macabre narrative visualization or dark poetry.**
-## 2) Canvas Strategy & Aspect Ratio Control
-
+  - Crisp black ink on white paper with clear line boundaries
   
-
-  - **Spatial Allocation:** *Tormented figure placement with diminishing hope, supporting grotesque elements in a suffocating arrangement.*
-  - **Background Treatment:** Fill with *suffocating cross-hatched environments, decaying architecture, or spectral mists extending to full canvas.*
-  - **Format Justification:** Keep as is.
-## 3) Style Context & Material Authenticity
-
+    ---
   
-
-  - **Influences:** *German Expressionism, Romantic horror literature (Poe, Shelley), Medieval danse macabre, Baroque dramatic composition with a focus on decay.*
-  - **Thematic purpose:** *Dramatic visualization of existential horror, spectral encounters, moral decay, and the fragility of sanity with theatrical grandeur.*
-  - **Hallmark motifs:**
-    - Monumental figure scale (keep as is, but figures could be more emaciated or distorted).
-    - Intricate cross-hatching patterns creating rich tonal gradation from pure white to deep black.
-    - *Decaying architectural grandeur with crumbling Gothic and skeletal elements.*
-    - *Atmospheric perspective achieved through line density variation, emphasizing oppressive fog or shadowy miasma.*
-    - *Theatrical chiaroscuro with a single, sickly light source or spectral glow, emphasizing deep, consuming shadows.*
-  - **Tone Tag:** *Ominous, horrifying, psychologically unsettling, grotesquely dramatic, melancholic.*
-## 4) Technical Method & Mark-Making
-
+  # Gustave Doré Gothic Horror Framework
   
-
-  - **Tonal system:** Complete grayscale range with an emphasis on *deep, suffocating blacks and stark, ghostly whites.*
-  - **Cross-hatching specifications:** Keep as is, but emphasize *dense, agitated hatching for areas of dread and decay.*
-  - **Surface simulation:** Authentic wood engraving line quality with characteristic white-on-black relief printing effects, *hinting at aged, brittle paper or crumbling stone.*
-  - **Scale proportions:** Heroic figure proportions with 120-150% naturalistic scale, *with possible anatomical distortions leaning towards the gaunt or unnaturally elongated for spectral beings.*
-  - **Atmospheric technique:** Line density variation for depth, *emphasizing suffocating fog, swirling spectral forms, or dust motes in stagnant air.*
-## 5) Wardrobe, Props & Setting Conventions
-
+  ## Renderer-Agnostic Adapter
   
-
-  - **Wardrobe tracks:**
-
-    - *Tattered robes, decaying aristocratic attire, burial shrouds, skeletal remains, spectral wisps with period-accurate draping.*
-    - *Fabric behavior: Heavy drapery with dramatic folds, appearing torn, decaying, or ethereal.*
-
-  - **Accessory caps:** Elaborate 3-4 accessories supporting *macabre narrative context, symbols of death or despair.*
-
-  - **Wardrobe variation:** Cycle through: *tattered black cloaks, ghostly white shrouds, ceremonial garments stained with decay, skeletal armor.*
-
-  - **Props:** 1 hero + 1 micro prop maximum: *scythe, hourglass, human skull (perhaps decaying), broken cross, rusted chains, spectral lantern, wilted flowers.*
-
-  - **Coherence filter:** All elements support *gothic horror/supernatural narrative with implied historical or folkloric authenticity.*
-
-  - **YAML Props Pool:**
-
-    
-
-    `gothic_horror: [scythe, human_skull, rusted_chains, broken_cross, spectral_lantern, withered_flowers, open_coffin, crow_perched]`
-
-    `decaying_architecture: [crumbling_archway, moss-covered_statue, shattered_stained_glass, leaning_tombstone]`
-
-    `macabre_symbols: [hourglass_nearly_empty, raven, shrouded_figure, single_candle_flickering]`
-## 6) Safety & IP Constraints (Hard Rules)
-
+  **Constraint precedence:** Sections 1→8 are hard constraints; earlier overrides later.
   
-
-  - **❌ Canvas Negatives:** Add "cheerfulness", "harmony", "beauty", "optimistic", "cleanliness".
-  - **✅ Canvas Positives:** Add "decaying architectural grandeur", "suffocating atmospheric effects", "spectral figures", "psychological terror".
-## 7) Composition & Lighting Patterns
-
+  **Canvas Override Mandate:** Always ignore source image dimensions; compose for declared target aspect ratio.
   
+  **Style over likeness:** Likeness via silhouette, gesture, and expression unless photographic.
+  
+  **Technical Measurement Authority:** Quantitative specifications ("20-80 lines per square inch cross-hatching," "figures occupy <30% of image area") override descriptive language.
+  
+  **Process-Over-Result Priority:** How engraving tools create marks supersedes visual appearance descriptions.
+  
+  **Material Physics Authority:** Wood-engraving tool limitations, end-grain hardwood characteristics, and ink-on-paper binding agent specifications override aesthetic preferences.
+  
+  **Face-Treatment Flag:** `pen-crosshatch` — Fine parallel and cross-hatched lines build all facial tones; no photographic gradation.
+  
+  **Pose Flags:** `gestural-fluid`, `psychological-tension`, `contorted-psychological` — Theatrical poses captured at moment of maximum narrative drama.
+  
+  **Canvas Control Flag:** `strict-reframe` — Recompose entirely for declared vertical portrait ratio.
+  
+  **Quantifiers authoritative:** Numeric anchors are targets.
+  
+  **Text policy:** Omit all text unless Section 8 authorizes.
+  
+  **Safety/IP:** No nudity/gore beyond period-appropriate biblical/literary horror context; no real logos/watermarks/signatures.
+  
+  **Age & wardrobe guardrail:** Minors = modest period-appropriate clothing; unknown age defaults to adult neutral.
+  
+  **Gender expression:** Respect presented.
+  
+  **Material authenticity:** No digital photo filters, Instagram effects, or modern post-processing that mimics traditional media; surface must exhibit authentic wood-engraving characteristics — visible directional linework creating all tones.
+  
+  **Composition boundaries:** No frames outside the canvas; no artificial presentation frames, borders, watermarks, or credits.
+  
+  **Failure Mode Flags:** Avoid photographic realism, digital smoothing, halftone dots, flat even lighting, static minimalist compositions.
+  
+  **Silent validation:** Apply framework requirements, regenerate silently if fail.
+  
+  ------
+  
+  ## 1) Core Instruction & Likeness Mandate
+  
+  **CANVAS OVERRIDE:** Recompose to **2:3 ratio** (primary) or **3:4 ratio** (alternative) — ignore source image dimensions completely.
+  
+  Redraw in **19th-Century French Romantic Illustration / Wood-Engraving style** for **mass-publication book illustration plate**.
+  
+  Identity via silhouette, gesture, and dramatic expression — not photographic likeness.
 
-  - **DORÉ-SPECIFIC COMPOSITION:**
-    - **Perspective:** Theatrical staging with *claustrophobic viewpoints, looming, decaying architecture, and an unsettling sense of scale.*
-    - **Lighting:** Single dramatic light source creating strong chiaroscuro with pure white highlights, *but emphasizing deep, oppressive shadows where malevolent forces might lurk, or a sickly, greenish glow.*
-    - **Detail:negative space 80:20 - dense engraving detail with strategic white space for spectral effects or moments of stark terror.*
-  - **REQUIRED ANCHORS:**
-    - **Surface Context:** Boxwood engraving block surface translated to white paper with authentic relief printing characteristics, *but with hints of aging, staining, or the brittle texture of ancient manuscripts.*
+  **IP Safeguard Declaration:** Create original gothic horror scene inspired by literary traditions (Dante, Milton, Biblical narratives) avoiding copyrighted character elements. No recognizable modern horror franchise iconography.
 
-  By implementing these changes, the prompt emphasizes the chilling and macabre aspects of gothic horror through atmosphere, thematic elements, and subtle stylistic shifts, all while remaining within the technical and artistic framework of Gustave Doré's wood engraving style.
+  **Face-Treatment Flag:** `pen-crosshatch` — All facial features constructed through visible parallel and cross-hatched engraving lines.
+
+  **Pose Flag:** `psychological-tension` or `contorted-psychological` — Capture figure at moment of supernatural awe, terror, or spiritual revelation.
+
+  **Canvas Control Flag:** `strict-reframe` — Entirely new composition optimized for vertical 2:3 or 3:4 format.
+
+  **Style Dominance:** Gustave Doré's dramatic chiaroscuro, theatrical gestures, and overwhelmed-human-in-sublime-environment aesthetic overrides all other stylistic considerations.
+
+  **Mode Selector:** Gallery print / Book illustration plate
+
+  ------
+
+  ## 2) Canvas Strategy & Spatial Logic
+
+  **MANDATORY RATIO SELECTION:**
+
+  - Primary: `2:3` (standard vertical portrait for biblical/literary horror scenes)
+  - Alternative: `3:4` (classical portrait orientation for book illustration)
+  
+  **Note on Ratio Flexibility:** Source image aspect ratios may influence final output. While target ratios are specified above, variations within the vertical portrait family (2:3 to 3:4 range) maintain authentic Doré proportions.
+  
+  **CANVAS RECOMPOSITION STRATEGY:**
+  
+  - **Reframing Method:** Recompose entirely — design new vertical composition from ground up
+  - **Spatial Allocation:** Subject positioned in lower-to-middle third, allowing vast supernatural/architectural environment to dominate upper 60-70% of frame
+  - **Background Treatment:** Extend dramatic atmospheric environment (vast caverns, turbulent skies, decaying architecture, sublime landscapes) to fill entire vertical canvas with environmental hostility
+  - **Format Justification:** 2:3 or 3:4 vertical ratio serves Doré's signature compositional strategy of dwarfing human figures within overwhelming sublime environments, maximizing vertical space for towering architecture, cosmic visions, or oppressive darkness
+  
+  ------
+  
+  ## 3) Artistic Style & Context
+  
+  **Influences:**
+  
+  - Literary sources: Dante Alighieri's *Divine Comedy*, John Milton's *Paradise Lost*, Biblical narratives, Lord Byron, Edgar Allan Poe
+  - Romantic movement emphasis on sublime, grotesque, emotional intensity over classical restraint
+  - 19th-century French illustration traditions serving mass-market book publication
+
+  **Medium/Production Method:** Wood-engraving on end-grain hardwood (typically boxwood) for industrial mass reproduction. Doré drew designs directly onto woodblocks; teams of skilled artisan engravers (including Héliodore Pisan) carved the relief surfaces. Final prints produced via electrotype process on high-speed cylinder presses, creating affordable illustrated books for global distribution. All tones built through parallel lines, cross-hatching, and stippling — no continuous-tone photographic processes.
+  
+  **Thematic Purpose:** Transform epic literary narratives into powerful visual statements championing emotion, imagination, supernatural wonder, and psychological terror. Visualize humanity's fragility when confronting divine majesty, infernal punishment, or cosmic forces beyond comprehension.
+  
+  **Hallmark Motifs (quantified):**
+  
+  1. **Overwhelmed Human Figure:** Human subjects occupy <30% of total image area in 64% of horror compositions, dwarfed by sublime landscapes, immense architecture, or overwhelming supernatural events
+  2. **Dramatic Chiaroscuro:** Deep blacks dominate 60-80% of image area; single dramatic light source creates extreme tonal contrast in 71% of compositions
+  3. **Theatrical Gestures:** Figures rendered in dynamic, contorted poses conveying intense movement — arms raised in supplication, bodies twisted in despair, captured at narrative climax
+  4. **Grotesque Supernatural Beings:** Demons, death personifications, monstrous hybrids, angels rendered at 150-200% human scale with same material authenticity as natural elements
+  5. **Environmental Hostility:** Settings convey danger through monumental scale, oppressive darkness, architectural decay, or turbulent natural forces in 90% of horror scenes
+  
+  **Period Framing:** 1850–1883 (peak productive years encompassing *Don Quixote* 1863, *The Bible* 1866, *Paradise Lost* 1866, *Divine Comedy* illustrations, *London: A Pilgrimage* 1872, *The Raven* 1883)
+  
+  **Tone Tag:** Sublime gothic horror, psychological dread, supernatural awe, romantic grandeur, theatrical intensity, biblical gravitas
+  
+  **Production Era Authenticity:** Industrial wood-engraving reproduction for mass-market book publication. Visible characteristics: energetic networks of fine linework, cross-hatching building all tones, high-contrast black ink on cream/white paper stock, sharp foreground detail transitioning to atmospheric soft-focus backgrounds. Explicitly forbid: halftone dots, photographic grain, digital smoothing, modern printing artifacts.
+  
+  ------
+  
+  ## 4) Technical Execution
+  
+  **Line Quality & Tool Marks:**
+  
+  - Cross-hatching density ranges 20-80 lines per square inch depending on tonal requirements
+  - Visible individual line strokes in highlight areas; dense interwoven networks in shadow zones
+  - Lines follow form topology: parallel curved lines for fabric draping, radiating lines for light emanation, irregular cross-hatch for rock texture
+  - Burin and graver tool marks visible in line consistency and precision
+  - NO photographic continuous tone; every tonal gradation constructed through visible line density modulation
+  
+  **Texture & Surface Depth:**
+  
+  - Rock surfaces: irregular cross-hatching with varied line angles, 40-60 lines per square inch
+  - Fabric/drapery: parallel flow lines following fold topology, 30-50 lines per square inch
+  - Flesh tones: minimal linework in highlights, subtle cross-hatching in shadows, tonal modeling through line density
+  - Atmospheric effects: widely-spaced parallel lines transitioning to pure white paper in brightest areas
+  - Wood-engraving relief printing produces crisp black ink on white paper with no plate tone
+  
+  **Edge Treatment & Detail Hierarchy:**
+  
+  - Foreground elements: 100% sharp defined edges with maximum detail precision (individual fingers, fabric folds, facial features)
+  - Midground: detail reduction of approximately 60% from foreground clarity
+  - Background: atmospheric soft edges, pure tonal gradation with minimal linework (70% soft focus treatment)
+  - Sharp focus zone occupies 30-40% of total image depth, creating powerful depth through selective clarity
+  
+  **Color Mixing Methods:**
+  
+  - Monochromatic: black ink on white/cream paper only
+  - Tonal range constructed entirely through line density: pure white (no lines) → light gray (sparse lines 10-20/inch) → medium gray (moderate cross-hatch 30-50/inch) → deep black (dense cross-hatch 60-80+/inch)
+  - Chiaroscuro dominance: 60-80% of image area rendered in dark tones (60+ lines/inch density)
+  - NO color, NO halftone dots, NO photographic grain
+  
+  **Stroke Economy & Directionality:**
+  
+  - Every mark serves form description or tonal modeling — no decorative linework
+  - Directional line flow mandatory: follow surface topology, never arbitrary
+  - Light source dictates shadow hatching angles: perpendicular to light rays, following form curvature
+  - Parallel line clusters create texture identity: horizontal for calm water, chaotic angles for turbulent elements
+  
+  **Material Simulation & Authenticity:**
+  
+  - Authentic wood-engraving characteristics: crisp black ink, slight paper texture absorption, occasional printing registration marks acceptable
+  - Surface must show tool-mark evidence: parallel graver strokes, controlled line width consistency
+  - Reject digital vector perfection: subtle line weight variation from tool pressure authentic
+  - Paper context: cream or white book-quality stock, not glossy modern coated paper
+  
+  **Pose Anchors:**
+  
+  - Head tilt: 15-45 degrees from vertical in moments of psychological stress or supernatural awe
+  - Shoulder-hip angle differential: 20-60 degrees creating dynamic contrapposto or twisted psychological tension
+  - Weight distribution: often imbalanced (70-30% split) suggesting instability, motion, or emotional turmoil
+  - Gesture economy: arms raised in supplication/defense, hands grasping at air/fabric, fingers splayed in emotional intensity
+  - Expression hierarchy: eyes and mouth receive highest detail precision for psychological communication
+  
+  **Emotional State Anchor (CRITICAL):**
+  
+  - **REQUIRED:** defensive, overwhelmed, terrified, supplicant, vulnerable, awestruck, cowering
+  - **FORBIDDEN:** commanding, triumphant, confident, powerful, in control, victorious, celebratory
+  - Arms raised = plea for mercy/divine intervention, NOT gesture of power or celebration
+  - Facial expression = fear/awe/desperation, NOT joy/confidence/serenity
+  - Body language = retreating/bracing/shielding, NOT advancing/conquering/welcoming
+  
+  **Scale Hierarchy Anchor:**
+  
+  - Human figures: baseline 100% scale
+  - Supernatural beings: 150-200% human scale (demons, angels, death personifications)
+  - Architecture/environment: 300-500% human scale creating overwhelming monumentality
+  - **CRITICAL:** Architecture must dwarf figures — minimum 3× human height, ideal 4-5× human height
+  - Compositional subordination: human elements occupy 20-30% of image area (strict maximum 35%)
+  - Viewer perspective should feel figure is small/vulnerable relative to setting scale
+  
+  **Material Authenticity Anchor:**
+  
+  - All tones created through visible directional linework — parallel lines, cross-hatching, stippling
+  - NO continuous-tone photographic gradients, NO digital smoothing
+  - Crisp black ink on white paper with clear line boundaries
+  - Tool mark evidence visible in line consistency and precision
+  
+  **Period Consistency Anchor:**
+  
+  - 1850-1883 wood-engraving industrial printing technology
+  - End-grain hardwood block (typically boxwood) relief printing characteristics
+  - Electrotype reproduction allowing mass publication
+  - Book illustration plate context: single-page vertical format
+  
+  **Production Method Anchor:**
+  
+  - Wood-engraving relief printing: only raised surfaces receive ink
+  - High-contrast black ink on paper — no plate tone, no ink variation
+  - Sharp detail possible through end-grain engraving vs. softer woodcut cross-grain
+  - Cylinder press reproduction for mass book publication
+  
+  **Canvas Adaptation Anchor:**
+  
+  - Vertical 3:4 composition maximizes environmental dominance over human figures
+  - Lower-third figure placement allows vast architectural/atmospheric space above
+  - Dramatic vertical perspective lines draw eye upward toward sublime/horrific elements
+  - Format optimized for full-page book illustration commanding reader's attention
+  
+  ------
+  
+  ## 5) Fashion & Attire — Wardrobe Matrix + Prop Selector
+  
+  **Wardrobe Tracks:**
+  
+  **Biblical/Classical Track (primary for gothic horror):**
+  
+  - Flowing robes, tunics, cloaks with dramatic drapery
+  - Period: Ancient Mediterranean/Biblical/Medieval fantasy
+  - Fabric: Heavy wool, linen suggesting weight and substantial draping
+  - Construction: Simple gathered garments, rope belts, hood constructions
+  
+  **Fabric Behavior:**
+  
+  - Heavy draping with deep parallel fold lines suggesting substantial weight
+  - Wind/motion effects: fabric streaming dramatically in supernatural atmospheric disturbances
+  - Light interaction: highlight ridges sharp, shadow valleys dense cross-hatching
+  - Period accuracy: Pre-industrial hand-woven textiles with natural drape characteristics
+  
+  **Accessory Caps:** Minimalist 0-2 accessories maximum
+  
+  - Allowable: staff/walking stick, rope belt, simple headwear, religious symbols
+  - Forbidden: ornate jewelry, complex armor details, anachronistic modern elements
+  
+  **Color Palette Restrictions:**
+  
+  - Monochromatic rendering only: pure white (highlight), light gray (sparse lines), medium gray (moderate cross-hatch), deep black (dense lines)
+  - Fabric tonal range: mid-tones for primary garments allowing both highlight and shadow definition
+  - No color information — all garment differentiation through tonal value and texture pattern
+  
+  **Wardrobe Variation Required:**
+  
+  - Vary garment tonal values between iterations: alternate light-valued robes (sparse linework) with dark-valued cloaks (dense cross-hatching)
+  - Cycle through period-appropriate silhouettes: simple tunic, draped toga, hooded cloak, tattered robes
+  - Maintain biblical/classical/medieval fantasy period consistency
+  
+  **Props (1 hero + optional 1 micro, total ≤2):**
+  
+  **YAML Prop Pool — Gothic Horror Biblical/Literary Context:**
+  
+  ```yaml
+  hero_props:
+    - staff_walking_stick:
+        description: "Wooden walking staff, gnarled texture"
+        scale: 150-180% human height
+        rendering: irregular cross-hatch suggesting wood grain
+        
+    - sword_blade:
+        description: "Medieval sword, simple cross-guard"
+        scale: 80-100% human height
+        rendering: smooth parallel lines on blade, sharp highlight edge
+        
+    - book_manuscript:
+        description: "Ancient tome, leather-bound"
+        scale: 30-40cm dimensions
+        rendering: geometric straight edges, dense shadow cross-hatch
+        
+    - lantern_torch:
+        description: "Oil lamp or burning torch"
+        scale: 30-50cm
+        rendering: radiating light lines, flame stippling
+        
+    - chain_rope:
+        description: "Heavy chain or thick rope"
+        scale: variable length
+        rendering: parallel curved lines following chain/rope topology
+  
+  micro_props:
+    - skull_bones:
+        description: "Human skull or skeletal remains"
+        scale: 15-20cm
+        rendering: high detail cross-hatching, dark eye sockets
+        
+    - religious_symbol:
+        description: "Cross, rosary, religious icon"
+        scale: 10-20cm
+        rendering: sharp geometric edges, symbolic clarity
+        
+    - scattered_objects:
+        description: "Books, vessels, small debris"
+        scale: 5-15cm each
+        rendering: atmospheric detail suggesting narrative context
+  ```
+  
+  **Coherence Filter:** All wardrobe and props must support 1850s Romantic literary illustration aesthetic serving biblical/epic poetry/gothic horror narratives. If period consistency unclear, default to simple draped garments and minimal props allowing environmental drama to dominate.
+  
+  ------
+  
+  ## 6) Constraints
+  
+  **Canvas Negatives (≥2) — Anti-Patterns to Avoid:**
+  
+  - "original aspect ratio", "source dimensions", "unmodified framing", "horizontal landscape format"
+  - "photographic realism", "smooth gradients", "digital smoothing", "airbrushed", "soft focus throughout"
+  - "flat even lighting", "studio lighting", "balanced illumination", "no shadows"
+  - "halftone dots", "CMYK printing", "modern offset printing", "photographic grain", "digital noise"
+  - "color", "chromatic", "polychrome", "tinted", "sepia tone wash"
+  - "minimalist", "clean", "simple", "sparse", "empty composition", "negative space dominance"
+  - "static pose", "calm", "peaceful", "tranquil", "serene", "relaxed posture"
+  - "vector crisp", "digital illustration", "Adobe Illustrator", "clean vector paths"
+  - "Instagram filter", "HDR", "lens flare", "bokeh", "depth of field blur"
+  
+  **Canvas Positives (≥2) — Required Constraints for Authenticity:**
+  
+  - "exactly 2:3 or 3:4 vertical portrait ratio", "recomposed for classical book illustration format", "vertical portrait family"
+  - "dramatic chiaroscuro", "extreme light-to-dark contrast", "60-80% deep black tonal dominance"
+  - "wood-engraving technique", "visible parallel and cross-hatched linework", "20-80 lines per square inch"
+  - "monochromatic black ink on white paper", "pure black and white", "no color information"
+  - "theatrical gestural pose", "psychological tension", "captured at moment of narrative climax"
+  - "human figure subordinate to environment", "figures occupy <30% of image area", "overwhelmed by sublime setting"
+  - "supernatural elements present", "fantastical beings", "gothic horror atmosphere"
+  - "sharp foreground detail", "atmospheric soft background", "hierarchical depth clarity"
+  - "directional linework following form topology", "visible tool marks", "engraver's technique evident"
+  - "19th-century book illustration aesthetic", "1850-1883 production era authenticity"
+  
+  **Vocabulary Warnings:**
+  
+  - Avoid "ornate," "ornament," "elaborate," "decorative border," "frame" — these trigger unwanted compositional elements
+  - Avoid "harmonious," "pleasant," "beautiful," "peaceful" — these contradict gothic horror psychological tension
+  - Avoid "realistic," "photographic," "lifelike" — these trigger wrong rendering approach
+  - Use instead: "dramatic," "theatrical," "sublime," "overwhelming," "psychological," "supernatural," "intense," "monumental"
+  
+  ------
+  
+  ## 7) Composition & Background
+  
+  **RATIO-SPECIFIC COMPOSITION REQUIREMENTS (2:3 or 3:4 Vertical Portrait):**
+  
+  - **Vertical emphasis:** Maximize upward compositional force — towering architecture, vast skies, overwhelming supernatural presence
+  - **Subject dominance:** Human figure(s) occupy 20-35% of total image area (target 20-30%), positioned lower-to-middle third
+  - **Hierarchical staging:** Primary figure → secondary environmental elements → atmospheric background recession
+  - **Environmental dominance:** Setting commands 65-80% visual weight, creating psychological pressure on human elements
+  
+  **STYLE-SPECIFIC COMPOSITION:**
+  
+  **Perspective Regime:**
+  
+  - Strong linear perspective in 57% of horror compositions: converging architectural lines, receding landscape elements
+  - Atmospheric perspective in 43%: tonal gradation creating depth through line density reduction
+  - Low-angle viewpoint (15-30 degree upward tilt): emphasizes monumentality, makes viewer vulnerable
+  - High-angle viewpoint (15-30 degree downward tilt): omniscient observer position for scenes of judgment/damnation
+  - Eye-level viewpoint: direct psychological confrontation with supernatural threats
+  
+  **Figure:Ground Ratio:**
+  
+  - Ground-dominant composition: 65-80% environmental setting, 20-35% human figures
+  - Target range for horror/sublime scenes: figures occupy 20-30% (ideal), acceptable range extends to 35%
+  - Figure placement: lower-third to mid-frame positioning, allowing vertical environmental expansion
+  - Scale subordination: architectural/natural/supernatural elements rendered at 300-500% human scale
+  
+  **Density Percentage:**
+  
+  - High visual density in foreground: 70-100% of available space filled with detailed elements
+  - Medium density in midground: 40-60% detail fill, selective focus on narrative elements
+  - Low density in background: 10-30% atmospheric suggestion, pure tonal gradation
+  
+  **Lighting Logic:**
+  
+  - Single dramatic light source in 71% of compositions: divine radiance, torch, moonlight, supernatural emanation
+  - Light angle: 30-60 degrees from horizontal, creating strong shadow definition
+  - Chiaroscuro priority: maximum tonal contrast serving emotional intensity
+  - Radiating light pattern: straight parallel lines emanating from source point
+  - Shadow construction: cross-hatching perpendicular to light rays, following form curvature
+  
+  **Detail:Negative Space Ratio:**
+  
+  - Foreground (sharp focus zone): 80-100% detail density
+  - Midground: 40-60% detail density with selective clarity
+  - Background: 10-30% detail density, atmospheric tonal gradation
+  - Pure white highlights: 5-15% of total image area for dramatic contrast
+  - Deep black shadows: 60-80% of total image area for psychological oppression
+  
+  **REQUIRED ANCHORS:**
+  
+  **Surface Context Anchor:**
+  
+  - Cream or white book-quality paper stock (not glossy coated modern paper)
+  - Wood-engraving relief print characteristics: crisp black ink, slight paper texture absorption
+  - Book illustration plate context: single-page vertical format for mass-publication illustrated literature
+  - Viewing distance: 30-50cm (typical book reading distance), detail scaled accordingly
+  
+  **Frame/Band Anchor:**
+  
+  - OMIT entirely — no decorative borders, no title bands, no marginal ornamentation
+  - Image extends to edge of page (bleed) or maintains simple rectangular boundary
+  - Any text (title/caption) placed separately below image, not integrated within composition
+  
+  **Production Context Anchor:**
+  
+  - 1850-1883 industrial wood-engraving technology
+  - Electrotype reproduction process for mass printing
+  - High-speed cylinder press output on book-quality paper stock
+  - Characteristic artifacts: occasional slight printing registration variation, crisp black ink boundaries
+  
+  **Ratio Enforcement Anchor:**
+  
+  - Composition designed specifically for 3:4 vertical format — not adapted from different ratio
+  - Vertical perspective lines emphasize portrait orientation
+  - Environmental elements scaled to fill vertical canvas maximally
+  - Lower-third figure placement optimized for vertical storytelling hierarchy
+  
+  **ENVIRONMENTAL TREATMENT (Background Options):**
+  
+  **Architectural Settings:**
+  
+  - Vast Gothic cathedrals, decaying ruins, cyclopean structures, infernal architecture
+  - Strong linear perspective with converging verticals emphasizing height
+  - Detail hierarchy: sharp foreground stonework, atmospheric distant arches
+  - Scale: 400-500% human height creating overwhelming monumentality
+  
+  **Landscape Settings:**
+  
+  - Turbulent skies with dramatic cloud formations rendered in flowing parallel lines
+  - Rocky chasms, mountain precipices, barren wastelands
+  - Atmospheric depth through line density reduction: foreground 60-80 lines/inch, background 10-20 lines/inch
+  - Scale: vast horizontal/vertical expanse dwarfing human figures
+  
+  **Supernatural Settings:**
+  
+  - Cosmic visions: radiating light patterns, swirling vortices of angels/demons
+  - Underworld caverns: dense cross-hatched shadows, occasional light source
+  - Ethereal spaces: minimal environmental detail, figures suspended in tonal atmosphere
+  
+  **Mood Amplification:**
+  
+  - Settings actively participate in narrative, not passive backdrops
+  - Environmental hostility: oppressive darkness, threatening scale, decaying structures
+  - Psychological pressure: vast empty spaces isolating figures, overwhelming architectural weight
+  - Supernatural atmosphere: impossible geometries, divine/infernal presences, cosmic scale
+  
+  ------
+  
+  ## 8) Typography & Text Integration
+  
+  **Binary:** OMIT — No text, titles, captions, or typography within image composition.
+  
+  **Rationale:** Following 19th-century book illustration conventions, Doré's illustrations were presented as full-page plates with any titles or captions placed separately below the image in the margin, not integrated within the artwork itself. This preserves visual purity and allows dramatic composition to command full attention.
+  
+  **If Text Were Authorized (for reference only):**
+  
+  - **Ratio-Appropriate Zones:** Lower margin below image, never overlapping illustration
+  - **Copy Limits:** ≤6 words for title/caption
+  - **Period-Appropriate Typography:** 19th-century serif typeface consistent with book printing conventions
+  - **Font Recommendation:** Closest match would be traditional book serif faces like Caslon, Baskerville, or similar old-style serifs used in 1850-1880s publishing. However, specific font matching not required as text is OMITTED from composition.
+  
+  **Format-Specific Text Rules:**
+  
+  - **Gallery Print Mode:** Omit all text — pure illustration
+  - **Museum Context:** Optional caption below image in traditional serif typeface
+  - **Book Illustration Plate:** Title/caption in margin below image, separate from composition
+  
+  **Historical Accuracy:** Typography must match 1850-1883 letterpress printing technology if included. Traditional serif faces, not modern sans-serif or display fonts.
+  
+  **Production Method Integration:** If text present, render with period-appropriate letterpress characteristics: slight ink spread, crisp edges, traditional book typography spacing and hierarchy.
+  
+  ------
+  
+  **END OF FRAMEWORK**
+  
+  *Silent validation reminder: Verify all sections 1-8 complete; exact 3:4 ratio specified; IP safeguards present; face/pose/canvas flags declared; ≥5 technical execution anchors with measurements; wardrobe + YAML props; ≥2 canvas negatives and positives; ratio-specific composition; text policy explicit; material authenticity emphasized; production method authentic to 1850-1883 wood-engraving; composition boundaries clear; no frames outside canvas.*
 
 ------
 
 # Edward Gorey Gothic Horror Illustration Style Prompt
+
 ## 1) Core Instruction & Likeness Mandate
 
 **CANVAS OVERRIDE:** Recompose to exactly **3:4 ratio** - ignore source image dimensions completely. Redraw in **Gorey's whimsical-gothic pen and ink style circa 1960-1980** for **book illustration reproduction**. Identity via silhouette/gesture/expression with **darkly whimsical unease and spectral melancholy**. **IP Safeguard Declaration:** Create original designs avoiding copyrighted elements, focusing on universal themes of existential uncertainty and darkly comic misfortune. **Face-Treatment Flag:** `pen-crosshatch` with `skeletal-minimalism and blank-stare-eyes` **Pose Flag:** `psychological-tension` (understated dread or spectral-stillness) **Canvas Control Flag:** `strict-reframe` **Style Dominance:** Gorey's **whimsical gothic illustration with emphasis on subtle menace and Victorian melancholy** supersedes photographic realism **Mode Selector:** Book illustration for **darkly whimsical narrative visualization or macabre children's literature parody**
-## 2) Canvas Strategy & Aspect Ratio Control
+
+## 2) Canvas Strategy & Spatial Logic
 
 **MANDATORY RATIO:** `3:4` (portrait format matching Gorey's book illustration proportions)
 
@@ -272,7 +687,8 @@ natural: [weathered_rock, fallen_tree, mountain_cairn, seashells]
 - **Spatial Allocation:** **Enigmatic figure placement with ominous negative space, supporting elements suggesting impending misfortune**
 - **Background Treatment:** Fill with **intricate cross-hatched environments suggesting decay or abandonment, extending to full canvas**
 - **Format Justification:** 3:4 ratio serves Victorian book tradition and allows proper figure-to-environment relationships essential for darkly comic narrative impact
-## 3) Style Context & Material Authenticity
+
+## 3) Artistic Style & Context
 
 **Influences:** Victorian illustration tradition, **Edwardian children's literature parody, gothic literature (Poe), Medieval memento mori, darkly comic storytelling** **Medium/Production method:** India ink applied with fine pen nibs on heavy paper, creating dense cross-hatching through multiple line layers. No brush work - purely linear pen technique with varying line weights and densities. **Thematic purpose:** **Darkly whimsical visualization of existential unease, childhood's hidden perils, social commentary through macabre humor, and the inevitability of misfortune** **Hallmark motifs:**
 
@@ -281,10 +697,12 @@ natural: [weathered_rock, fallen_tree, mountain_cairn, seashells]
 - Victorian/Edwardian period dress with **subtle suggestions of decay or eeriness**
 - **Intricate background patterns and architectural details with ominous undertones**
 - Strategic use of pure white space for dramatic contrast and **spectral emphasis** **Period framing:** Mid-20th century American illustration with Victorian aesthetic sensibility, literary parody tradition **Tone Tag:** **Whimsically ominous, melancholically humorous, subtly unsettling, darkly elegant** **Production Era Authenticity:** Mid-century pen and ink book illustration with precise line reproduction requirements
-## 4) Technical Method & Mark-Making
+
+## 4) Technical Execution
 
 **Line application:** Multiple layers of fine cross-hatching executed with India ink, varying from hair-thin feathery lines to bold structural strokes, building saturated black areas through line density **Cross-hatching specifications:** Dense layered line work - 60-120 lines per inch in shadow areas, creating 3-dimensional pools of ink saturation on paper surface **Tonal system:** Purely linear - no brush work or solid fills, complete grayscale achieved through line density variation from sparse hatching to dense cross-hatching **Edge treatment:** Precise pen line quality with deliberate line weight variation, crisp linear definition throughout **Stroke economy:** Every line serves structural or atmospheric purpose - maximum visual impact through strategic line placement **Surface simulation:** Authentic India ink saturation effects - heavy cross-hatching areas appear smaller and more concentrated than printed versions **Detail hierarchy:** Meticulous foreground detail diminishing to suggestion through line density control **Material authenticity:** India ink pen characteristics - rich blacks, precise line quality, no modern digital smoothness **Scale proportions:** Figures scaled for narrative emphasis - often diminished against elaborate backgrounds suggesting **vulnerability or isolation** **Pattern work:** Intricate textile and architectural patterns executed through systematic line work **Atmospheric technique:** Line density creating depth - saturated cross-hatching for **oppressive shadows**, sparse lines for **ethereal or spectral effects**
-## 5) Wardrobe, Props & Setting Conventions
+
+## 5) Fashion & Attire - Wardrobe Matrix + Prop Selector
 
 **Wardrobe tracks:**
 
@@ -300,7 +718,8 @@ childhood_eeriness: [abandoned_doll, broken_toy, empty_birdcage, music_box]
 victorian_melancholy: [pocket_watch, mourning_jewelry, handkerchief, calling_card]
 subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 ```
-## 6) Safety & IP Constraints (Hard Rules)
+
+## 6) Constraints
 
 **❌ Canvas Negatives:**
 
@@ -316,7 +735,8 @@ subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 - "dense India ink cross-hatching creating saturated line pools", "authentic pen line quality"
 - **"whimsical gothic atmosphere", "subtly ominous undertones", "darkly elegant Victorian aesthetic"**
 - "precise linear technique with no brush work", **"spectral negative space effects", "melancholic narrative suggestion"**
-## 7) Composition & Lighting Patterns
+
+## 7) Composition & Background
 
 **3:4 PORTRAIT COMPOSITION REQUIREMENTS:**
 
@@ -339,7 +759,8 @@ subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 - **Frame/Band:** Omit entirely - pure illustration without decorative borders
 - **Production Context:** Mid-century book illustration reproduction appropriate to literary publishing
 - **Ratio Enforcement:** Composition designed for 3:4 book format with proper **narrative pacing and atmospheric development**
-## 8) Typography & Text Integration (If Historically Present)
+
+## 8) Typography & Text Integration
 
 **Binary:** Allow text when narratively essential - Gorey often integrated minimal text with illustrations **If allowed:**
 
@@ -374,7 +795,8 @@ subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 ------
 
 ## 📋 Framework Sections
-## 1) Core Instruction & Likeness Mandate
+
+### 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
 - Redraw in **Bernie Wrightson Gothic Horror Pen-and-Ink Style** for **detailed book illustration format**.
@@ -387,7 +809,8 @@ subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 - **Mode Selector:** Gothic horror book illustration for macabre narrative visualization.
 
 ------
-## 2) Canvas Strategy & Aspect Ratio Control
+
+### 2) Canvas Strategy & Spatial Logic
 
 **MANDATORY RATIO SELECTION:**
 
@@ -410,7 +833,8 @@ subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 - **Format Justification:** Ratio serves theatrical staging of gothic horror narrative
 
 ------
-## 3) Style Context & Material Authenticity
+
+### 3) Artistic Style & Context
 
 - **Influences:** German Expressionism, Romantic horror literature (Poe, Shelley), Medieval danse macabre, Gustave Doré engraving tradition, EC Comics horror atmosphere
 - **Medium/Production method:** Authentic pen-and-ink on bristol board using Gillott 291 nib with india ink, emphasizing cross-hatching and line weight variation rather than solid black fills
@@ -425,7 +849,8 @@ subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 - **Tone Tag:** Ominous, psychologically unsettling, grotesquely dramatic, melancholic, theatrically macabre
 
 ------
-## 4) Technical Method & Mark-Making
+
+### 4) Technical Execution (≥5 anchors + measurement specifications)
 
 - **Line quality:** Gillott 291 nib characteristics with variable pressure creating 0.2-1.5mm line weights, authentic india ink flow with slight bleeding on bristol board texture
 - **Cross-hatching specifications:** Primary hatching at 45° angles, secondary crosshatch at 135°, tertiary hatching at 90° for deepest blacks, line spacing 0.5-3mm depending on tonal value
@@ -437,7 +862,8 @@ subtle_omens: [black_cat, raven_feather, cracked_mirror, extinguished_candle]
 - **Detail hierarchy:** Primary subject 100% detail resolution, secondary elements 60%, atmospheric elements 30%
 
 ------
-## 5) Wardrobe, Props & Setting Conventions
+
+### 5) Fashion & Attire – Wardrobe Matrix + Prop Selector
 
 - **Wardrobe tracks:** Tattered Victorian/Edwardian garments, decaying aristocratic attire, burial shrouds, monastic robes with period-accurate construction showing decay and age
 - **Fabric behavior:** Heavy drapery with dramatic folds appearing torn, weathered, or ethereal with authentic textile physics
@@ -456,7 +882,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 ```
 
 ------
-## 6) Safety & IP Constraints (Hard Rules)
+
+### 6) Constraints
 
 **❌ Canvas Negatives (≥2):**
 
@@ -471,7 +898,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - "authentic pen-and-ink line quality", "bristol board texture interaction", "Gillott 291 nib characteristics"
 
 ------
-## 7) Composition & Lighting Patterns
+
+### 7) Composition & Background
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
 
@@ -495,7 +923,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with gothic architectural elements supporting the format
 
 ------
-## 8) Typography & Text Integration (If Historically Present)
+
+### 8) Typography & Text Integration
 
 - **Binary:** Omit text entirely for pure visual storytelling
 - **Production Context:** Focus on illustration as standalone narrative art without typography distraction
@@ -529,7 +958,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 ------
 
 ## 📋 Framework Sections
-## 1) Core Instruction & Likeness Mandate
+
+### 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
 - Redraw in **H.R. Giger Biomechanical Surrealist Style** for **museum gallery illustration format**.
@@ -542,7 +972,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - **Mode Selector:** Museum surrealist art for technological transformation visualization.
 
 ------
-## 2) Canvas Strategy & Aspect Ratio Control
+
+### 2) Canvas Strategy & Spatial Logic
 
 **MANDATORY RATIO SELECTION:**
 
@@ -565,7 +996,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - **Format Justification:** Ratio serves architectural precision and technological detail hierarchy
 
 ------
-## 3) Style Context & Material Authenticity
+
+### 3) Artistic Style & Context
 
 - **Influences:** Swiss Surrealism, Bauhaus precision, Ernst Fuchs, Salvador Dalí, architectural draftsmanship, technical illustration tradition
 - **Medium/Production method:** Professional airbrush technique on canvas board using acrylic paints, emphasizing smooth gradations and precise mechanical detail
@@ -580,7 +1012,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - **Tone Tag:** Technological, architectural, precisely surreal, biomechanically evolved, coldly beautiful
 
 ------
-## 4) Technical Method & Mark-Making
+
+### 4) Technical Execution (≥5 anchors + measurement specifications)
 
 - **Airbrush technique:** Professional dual-action airbrush with 0.2-0.35mm needle creating seamless gradations, acrylic paint thinned to milk consistency with authentic paint flow characteristics and subtle application irregularities
 - **Surface preparation:** Canvas board with smooth tooth for precise airbrush application, minimal texture interference but retaining authentic canvas grain
@@ -594,7 +1027,8 @@ macabre_symbols: [hourglass_sand_falling, single_candle_guttering, skeletal_hand
 - **Scale proportions:** Precise architectural measurements with biomechanical elements following technical drawing conventions
 
 ------
-## 5) Wardrobe, Props & Setting Conventions
+
+### 5) Fashion & Attire – Wardrobe Matrix + Prop Selector
 
 - **Wardrobe tracks:** Technological integration garments, architectural clothing forms, biomechanical accessories with precise geometric construction
 - **Fabric behavior:** Synthetic materials with technological appearance, smooth surfaces reflecting airbrush technique aesthetic
@@ -613,7 +1047,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 ```
 
 ------
-## 6) Safety & IP Constraints (Hard Rules)
+
+### 6) Constraints
 
 **❌ Canvas Negatives (≥2):**
 
@@ -628,7 +1063,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - "professional airbrush technique", "canvas board surface interaction", "Swiss precision aesthetics"
 
 ------
-## 7) Composition & Lighting Patterns
+
+### 7) Composition & Background
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
 
@@ -652,7 +1088,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with architectural elements supporting the format
 
 ------
-## 8) Typography & Text Integration (If Historically Present)
+
+### 8) Typography & Text Integration
 
 - **Binary:** Omit text entirely for pure visual biomechanical exploration
 - **Production Context:** Focus on artwork as standalone technological-surrealist statement
@@ -686,7 +1123,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 ------
 
 ## 📋 Framework Sections
-## 1) Core Instruction & Likeness Mandate
+
+### 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
 - Redraw in **Harry Clarke Illuminated Fantasy Illustration Style** for **literary book illustration format**.
@@ -699,7 +1137,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - **Mode Selector:** Literary fantasy book illustration for narrative visualization.
 
 ------
-## 2) Canvas Strategy & Aspect Ratio Control
+
+### 2) Canvas Strategy & Spatial Logic
 
 **MANDATORY RATIO SELECTION:**
 
@@ -722,7 +1161,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - **Format Justification:** Ratio serves decorative precision and narrative illustration hierarchy
 
 ------
-## 3) Style Context & Material Authenticity
+
+### 3) Artistic Style & Context
 
 - **Influences:** Irish Arts and Crafts Movement, Art Nouveau, Art Deco, French Symbolist movement, medieval illuminated manuscripts, stained glass craftsmanship tradition
 - **Medium/Production method:** Dip pen and India ink on Bristol board, emphasizing stippling technique and lead line integration from stained glass experience
@@ -737,7 +1177,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - **Tone Tag:** Decoratively intricate, fantastically literary, symbolically rich, craftsman-precise, mysteriously beautiful
 
 ------
-## 4) Technical Method & Mark-Making
+
+### 4) Technical Execution (≥5 anchors + measurement specifications)
 
 - **Dip pen technique:** Flexible nib creating variable line weights from 0.5-3mm, India ink flow with authentic bristol board interaction and organic line variation
 - **Stippling specifications:** Systematic dot placement with 0.5-2mm spacing variation for tonal gradation, achieving texture through density rather than line work
@@ -749,7 +1190,8 @@ technological_symbols: [circuit_patterns, mechanical_interfaces, architectural_d
 - **Stained glass translation anchor:** Two-dimensional interpretation of three-dimensional glass techniques maintaining lead line structural logic
 
 ------
-## 5) Wardrobe, Props & Setting Conventions
+
+### 5) Fashion & Attire – Wardrobe Matrix + Prop Selector
 
 - **Wardrobe tracks:** Art Nouveau period fantasy garments, medieval-influenced robes, decorative costume elements with stained glass pattern integration
 - **Fabric behavior:** Heavy drapery with decorative pattern integration, period-accurate construction showing Clarke's textile pattern expertise
@@ -768,7 +1210,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 ```
 
 ------
-## 6) Safety & IP Constraints (Hard Rules)
+
+### 6) Constraints
 
 **❌ Canvas Negatives (≥2):**
 
@@ -783,7 +1226,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - "authentic dip pen technique", "bristol board surface interaction", "Edgar Allan Poe atmospheric authenticity"
 
 ------
-## 7) Composition & Lighting Patterns
+
+### 7) Composition & Background
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
 
@@ -807,7 +1251,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with decorative elements supporting the format
 
 ------
-## 8) Typography & Text Integration (If Historically Present)
+
+### 8) Typography & Text Integration
 
 - **Binary:** Allow selective text integration for literary illustration authenticity
 - **If allowed:**
@@ -848,7 +1293,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 ------
 
 ## 📋 Framework Sections
-## 1) Core Instruction & Likeness Mandate
+
+### 1) Core Instruction & Likeness Mandate
 
 - **CANVAS OVERRIDE:** Recompose to exactly **[declared ratio]** - ignore source image dimensions completely.
 - Redraw in **Virgil Finlay Lovecraftian Cosmic Horror Stippling Illustration Style** for **weird fiction magazine interior illustration format**.
@@ -861,7 +1307,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - **Mode Selector:** Weird fiction magazine interior illustration for cosmic horror narrative visualization.
 
 ------
-## 2) Canvas Strategy & Aspect Ratio Control
+
+### 2) Canvas Strategy & Spatial Logic
 
 **MANDATORY RATIO SELECTION:**
 
@@ -884,7 +1331,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - **Format Justification:** Ratio serves dramatic weird fiction illustration and cosmic horror layout hierarchy
 
 ------
-## 3) Style Context & Material Authenticity
+
+### 3) Artistic Style & Context
 
 - **Influences:** American weird fiction tradition, H.P. Lovecraft cosmic horror aesthetic, Gothic Revival architecture, Gustave Doré engraving techniques, Pablo Picasso modernist influence, Edgar Allan Poe atmospheric terror
 - **Medium/Production method:** 290 lithographic pen with India ink on scratchboard, emphasizing stippling technique with scratchboard subtractive methods for cosmic horror visualization
@@ -899,7 +1347,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - **Tone Tag:** Cosmically atmospheric, meticulously crafted, psychologically unsettling, otherworldly dramatic, weird-fiction-authentically detailed
 
 ------
-## 4) Technical Method & Mark-Making
+
+### 4) Technical Execution (≥5 anchors + measurement specifications)
 
 - **Lithographic pen technique:** 290 lithographic pen (ultra-fine point) with India ink, individual dot application requiring pen-tip wiping after each stipple for authentic pointillist texture
 - **Scratchboard specifications:** Clay-covered board coated with black ink, white line carving using sharp blade creating 40-60% subtractive white areas
@@ -911,7 +1360,8 @@ narrative_symbols: [literary_references, symbolic_objects, allegorical_elements,
 - **Tool specificity anchor:** 290 lithographic pen point so fine that most artists cannot use it, requiring months of searching for properly flowing pens
 
 ------
-## 5) Wardrobe, Props & Setting Conventions
+
+### 5) Fashion & Attire – Wardrobe Matrix + Prop Selector
 
 - **Wardrobe tracks:** 1930s-1950s period occult investigator clothing, scholarly academic attire, weird fiction character garments with cosmic horror aesthetic and period authenticity
 - **Fabric behavior:** Period-accurate construction showing Finlay's attention to textile rendering through stippling technique with emphasis on scholarly and occult themes, fabric showing signs of tension or distress (wrinkled from clutching forbidden knowledge, disheveled from cosmic revelations)
@@ -930,7 +1380,8 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 ```
 
 ------
-## 6) Safety & IP Constraints (Hard Rules)
+
+### 6) Constraints
 
 **❌ Canvas Negatives (≥2):**
 
@@ -945,7 +1396,8 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 - "authentic 290 lithographic pen technique", "scratchboard surface interaction", "wood pulp reproduction optimization"
 
 ------
-## 7) Composition & Lighting Patterns
+
+### 7) Composition & Background
 
 **RATIO-SPECIFIC COMPOSITION REQUIREMENTS:**
 
@@ -969,7 +1421,8 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 - **Ratio Enforcement:** Composition designed specifically for declared ratio with stippling elements supporting the format
 
 ------
-## 8) Typography & Text Integration (If Historically Present)
+
+### 8) Typography & Text Integration
 
 - **Binary:** Omit text entirely for pure visual narrative storytelling
 - **Production Context:** Focus on illustration as standalone weird fiction magazine interior art
@@ -978,3 +1431,590 @@ weird_fiction: [scientific_instruments_archaic, occult_research_tools, mysteriou
 
 ------
 
+# José Guadalupe Posada
+
+## Renderer-Agnostic Adapter
+
+**Constraint precedence:** Sections 1→8 are hard constraints; earlier overrides later.
+
+**Canvas Override Mandate:** Compose for declared target aspect ratio; source image dimensions may influence final output.
+
+**Style over likeness:** Likeness via silhouette, caricature, and satirical expression — not photographic accuracy.
+
+**Technical Measurement Authority:** Quantitative specifications ("60-90% figure dominance," "15-50 lines per inch," "40-60% black areas") override descriptive language.
+
+**Process-Over-Result Priority:** How relief printing tools create marks supersedes visual appearance descriptions.
+
+**Material Physics Authority:** Wood/metal plate carving limitations, cheap wood-pulp paper characteristics, and relief printing specifications override aesthetic preferences.
+
+**Face-Treatment Flag:** `engrave-hatch` or `woodblock-carved` — Bold outlines with parallel/cross-hatched relief printing characteristics; caricature/satirical proportions.
+
+**Pose Flags:** `gestural-fluid`, `candid-motion` — Dynamic action poses captured mid-movement (dancing, working, fighting, performing).
+
+**Canvas Control Flag:** `adaptive-extend` or `format-native` — Commercial broadside format flexibility.
+
+**Quantifiers authoritative:** Numeric anchors are targets.
+
+**Text policy:** Omit all text unless Section 8 authorizes.
+
+**Safety/IP:** No nudity/gore beyond period-appropriate social satire context; no real logos/watermarks/signatures.
+
+**Age & wardrobe guardrail:** Minors = modest period-appropriate clothing; unknown age defaults to adult neutral.
+
+**Gender expression:** Respect presented.
+
+**Material authenticity:** No digital photo filters, Instagram effects, or modern post-processing; surface must exhibit authentic relief printing characteristics — bold hand-carved linework, slight ink irregularities, cheap newsprint texture.
+
+**Composition boundaries:** No frames outside the canvas; no artificial presentation frames, borders, watermarks, or credits.
+
+**Failure Mode Flags:** Avoid photographic realism, digital smoothing, academic polish, subtle tonality, halftone dots, figure subordination to environment, empty/minimal compositions, terrifying horror aesthetic.
+
+**Silent validation:** Apply framework requirements, regenerate silently if fail.
+
+------
+
+## 1) Core Instruction & Likeness Mandate
+
+**CANVAS OVERRIDE:** Compose for flexible commercial broadside format — **4:3**, **3:2**, **5:3**, **2:1** (horizontal), **3:2**, **4:3** (vertical), or **1:1** (square) acceptable.
+
+**Note on Ratio Flexibility:** Source image aspect ratios may influence final output. Posada worked across multiple broadside formats for commercial printing flexibility.
+
+Redraw in **Mexican Folk Printmaking / Relief Print style** for **mass-media broadside publication (hoja volante)**.
+
+Identity via caricature silhouette, exaggerated gesture, and satirical costume/prop signifiers — not naturalistic likeness.
+
+**IP Safeguard Declaration:** Create original satirical scenes inspired by Mexican popular culture (Day of the Dead traditions, revolutionary politics, social commentary) avoiding copyrighted character elements. No recognizable modern franchise iconography.
+
+**Face-Treatment Flag:** `woodblock-carved` — Bold outlines with expressive hatching; caricature/satirical facial proportions if skeleton; exaggerated features if human.
+
+**Pose Flag:** `gestural-fluid` or `candid-motion` — Capture figure mid-action: dancing, bicycling, playing music, working, fighting, celebrating.
+
+**Canvas Control Flag:** `adaptive-extend` or `format-native` — Commercial flexibility across broadside formats.
+
+**Style Dominance:** José Guadalupe Posada's whimsical calavera satire, densely packed compositions, hand-carved relief printing aesthetic, and populist narrative clarity overrides all other stylistic considerations.
+
+**Mode Selector:** Broadside print / Popular media illustration
+
+------
+
+## 2) Canvas Strategy & Spatial Logic
+
+**FLEXIBLE RATIO SELECTION (commercial broadside formats):**
+
+**HORIZONTAL FORMATS:**
+
+- `5:3` or `3:2` (standard broadsheet horizontal)
+- `2:1` (wide panoramic broadsheet)
+
+**VERTICAL FORMATS:**
+
+- `3:2` or `4:3` (standard broadsheet vertical)
+
+**SQUARE FORMAT:**
+
+- `1:1` (chapbook or contained illustration)
+
+**Note on Format Flexibility:** Source image aspect ratios may influence final output. Posada's commercial work appeared in varied broadside formats optimized for printing economics and narrative needs.
+
+**CANVAS RECOMPOSITION STRATEGY:**
+
+- **Reframing Method:** Adapt composition to suit declared format while maintaining figure dominance and packed density
+- **Spatial Allocation:** Figures occupy 60-90% of frame area — backgrounds functional and supporting, never empty or dominant
+- **Background Treatment:** Functional contextual settings (cemetery, street, cantina, landscape) that support narrative without overwhelming central action
+- **Format Justification:** Flexible formats serve commercial broadside publication for mass-market penny papers, allowing horizontal group scenes, vertical portraits, or square contained narratives
+
+------
+
+## 3) Artistic Style & Context
+
+**Influences:**
+
+- Manuel Manilla (predecessor at Vanegas Arroyo press) — popularized calavera as living active figure
+- Indigenous Mexican skull motif — prehistoric cultural symbolism reinterpreted for modern satire
+- Socio-political environment — Porfirio Díaz dictatorship, Mexican Revolution, rapid modernization
+- Commercial mass media — penny broadsides, corridos (narrative songs), sensational news
+- Counter-influence: Rejection of European academic polish and refined aesthetics in favor of raw populist expression
+
+**Medium/Production Method:** Relief printing (letterpress) using type-metal engraving, woodcut, wood engraving, or acid-etched zinc plates. High-volume, low-cost commercial printing for mass distribution via broadsides (hojas volantes). Images carved in relief, inked, and pressed into cheap wood-pulp paper often dyed with bright aniline colors (orange, scarlet, green, yellow, magenta). All tones built through bold outlines, parallel hatching, and cross-hatching — no continuous-tone processes. Characteristic imperfections from speed printing: slight ink irregularities, plate impression texture, hand-carved line quality.
+
+**Thematic Purpose:** Social and political satire for mass consumption. Calaveras (skeletons) used as whimsical satirical figures commenting on class distinctions, political hypocrisy, revolutionary politics, and the great equalizer—death. Narrative immediacy for largely illiterate audience requiring instantly legible visual storytelling. Commercial journalism documenting sensational news, crimes, disasters, and popular culture.
+
+**Hallmark Motifs (quantified):**
+
+1. **Calaveras (Skeletons):** Dominant motif — whimsical, expressive skeletons engaged in all human activities (dancing, bicycling, working, fighting). NOT horrific but satirical. Characterized by exaggerated non-naturalistic proportions, elaborate costume signifiers (sombreros, bourgeois hats, work clothes), and dynamic gesture. La Calavera Catrina (skeleton with elaborate feathered hat) most iconic example.
+2. **Dense Crowd Compositions:** 70-95% of frame filled with figures and narrative details — horror vacui (fear of empty space). Multiple figures in dynamic interaction, supporting cast filling negative space, props and environmental details packed edge-to-edge.
+3. **Dynamic Action:** Constant movement — figures captured mid-dance, mid-stride, mid-gesture. NO static poses. Energy and immediacy prioritized over composed stillness.
+4. **Social Caricature:** Exaggerated features and proportions amplify character and social commentary. Costume and props signify class (peasant, bourgeois, revolutionary, worker). Satirical rather than reverential treatment of authority.
+5. **Expressive Line Quality:** "Smooth and harmonious" in daily life scenes vs. "harsh and thick" in scenes of violence or denunciation. Hand-carved irregularity evident — NOT mechanical precision.
+
+**Period Framing:** 1888–1913 (Posada's Mexico City years at Vanegas Arroyo press encompassing height of Porfirian era through outbreak of Mexican Revolution)
+
+**Tone Tag:** Whimsical satire, dark comedy, populist immediacy, revolutionary energy, social critique, macabre playfulness, folk narrative
+
+**Production Era Authenticity:** High-volume commercial relief printing for penny broadsides. Visible characteristics: bold hand-carved linework with irregular tool marks, slight ink distribution variations, plate impression texture in cheap wood-pulp paper, aniline-dyed paper color (cream, yellow, pink, orange, green), NO halftone dots, NO photographic grain, NO digital smoothing, NO academic polish.
+
+------
+
+## 4) Technical Execution
+
+**Line Quality & Tool Marks:**
+
+- Bold, energetic, varied line weight (thin contours to thick emphatic strokes)
+- Hand-carved relief printing character: irregular tool marks, slight variations in line width, expressive rather than mechanical
+- Line density: 15-50 lines per inch for hatching/cross-hatching (coarser than fine wood engraving)
+- Style adaptation: "smooth and harmonious" parallel lines for everyday scenes, "harsh and thick" aggressive lines for violence/denunciation
+- Bold outlines define all major forms — graphic clarity prioritized
+- NO photographic continuous tone; every tonal gradation constructed through visible line density
+
+**Texture & Surface Depth:**
+
+- Parallel hatching for mid-tones: 20-35 lines per inch, following form curvature
+- Cross-hatching for shadows: 30-50 lines per inch, perpendicular line networks
+- Fabric texture: flowing parallel lines suggesting drape and movement
+- Bone texture (skeletons): sharp highlight edges, bold shadow hatching emphasizing contours
+- Relief printing impression: slight texture from plate pressed into soft absorbent paper
+- Paper substrate texture: cheap wood-pulp newsprint with visible fiber structure
+
+**Edge Treatment & Detail Hierarchy:**
+
+- ALL forms defined by bold outlines — graphic clarity mandatory
+- Primary figures: maximum detail with clear feature definition (skull teeth, costume details, facial expressions)
+- Secondary figures: moderate detail maintaining legibility
+- Background elements: simplified but functional — never vague or atmospheric
+- NO atmospheric soft-focus recession — clarity maintained throughout depth
+- Detail serves narrative — exaggerated features for satire, costume details for class signification
+
+**Color Mixing Methods:**
+
+- Monochromatic: black ink on colored paper substrate
+- Paper color provides "ground tone": cream, pale yellow, pale pink, orange, scarlet, green (aniline-dyed wood-pulp paper)
+- NO multicolor printing (except rare chromolithograph exceptions 1899-1901 Maucci series)
+- Tonal range through line density: white paper (no ink) → light gray (sparse lines) → medium gray (moderate hatching) → deep black (dense hatching/solid areas)
+- Chiaroscuro balance: 40-60% deep blacks (more balanced than Doré's oppressive 60-80%)
+
+**Stroke Economy & Directionality:**
+
+- Every line serves form description, volume modeling, or narrative clarity
+- Hatching follows surface topology: curved parallel lines for rounded forms, straight for flat planes
+- Cross-hatching angles determined by form intersection and shadow direction
+- Bold solid blacks for maximum contrast areas (deep shadows, costume elements, background emphasis)
+- Economic use of line — populist clarity over refined academic detail
+
+**Material Simulation & Authenticity:**
+
+- Authentic relief printing characteristics: crisp black ink edges, slight ink spread on absorbent paper
+- Hand-carved tool evidence: line width variation from pressure, occasional irregular edges
+- Cheap paper absorption: slight ink bleed acceptable, adds authenticity
+- Plate impression texture: subtle embossing from printing pressure
+- NO digital vector perfection — hand-crafted irregularity required
+- Paper context: wood-pulp newsprint (cream/colored), NOT fine art paper or glossy stock
+
+**Pose Anchors:**
+
+- Dynamic action mandatory: NO static standing poses
+- Mid-motion capture: dancing (legs lifted, arms extended), bicycling (bent posture, hands on handlebars), working (tool-wielding gesture), fighting (aggressive lean, weapon raised)
+- Exaggerated gesture: arms akimbo, legs splayed, heads tilted, spines curved
+- Social gesture vocabulary: peasant (bent from labor, simple tool), bourgeois (upright posture, elaborate costume), revolutionary (aggressive stance, weapon), musician (instrument-holding pose)
+- Skeleton articulation: flexible, cartoonish joint angles (NOT anatomically rigid)
+
+**Scale Hierarchy Anchor:**
+
+- **CRITICAL:** Figures dominate 60-90% of image area (OPPOSITE of Doré's environmental subordination)
+- Primary figures: 100% baseline scale, commanding central composition
+- Secondary figures: 60-90% primary scale, filling remaining space
+- Background architecture/landscape: human-scaled (NOT overwhelming monumental 300-500% scale)
+- Compositional density: 70-95% of frame filled — minimal negative space
+- Horror vacui principle: packed, crowded compositions rejecting emptiness
+
+**Emotional State Anchor:**
+
+- **REQUIRED:** whimsical, satirical, energetic, playful, defiant, celebratory, mischievous
+- **FORBIDDEN:** terrified, overwhelmed, cowering, defensively retreating, victimized, helpless
+- Death representation: lively skeletons engaged in human activities, NOT horrific specters
+- Satire mode: mocking authority, celebrating folk culture, critiquing social hypocrisy
+- Revolutionary energy: defiant, active, engaged — NOT passive or defeated
+
+**Material Authenticity Anchor:**
+
+- All tones created through visible bold linework — outlines, parallel hatching, cross-hatching
+- NO continuous-tone photographic gradients, NO digital smoothing, NO academic polish
+- Crisp black ink on colored paper substrate with hand-carved line irregularities
+- Cheap newsprint texture and aniline dye color foundational to aesthetic
+
+**Detail Hierarchy & Compositional Density (MANDATORY):**
+
+- **NO atmospheric recession** — clarity maintained throughout depth (OPPOSITE of Doré)
+- Foreground (primary figures): Maximum detail density 40-50 lines/inch, bold outlines, clear features
+- Midground (secondary figures): Moderate detail 30-40 lines/inch, simplified but legible
+- Background (context): Functional detail 15-30 lines/inch, supporting narrative without vagueness
+- **CRITICAL:** Detail serves narrative clarity, NOT atmospheric depth — populist legibility prioritized
+- Frame density: 70-95% filled with figures, objects, narrative elements — reject empty space
+
+**Period Consistency Anchor:**
+
+- 1888-1913 Mexican commercial relief printing technology
+- Broadside (hoja volante) mass-media format
+- Cheap wood-pulp paper with aniline dye coloring
+- High-speed letterpress reproduction characteristics
+
+**Production Method Anchor:**
+
+- Relief printing: only raised carved surfaces receive ink
+- Bold black ink on colored paper — slight ink spread from absorbent substrate
+- Hand-carved plate texture: irregular line quality, tool mark evidence
+- Speed printing imperfections: acceptable minor ink variations, registration marks
+
+**Canvas Adaptation Anchor:**
+
+- Flexible format composition: horizontal group scenes, vertical portraits, square contained narratives
+- Figure dominance regardless of format: 60-90% figure area maintained
+- Packed density across all ratios: minimal negative space universally
+- Format optimized for commercial broadside publication and mass distribution
+
+------
+
+## 5) Fashion & Attire — Wardrobe Matrix + Prop Selector
+
+**Wardrobe Tracks:**
+
+**Mexican Folk/Peasant Track (primary for popular scenes):**
+
+- Simple cotton clothing, sarapes (striped blankets), rebozos (shawls)
+- Period: 1880s-1910s rural/urban working class Mexico
+- Fabric: Plain cotton, simple stripes, functional work wear
+- Construction: Loose-fitting garments, rope belts, practical footwear
+
+**Bourgeois/Dandy Track (for satirical class critique):**
+
+- Elaborate hats (European fashion), formal suits, fancy dresses
+- Period: Porfirian era (1876-1911) upper-class fashion
+- Fabric: Fine textiles suggested through clean surfaces vs. working-class hatching
+- Construction: Fitted garments, decorative elements, status signifiers
+
+**Revolutionary Track (for political scenes):**
+
+- Military-style clothing, bandoliers, work clothes with weapons
+- Period: 1910-1920 Mexican Revolution
+- Fabric: Rugged practical textiles, leather accessories
+- Construction: Functional military/guerrilla style, ammunition belts
+
+**Calavera Costume Track (for skeleton scenes):**
+
+- Skeletons wear human clothing appropriate to social class/role
+- Elaborate hats PRIMARY signifier: sombrero (peasant), feathered hat (bourgeois dandy—La Catrina), top hat (European elite), simple cap (worker)
+- Clothing defines skeleton's satirical role: sarape (peasant), suit (bourgeois), military gear (revolutionary), work clothes (laborer)
+
+**Fabric Behavior:**
+
+- Bold outline definition with interior parallel line hatching suggesting drape
+- Flowing movement lines for dynamic action (dancing, running, wind)
+- Striped patterns (sarapes, ribbed fabrics) rendered with parallel lines
+- Contrast between smooth bourgeois fabrics (minimal hatching) and textured peasant fabrics (dense hatching)
+
+**Accessory Caps:** 2-4 accessories typical (hats, instruments, weapons, bottles, tools)
+
+- Allowable: Elaborate hats (PRIMARY), musical instruments, work tools, bottles, weapons, cigarettes, fans
+- Props define social role and satirical commentary
+
+**Color Palette Restrictions:**
+
+- Monochromatic rendering: black ink on colored paper substrate
+- Paper color provides chromatic element: cream, yellow, pink, orange, scarlet, green
+- NO multicolor ink printing (except rare chromolithograph exceptions)
+- Clothing differentiation through tonal value (line density) and bold outline rather than color
+
+**Wardrobe Variation Required:**
+
+- Vary social class costumes between iterations: peasant sarape → bourgeois suit → revolutionary bandolier
+- Cycle through hat styles: sombrero → feathered bourgeois hat → top hat → worker's cap
+- Maintain 1888-1913 Mexican period consistency across all wardrobe choices
+
+**Props (2-4 typical for Posada's narrative density):**
+
+**YAML Prop Pool — Mexican Popular Culture Context:**
+
+```yaml
+hero_props:
+  - elaborate_hat:
+      description: "Sombrero, feathered bourgeois hat (Catrina), top hat, worker's cap"
+      scale: 80-150% head size (exaggerated for satire)
+      rendering: bold outline, hatching for texture/shadow, PRIMARY class signifier
+      
+  - musical_instrument:
+      description: "Guitar, violin, trumpet, accordion"
+      scale: proportional to figure
+      rendering: simplified functional form, bold outline, minimal interior detail
+      
+  - bottle_drink:
+      description: "Pulque bottle, aguardiente, beer, tequila"
+      scale: 30-50cm typical bottle
+      rendering: simple cylindrical form, label suggested, held in hand
+      
+  - weapon:
+      description: "Rifle, pistol, knife, machete"
+      scale: proportional to historical weapons
+      rendering: bold outline emphasizing threatening silhouette
+      
+  - work_tool:
+      description: "Shovel, hoe, hammer, sickle"
+      scale: functional tool size
+      rendering: simplified recognizable form, labor signifier
+
+secondary_props:
+  - bicycle:
+      description: "Penny-farthing or early safety bicycle"
+      scale: functional bicycle proportions
+      rendering: wheel spokes as radiating lines, bold frame outline
+      
+  - furniture:
+      description: "Table, chair, barrel, coffin"
+      scale: functional furniture size
+      rendering: simplified geometric forms, functional context
+      
+  - papers_text:
+      description: "Broadsides, newspapers, letters, books"
+      scale: handheld document size
+      rendering: rectangular form with suggested text lines
+      
+  - skull_bones:
+      description: "Ground skulls for cemetery scenes"
+      scale: 10-15cm skulls
+      rendering: simplified skull form, bold eye sockets, grinning teeth
+      
+  - small_objects:
+      description: "Cigarettes, coins, flowers, rosaries"
+      scale: 5-15cm objects
+      rendering: economical simplified forms, narrative signifiers
+```
+
+**Coherence Filter:** All wardrobe and props must support 1888-1913 Mexican popular culture aesthetic serving satirical social commentary, Day of the Dead traditions, revolutionary politics, and folk narrative. If period consistency unclear, default to simple peasant attire with sombrero allowing satirical skeleton characterization to dominate.
+
+------
+
+## 6) Constraints
+
+**Canvas Negatives (≥2) — Anti-Patterns to Avoid:**
+
+- "photographic realism", "photorealistic rendering", "lifelike", "naturalistic proportions"
+- "smooth gradients", "digital smoothing", "airbrushed", "soft focus", "blurred depth of field"
+- "academic polish", "refined technique", "classical proportions", "Renaissance perspective"
+- "subtle tonality", "mezzotint quality", "delicate gradation", "atmospheric haze"
+- "halftone dots", "CMYK printing", "modern offset", "digital printing", "glossy finish"
+- "multicolor printing" (except if specifically requesting rare chromolithograph style)
+- "fine art paper", "archival paper", "museum-quality substrate"
+- "empty composition", "minimal negative space", "sparse", "quiet", "contemplative emptiness"
+- "figure subordinate to environment", "overwhelming monumental architecture", "environmental dominance", "vast empty spaces"
+- "terrifying horror", "overwhelmed by supernatural", "defensive cowering", "victimized pose", "frightened awe"
+- "static pose", "standing still", "composed stillness", "academic pose", "motionless"
+- "subtle line work", "delicate engraving", "refined detail", "precious technique"
+- "bourgeois framing devices", "decorative borders", "aestheticizing composition"
+- "European academic technique", "Renaissance compositional logic", "high finish"
+
+**Canvas Positives (≥2) — Required Constraints for Authenticity:**
+
+- "flexible commercial broadside format", "4:3, 3:2, 5:3, 2:1 horizontal or 3:2, 4:3 vertical or 1:1 square acceptable"
+- "relief printing technique", "hand-carved woodcut quality", "type-metal engraving character", "bold carved linework"
+- "monochromatic black ink on colored paper substrate", "aniline-dyed newsprint ground (cream/yellow/pink/orange/scarlet/green)"
+- "figure dominance 60-90% of frame", "densely packed composition", "70-95% frame filled", "horror vacui principle"
+- "dynamic action mandatory", "mid-motion capture", "dancing/bicycling/working/fighting", "energetic gesture"
+- "whimsical satirical tone", "dark comedy", "social critique", "revolutionary energy", "playful macabre"
+- "calaveras as lively characters", "skeletons engaged in human activities", "NOT terrifying death figures"
+- "exaggerated caricature proportions", "satirical features", "non-naturalistic scale for emphasis"
+- "bold outlines define all forms", "graphic clarity prioritized", "populist legibility", "instantly readable narrative"
+- "balanced chiaroscuro 40-60% blacks", "graphic high contrast", "NOT oppressively dark like gothic horror"
+- "hand-carved irregular line quality", "tool mark evidence", "expressive imperfection", "NOT mechanical precision"
+- "cheap wood-pulp newsprint texture", "aniline-dyed paper color", "absorbent substrate ink bleed"
+- "elaborate hat as primary signifier", "costume defines social class", "props indicate satirical role"
+- "smooth harmonious lines for daily life OR harsh thick lines for violence/denunciation", "emotional line quality adaptation"
+- "flattened populist perspective", "non-academic spatial logic", "narrative clarity over depth illusion"
+- "1888-1913 Mexican commercial printing authenticity", "broadside letterpress production characteristics"
+
+**Vocabulary Warnings:**
+
+- Avoid "terrifying," "horror," "overwhelming," "sublime," "dread" — these trigger gothic horror tone (Posada is whimsical satire, NOT terror)
+- Avoid "refined," "academic," "polished," "delicate," "precious" — these suggest European high art (Posada is raw populist)
+- Avoid "empty," "sparse," "minimal," "quiet," "contemplative" — these suggest minimalism (Posada is densely packed)
+- Avoid "photographic," "realistic," "naturalistic," "accurate proportions" — Posada uses caricature exaggeration
+- Use instead: "whimsical," "satirical," "energetic," "populist," "immediate," "crowded," "dynamic," "caricature," "folk," "revolutionary"
+
+------
+
+## 7) Composition & Background
+
+**RATIO-SPECIFIC COMPOSITION REQUIREMENTS (Flexible Broadside Formats):**
+
+**HORIZONTAL FORMATS (5:3, 3:2, 2:1):**
+
+- Group scenes: multiple figures in lateral arrangement
+- Parade/procession compositions: left-to-right narrative flow
+- Crowd scenes: densely packed horizontal bands of action
+- Figure distribution: 60-90% coverage across width
+
+**VERTICAL FORMATS (3:2, 4:3 portrait):**
+
+- Single figure or paired figures emphasis
+- Vertical stacking: figure over contextual ground
+- Portrait orientation: elaborate hat/costume emphasis
+- Figure dominance: 60-90% vertical frame occupation
+
+**SQUARE FORMAT (1:1):**
+
+- Centered figure or tight group
+- Radial composition around central action
+- Contained narrative scene
+- Dense edge-to-edge fill: 70-95%
+
+**Note on Format Flexibility:** Source image ratios may influence output. All formats prioritize figure dominance and packed density over environmental vastness.
+
+**STYLE-SPECIFIC COMPOSITION:**
+
+**Perspective Regime:**
+
+- Flattened populist perspective: narrative clarity prioritized over academic spatial depth
+- Non-systematic spatial logic: figures and objects arranged for maximum legibility
+- Expressive distortion acceptable: scale exaggeration for satire, perspective compression for density
+- Eye-level viewpoint predominant: direct engagement with viewer
+- NO atmospheric recession — clarity maintained throughout depth
+
+**Figure:Ground Ratio:**
+
+- **Figure-dominant composition MANDATORY:** 60-90% figures/action, 10-40% background context
+- **OPPOSITE of Doré:** Figures command space rather than subordinate to environment
+- Central figures: maximum scale and detail
+- Secondary figures: fill remaining space, create density
+- Background: functional supporting context, NEVER empty or vast
+
+**Density Percentage:**
+
+- High visual density universal: 70-95% of frame filled with narrative elements
+- Horror vacui principle: reject empty space, pack frame edge-to-edge
+- Multiple figures, props, background details create vibrant crowded energy
+- Minimal negative space: only functional breathing room between elements
+
+**Lighting Logic:**
+
+- Graphic contrast prioritized over naturalistic lighting
+- Bold blacks and white paper create high-contrast clarity
+- NO single dramatic light source (unlike Doré)
+- Functional shading: hatching indicates volume and form, NOT atmospheric mood
+- **Chiaroscuro balance:** 40-60% deep blacks (more balanced than Doré's oppressive 60-80%)
+- Lighting serves legibility — populist clarity over dramatic atmosphere
+
+**Detail:Negative Space Ratio:**
+
+- Primary figures: 70-95% detail coverage with bold outlines and hatching
+- Secondary figures: 60-80% detail coverage maintaining legibility
+- Background: 40-60% functional detail supporting narrative
+- **NO atmospheric recession** — detail serves clarity throughout depth
+- Negative space: 5-30% maximum (only functional gaps between elements)
+
+**REQUIRED ANCHORS:**
+
+**Surface Context Anchor:**
+
+- Cheap wood-pulp newsprint with aniline dye coloring
+- Paper colors: cream, pale yellow, pale pink, orange, scarlet, green, magenta
+- Absorbent substrate texture: slight ink spread, fibrous paper structure
+- Broadside (hoja volante) ephemeral publication context
+- NOT fine art paper, NOT glossy modern stock
+
+**Frame/Band Anchor:**
+
+- OMIT decorative borders and aestheticizing framing devices
+- Image may have simple linear border (printing plate edge) but NO elaborate ornamentation
+- Typography (if present) integrated as compositional element, not decorative addition
+- Reject European "high finish" framing conventions
+
+**Production Context Anchor:**
+
+- 1888-1913 Mexican commercial letterpress printing
+- High-volume, low-cost broadside production
+- Relief printing characteristics: plate impression texture, hand-carved line quality
+- Speed printing imperfections: acceptable ink variations, slight registration drift
+
+**Ratio Enforcement Anchor:**
+
+- Composition optimized for declared format (horizontal group, vertical portrait, square contained)
+- Figure dominance maintained across all ratios: 60-90% figure area universal
+- Packed density regardless of format: 70-95% frame filled
+- Format serves commercial broadside flexibility, not artistic hierarchy
+
+**ENVIRONMENTAL TREATMENT (Background Options):**
+
+**Cemetery Settings (for calavera scenes):**
+
+- Tombstones, crosses, ground skulls
+- Simplified architectural forms with bold outlines
+- Functional context supporting skeleton narrative
+- Human-scaled elements (NOT monumental overwhelming architecture)
+
+**Urban Settings (for social/political scenes):**
+
+- Street architecture, buildings, trains, modern technology
+- Simplified geometric forms indicating context
+- Crowd elements filling space
+- Revolutionary/modern Mexico City environment
+
+**Rural/Landscape Settings (for peasant/worker scenes):**
+
+- Simplified vegetation, mountains, agave plants
+- Functional ground plane with textural hatching
+- Agricultural tools, buildings suggesting context
+- Traditional rural Mexico
+
+**Interior Settings (for cantina/domestic scenes):**
+
+- Tables, barrels, architectural elements
+- Props indicating function (bottles, instruments, furniture)
+- Walls with simple hatching, floor with linear perspective
+- Crowded intimate spaces
+
+**Mood Amplification:**
+
+- Backgrounds support satirical narrative, NOT atmospheric mood
+- Settings indicate social context (cemetery = death commentary, cantina = popular culture, landscape = peasant life)
+- Functional clarity over emotional atmosphere
+- Populist legibility: viewers instantly read location and context
+
+------
+
+## 8) Typography & Text Integration
+
+**Binary:** OMIT — No text, titles, headlines, or typography within image composition.
+
+**Rationale:** Per user specification, create pure illustration without broadside text elements. While Posada's authentic broadsides featured integrated typography (sensational headlines above, corrido text below), this framework produces standalone illustration plates suitable for modern contexts or where text-free imagery is preferred.
+
+**Historical Context (For Reference Only — NOT Applied):** Authentic Posada broadsides featured essential text integration as compositional elements:
+
+- Sensational headlines above illustration in bold varied typefaces
+- Story/corrido text below in columnar layout
+- Eclectic Victorian-era "jobbing press" typography mixing bold, decorative, slab-serif, condensed fonts
+- Typography and image printed together via letterpress relief printing
+- Text integral to broadside's narrative and commercial function
+
+**If Text Were Authorized (For Reference):**
+
+- **Ratio-Appropriate Zones:** Headline above illustration, story columns below
+- **Copy Limits:** Headline ≤8 words; story text as required for corrido/narrative
+- **Period-Appropriate Typography:** Late 19th-century Mexican commercial display faces
+- **Font Recommendations:**
+  - Modern analogs: "Flamingo Solide", "aka Posse" (per exhibition usage)
+  - Archival search terms: "Victorian display typefaces", "Mexican jobbing press fonts 1880-1910", "late 19th-century slab serif", "condensed wood type"
+- **Visual Hierarchy:** Bold sensational headline dominates; mixed weights and styles create energy; type and image share equal compositional importance
+
+**Format-Specific Text Rules (If Applied):**
+
+- **Broadside Mode:** Text mandatory — headline above, corrido below
+- **Chapbook Mode:** Text and image integrated across pages
+- **Gallery Print Mode:** Omit all text — pure illustration
+- **Modern Context:** Omit text unless specifically recreating authentic broadside format
+
+**Historical Accuracy:** Typography must match 1888-1913 Mexican letterpress printing if included. Victorian-era display types, wood type, metal type — NOT modern digital fonts or clean sans-serifs.
+
+**Current Specification:** OMIT all typography per user request.
+
+------
+
+**END OF FRAMEWORK**
+
+*Silent validation reminder: Verify all sections 1-8 complete; flexible ratio options specified with source influence note; IP safeguards present; face/pose/canvas flags declared; ≥5 technical execution anchors with measurements; wardrobe + YAML props; ≥2 canvas negatives and positives; ratio-flexible composition; text policy explicit (OMIT); material authenticity emphasized; production method authentic to 1888-1913 relief printing; figure dominance 60-90% specified; packed density 70-95% required; whimsical satirical tone mandated; composition boundaries clear; no frames outside canvas.*
