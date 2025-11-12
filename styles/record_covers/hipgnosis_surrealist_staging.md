@@ -4,14 +4,14 @@ group: Record Covers
 movement: Surrealist Photographic Album Art
 artist: Hipgnosis (Storm Thorgerson & Aubrey Powell)
 display_name: Hipgnosis — Surrealist Photographic Staging
-style_scope: single-artist
+style_scope: collaboration
 ratios:
   - '1:1'
-  - '2:1'
+  - '16:9'
 ratios_status: provisional
 ratios_notes: >
-  Square 12-inch sleeves carry the core imagery; open to 2:1 only when staging a
-  full gatefold panorama.
+  Square 12-inch sleeves carry the core imagery; open to 16:9 when staging a
+  full gatefold panorama surrogate.
 modes:
   - Surreal Tableau
   - Gatefold Panorama
@@ -34,7 +34,7 @@ hero_image: null
 
 # Hipgnosis (Storm Thorgerson & Aubrey Powell) — Surrealist Photographic Staging
 
-## 🔧 Renderer-Agnostic Adapter
+## Renderer-Agnostic Adapter
 
 **Face-Treatment Flags:** `film-grain-triX`, `medium-format-compression`, `silver-halide-grain`, `contact-print-scale`
 
@@ -51,7 +51,7 @@ hero_image: null
 ------
 ## 1) Core Instruction & Likeness Mandate
 
-**CANVAS OVERRIDE:** Recompose to exactly **1:1 ratio** (album cover standard) OR **2:1 ratio** (gatefold) - ignore source image dimensions completely.
+**CANVAS OVERRIDE:** Recompose to exactly **1:1 ratio** (album cover standard) OR **16:9 ratio** (gatefold surrogate) - ignore source image dimensions completely.
 
 Redraw subject in **Hipgnosis surrealist photographic staging style** for **vinyl LP album cover (12" × 12" or 24" × 12" gatefold)**.
 
@@ -72,14 +72,14 @@ Identity via **recognizable integration into impossible scenarios** - subject be
 ------
 ## 2) Canvas Strategy & Aspect Ratio Control
 
-**MANDATORY RATIO SELECTION:** `1:1` (standard album) OR `2:1` (gatefold panoramic)
+**MANDATORY RATIO SELECTION:** `1:1` (standard album) OR `16:9` (gatefold panoramic surrogate)
 
 **CANVAS RECOMPOSITION STRATEGY:**
 
 - **Reframing Method:** recompose-entirely (create elaborate staged environment)
 - **Spatial Allocation:** Subject integrated as element within larger surrealist landscape (15-40% of composition)
 - **Background Treatment:** Vast surreal environments (deserts, oceans, industrial wastelands, barren fields) extending to horizon
-- **Format Justification:** Square format for concentrated surreal moments; 2:1 gatefold for epic surrealist panoramas with elaborate staging
+- **Format Justification:** Square format for concentrated surreal moments; 16:9 gatefold surrogate for epic surrealist panoramas with elaborate staging
 
 ------
 ## 3) Style Context & Material Authenticity
@@ -136,7 +136,7 @@ Identity via **recognizable integration into impossible scenarios** - subject be
 
 **Production Method Anchor:** Dye transfer printing creates color depth impossible with C-prints. Registration accuracy ±0.25mm between cyan, magenta, yellow layers. Paper choice affects final surface (matte vs. glossy receiving papers).
 
-**Canvas Adaptation Anchor:** Square 1:1 format concentrates surreal moment; 2:1 gatefold enables epic panoramic staging with multiple surreal elements across extended vista.
+**Canvas Adaptation Anchor:** Square 1:1 format concentrates surreal moment; 16:9 gatefold surrogate enables epic panoramic staging with multiple surreal elements across extended vista.
 
 ------
 ## 5) Wardrobe, Props & Setting Conventions
@@ -191,7 +191,7 @@ hipgnosis_surreal_props:
 
 **✅ Canvas Positives:**
 
-- "exactly 1:1 square ratio" OR "exactly 2:1 gatefold ratio"
+- "exactly 1:1 square ratio" OR "exactly 16:9 gatefold ratio"
 - "Hasselblad medium format grain"
 - "practical staging photography"
 - "dye transfer color saturation"
@@ -216,7 +216,7 @@ hipgnosis_surreal_props:
 - Subject integrated as scale indicator within landscape
 - Radial composition for circular impossible objects
 
-**For 2:1 Gatefold:**
+**For 16:9 Gatefold Surrogate:**
 
 - Panoramic surreal landscape extending across double-width
 - Multiple surreal elements positioned at mathematical intervals
@@ -286,7 +286,6 @@ hipgnosis_surreal_props:
 
 ## Roger Dean — Fantasy Landscape Visionary
 
-## 🔧 Renderer-Agnostic Adapter
 
 **Face-Treatment Flags:** `watercolor-soft`, `gouache-opaque`, `mixed-media-linear`, `wet-on-wet-bleed`
 
@@ -301,9 +300,8 @@ hipgnosis_surreal_props:
 **Period Production Authenticity:** 1970s-1980s traditional painting methods with experimental mixed media, organic mark-making, controlled chaos through water/gravity manipulation.
 
 ------
-## 1) Core Instruction & Likeness Mandate
 
-**CANVAS OVERRIDE:** Recompose to exactly **1:1 ratio** (album cover) OR **2:1 ratio** (gatefold) - ignore source image dimensions completely.
+**CANVAS OVERRIDE:** Recompose to exactly **1:1 ratio** (album cover) OR **16:9 ratio** (gatefold surrogate) - ignore source image dimensions completely.
 
 Redraw subject in **Roger Dean's fantasy landscape style** for **progressive rock album artwork**.
 
@@ -322,19 +320,17 @@ Identity via **symbolic mythologization** - subject becomes tiny traveler or mys
 **Mode Selector:** Album cover (vinyl LP or gatefold format)
 
 ------
-## 2) Canvas Strategy & Aspect Ratio Control
 
-**MANDATORY RATIO SELECTION:** `1:1` (standard album) OR `2:1` (gatefold panorama)
+**MANDATORY RATIO SELECTION:** `1:1` (standard album) OR `16:9` (gatefold panorama surrogate)
 
 **CANVAS RECOMPOSITION STRATEGY:**
 
 - **Reframing Method:** adaptive-extend (organic landscape elements flow naturally to fill ratio)
 - **Spatial Allocation:** Vast cosmic landscape dominates (70-90%), tiny figures positioned as scale indicators (5-10%)
 - **Background Treatment:** Ethereal skies with luminous color gradients, floating islands, alien vegetation extending to all edges
-- **Format Justification:** Square format concentrates cosmic vision; 2:1 gatefold enables epic panoramic alien worlds with elaborate organic architecture
+- **Format Justification:** Square format concentrates cosmic vision; 16:9 gatefold surrogate enables epic panoramic alien worlds with elaborate organic architecture
 
 ------
-## 3) Style Context & Material Authenticity
 
 **Influences:** Surrealism, Art Nouveau organic forms, Chinese/Japanese landscape painting, ecological themes, botanical illustration, visionary art.
 
@@ -357,7 +353,6 @@ Identity via **symbolic mythologization** - subject becomes tiny traveler or mys
 **Production Era Authenticity:** Traditional watercolor/gouache techniques with experimental material manipulation. No digital enhancement - all luminosity achieved through layered transparent pigments, scratched highlights, controlled water effects.
 
 ------
-## 4) Technical Method & Mark-Making
 
 **Line work:** Fluid curvilinear contours defining floating islands and organic architecture. Controlled fine linework for rock textures and foliage detail. Exploratory initial marks refined through careful edge definition.
 
@@ -383,10 +378,9 @@ Identity via **symbolic mythologization** - subject becomes tiny traveler or mys
 
 **Production Method Anchor:** Original paintings photographed for reproduction. Offset lithography struggles to capture watercolor luminosity - requires careful color separation to approximate transparent wash depth.
 
-**Canvas Adaptation Anchor:** Compositions designed for specific ratios - 1:1 concentrates cosmic moment, 2:1 enables epic journey across alien vista with multiple floating islands and organic structures.
+**Canvas Adaptation Anchor:** Compositions designed for specific ratios - 1:1 concentrates cosmic moment, 16:9 enables epic journey across alien vista with multiple floating islands and organic structures.
 
 ------
-## 5) Wardrobe, Props & Setting Conventions
 
 **Wardrobe Tracks:**
 
@@ -420,7 +414,6 @@ roger_dean_fantasy_props:
 **Coherence Filter:** All elements must feel ecologically connected within alien world system. Default = floating island in cosmic void with organic architecture.
 
 ------
-## 6) Safety & IP Constraints (Hard Rules)
 
 **❌ Canvas Negatives:**
 
@@ -437,7 +430,7 @@ roger_dean_fantasy_props:
 
 **✅ Canvas Positives:**
 
-- "exactly 1:1 square ratio" OR "exactly 2:1 gatefold ratio"
+- "exactly 1:1 square ratio" OR "exactly 16:9 gatefold ratio"
 - "watercolor granulation texture"
 - "gouache opacity layers"
 - "scalpel scratched highlights"
@@ -451,7 +444,6 @@ roger_dean_fantasy_props:
 **Vocabulary Warnings:** Avoid "digital," "rendered," "computer-generated," "vector," "synthetic." Embrace "painted," "organic," "flowing," "luminous," "atmospheric."
 
 ------
-## 7) Composition & Lighting Patterns
 
 **RATIO-SPECIFIC COMPOSITION:**
 
@@ -462,7 +454,7 @@ roger_dean_fantasy_props:
 - Equal weight distribution through organic symmetry
 - Atmospheric depth receding to all four edges
 
-**For 2:1 Gatefold:**
+**For 16:9 Gatefold Surrogate:**
 
 - Epic panoramic alien landscape extending across width
 - Multiple floating islands positioned at rhythmic intervals
@@ -489,7 +481,6 @@ roger_dean_fantasy_props:
 **Ratio Enforcement Anchor:** Composition flows organically to fill declared ratio, floating islands and cosmic elements positioned specifically for square or panoramic format.
 
 ------
-## 8) Typography & Text Integration (If Historically Present)
 
 **Binary:** ALLOW (typography integrated as organic element)
 
