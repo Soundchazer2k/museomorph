@@ -4,7 +4,7 @@ group: Psychedelic Art
 movement: Mouse & Kelley Psychedelic Collage
 artist: Stanley Mouse & Alton Kelley
 display_name: Mouse & Kelley — Psychedelic Collage Poster
-style_scope: single-artist
+style_scope: collaboration
 ratios:
   - '2:3'
 ratios_status: provisional
@@ -30,7 +30,7 @@ hero_image: null
 
 # Stanley Mouse & Alton Kelley
 
-## Renderer-Agnostic Adapter - Mouse & Kelley Specific
+## Renderer-Agnostic Adapter
 
 - **Constraint precedence:** Sections 1→8 are hard constraints; earlier overrides later
 - **Canvas Override Mandate:** Always ignore source image dimensions; compose for declared target aspect ratio

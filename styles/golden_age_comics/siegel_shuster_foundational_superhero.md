@@ -4,7 +4,7 @@ group: Golden Age Comics
 movement: Golden Age Superhero Foundations
 artist: Jerry Siegel & Joe Shuster
 display_name: Siegel & Shuster — Foundational Superhero Iconography
-style_scope: single-artist
+style_scope: collaboration
 ratios:
   - '2:3'
   - '3:4'

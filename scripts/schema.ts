@@ -18,7 +18,9 @@ export const FrontmatterSchema = z.object({
   display_name: z.string().min(1),
   artist: z.string().min(1).optional(),
   movement: z.string().min(1).optional(),
-  style_scope: z.enum(["single-artist", "movement"]).default("single-artist"),
+  style_scope: z
+    .enum(["single-artist", "movement", "collaboration"])
+    .default("single-artist"),
 
   ratios: z.array(z.string().regex(ratioPattern)).min(1),
   modes: z.array(z.string().min(1)).min(1),
