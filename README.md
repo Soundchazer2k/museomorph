@@ -67,5 +67,19 @@ MuseoMorph is a **playful art lab**: fun first, but also a way to appreciate the
 - `src-tauri/` – Rust backend bootstrapped for the Tauri desktop wrapper.
 - `scripts/` – Node/TypeScript utilities for manifest generation and validation.
 - `styles/` – curated Markdown prompt frameworks consumed by the app.
-- `styles-source/` – long-form research notes and drafting material for prompts.
+- `styles-source/` - long-form research notes and drafting material for prompts.
+
+------
+
+## 🤝 Contributing
+
+<!-- START: CONTRIBUTING (authoritative) -->
+- Keep one artist or one tightly scoped style per file.
+- Use `style_scope` correctly: `single-artist`, `movement`, or `collaboration`.
+  - Duos/studios (e.g., “Mouse & Kelley”, “Hipgnosis”, “Siegel & Shuster”) → set `style_scope: "collaboration"` (do not split).
+  - Schools/workshops (e.g., “Utagawa School”, “Morris & Co. Workshop”) → `style_scope: "movement"`.
+- Ratios: ≤3, follow docs/ratio_policy.md; start as `provisional` with a brief rationale.
+- Safety: no nudity/gore/logos/watermarks; minors modest; gender respect.
+<!-- END: CONTRIBUTING (authoritative) -->
+
 
