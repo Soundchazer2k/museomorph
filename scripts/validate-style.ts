@@ -74,6 +74,9 @@ async function main() {
     process.exit(0);
   }
 
+  // small helper to normalize paths for cross-platform comparisons
+  const norm = (p: string) => p.replace(/\\/g, "/").replace(/\/+$/, "");
+
   for (const file of files) {
     const rel = path.relative(root, file);
     if (rel.includes(`${path.sep}archive${path.sep}`) || rel.startsWith(`archive${path.sep}`)) {
@@ -118,9 +121,10 @@ async function main() {
         }
       }
 
-      const expectedDir = path.join("styles", slugify(fm.group));
-      const actualDir = path.dirname(rel).replace(/\\/g, "/");
-      if (!actualDir.startsWith(expectedDir)) {
+      const expectedDir = norm(path.join("styles", slugify(fm.group)));
+      const actualDir = norm(path.dirname(rel));
+      // Accept exact match or being inside a deeper subfolder under expectedDir
+      if (actualDir !== expectedDir && !actualDir.startsWith(expectedDir + "/")) {
         problems.push({
           file,
           message: `Group "${fm.group}" should live under ${expectedDir}/ — found in ${actualDir}/`,
@@ -129,10 +133,13 @@ async function main() {
 
       if (typeof fm.artist === "string") {
         const artist = fm.artist.trim();
-        if (artist && (artist.includes(",") || /\s(?:and|&|\+|x)\s/i.test(artist))) {
+        const looksMulti =
+          artist && (artist.includes(",") || /\s(?:and|&|\+|x)\s/i.test(artist));
+        // Only warn for multi-artist strings when the scope claims single-artist
+        if (fm.style_scope === "single-artist" && looksMulti) {
           warnings.push({
             file,
-            message: `Frontmatter.artist looks multi-artist ("${artist}"). Split styles per artist to avoid mixing voices.`,
+            message: `Frontmatter.artist looks multi-artist ("${artist}"). For duos/studios, set style_scope: "collaboration" (or "movement" for schools).`,
           });
         }
       }
