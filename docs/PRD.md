@@ -2,7 +2,7 @@
 
 ### 1. Project Overview
 
-MuseoMorph is a **playful art lab** delivered as a cross-platform desktop app (Windows, macOS, Linux) that transforms a submitted photograph into an artwork rendered in the visual language of a chosen artist, movement, or technique. Unlike generic style-transfer filters, MuseoMorph emphasizes *art-historical authenticity*. It uses structured Markdown prompt frameworks (e.g., Universal Museum-Grade Prompt Framework v4.3) to encode artist-specific characteristics such as pigments, brushwork, medium, palette constraints, and compositional strategies.
+MuseoMorph is a **playful art lab** delivered as a cross-platform desktop app (Windows, macOS, Linux) that transforms a submitted photograph into an artwork rendered in the visual language of a chosen artist, movement, or technique. Unlike generic style-transfer filters, MuseoMorph emphasizes *art-historical authenticity*. It uses structured Markdown prompt frameworks (e.g., Universal Museum-Grade Prompt Framework v4.4) to encode artist-specific characteristics such as pigments, brushwork, medium, palette constraints, and compositional strategies.
 
 Users supply their own image generation API keys (starting with Google’s NanoBanana/Gemini) to locally generate results. The app presents a **museum-inspired interface** with curated collections, style detail pages, and optional educational blurbs, balancing fun, accessibility, and art appreciation.
 
@@ -41,7 +41,7 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 - **Markdown-Driven Styles:** Styles loaded from `styles/**/*.md`, parsed into manifest.json.
 - **Universal Framework Compliance:** Sections 1–8 enforced with flags, ratios, constraints.
 - **Photo Input:** Single or multiple images.
-- **Face Detection:** YuNet ONNX (Apache 2.0), CPU-only; manual selection is default, auto available as toggle.
+- **Face Detection & Subject Selection:** BlazeFace (MediaPipe, Apache 2.0) running on CPU/iGPU; manual face picker is default with optional auto pre-select toggle. Processor crops references to the target ratio before generation.
 - **Multi-Subject Support:** Selector UI + “Multi-Subject Directive” injection in prompts.
 - **Result Viewer:** Display result with option to save; metadata caption styled like museum label.
 - **Security:** API keys stored in OS keychain (via Rust); all generation local.
@@ -72,7 +72,7 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 
 - **Qualitative:** Users feel authenticity, delight, and fun; flows are frictionless; app feels like a playful art lab, not a technical tool.
 - **Community Signals:** GitHub stars, style contributions, organic sharing of results.
-- **Internal Rubric:** Developers validate authenticity with internal tests; framework evolves (v4.3 → future).
+- **Internal Rubric:** Developers validate authenticity with internal tests; framework evolves (v4.4 → future).
 - **No User Burden:** No in-app surveys, ratings, or forced feedback loops.
 
 ------
@@ -82,10 +82,10 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 - **Assumptions:**
   - Non-commercial, leisure-focused; cost target = $0.
   - Users provide their own API keys; local-first runtime.
-  - Markdown frameworks (e.g., Universal Prompt v4.3, NanoBanana Edition) serve as prompt source of truth.
+  - Markdown frameworks (e.g., Universal Prompt v4.4, NanoBanana Edition) serve as prompt source of truth.
 - **Technical Constraints:**
   - Provider limits resolution, latency, fidelity.
-  - Face detection = YuNet ONNX, CPU-only; fallback to manual.
+  - Face detection = BlazeFace (MediaPipe), CPU-friendly with manual fallback.
   - Prompts must enforce framework guardrails; silent validation applies.
   - App must run on mid-tier laptops (no GPU required).
 - **Operational Constraints:**
@@ -99,7 +99,7 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 
 - **Dependencies:**
   - Provider APIs (NanoBanana/Gemini first).
-  - YuNet ONNX for face detection.
+  - BlazeFace (MediaPipe) for face detection and subject pre-selection.
   - Tauri + Rust ecosystem.
   - Structured Markdown frameworks.
 - **Risks:**
@@ -118,4 +118,29 @@ MuseoMorph addresses this by structuring prompts with explicit anchors (ratios, 
 2. **Interpretive Drift:** Framed as part of the experiment. Users encouraged to retry or log GitHub issues for prompt refinements.
 3. **Face Detection Default:** Manual by default; auto available as toggle.
 4. **Signatures/Logos:** Disclaimer in README; no auto-regeneration by default (user decides).
-5. **Identity:** MuseoMorph is a **playful art lab** — fun-first, educational-second.
+5. **Identity:** MuseoMorph is a **playful art lab** - fun-first, educational-second.
+
+------
+
+### 11. Style Data Model (Frontmatter & Validation)
+
+MuseoMorph styles are Markdown files with YAML frontmatter. The validator enforces presence and ordering of sections (1–8) and lints frontmatter. Key fields:
+
+- `id` (slug), `group`, `display_name`
+- `artist` (string) and `movement` (string, optional)
+- `style_scope`: one of
+  - `"single-artist"` — individual artist voice; multi-artist names are discouraged and will trigger a validator warning.
+  - `"movement"` — school/workshop/period styles (e.g., “Morris & Co. Workshop”, “Utagawa School”). Multi-artist strings are allowed.
+  - `"collaboration"` — intentional duos/studios (e.g., “Mouse & Kelley”, “Hipgnosis”, “Siegel & Shuster”). Multi-artist strings are allowed.
+- `ratios` (≤3), `ratios_status` (`"provisional"|"approved"`), `ratios_notes` (explain rationale)
+- `modes` (2–3 meaningful toggles)
+- `safety_profile` (from policy allowlist)
+- `multi_subject` (optional block)
+- `about` (2–6 sentence educational blurb)
+
+Validator behavior updates (2025-11-12):
+
+- Multi-artist `artist` strings only warn when `style_scope` is `"single-artist"`.
+- Windows path normalization in group directory checks prevents false directory warnings.
+
+Manifest expectations: manifest entries include `artist`, `movement`, and `style_scope` when present, plus `sections_index`, `ratios`, `modes`, and `safety_profile`.
