@@ -1,33 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  color-scheme: light;
+  /* Gallery-first dark theme as default */
+  color-scheme: dark;
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-serif: 'Playfair Display', 'Georgia', serif;
-  --color-ink: #1f1f1f;
-  --color-muted: #4f4a43;
-  --color-background: #f6f2eb;
-  --color-panel: #ffffff;
-  --color-accent: #8b6f3d;
-  --color-accent-soft: rgba(139, 111, 61, 0.12);
-  --color-border: rgba(47, 37, 21, 0.12);
-  --color-nav: rgba(246, 242, 235, 0.94);
+
+  /* Dark museum gallery palette */
+  --color-ink: #f3ead5;
+  --color-muted: #a69c8a;
+  --color-background: #0a0806;
+  --color-panel: #141210;
+  --color-panel-elevated: #1c1814;
+  --color-accent: #c9a456;
+  --color-accent-warm: #d4a85a;
+  --color-accent-soft: rgba(201, 164, 86, 0.15);
+  --color-border: rgba(201, 164, 86, 0.18);
+  --color-nav: rgba(10, 8, 6, 0.85);
+
+  /* Atmospheric effects */
+  --gradient-fade: linear-gradient(180deg, transparent 0%, var(--color-background) 100%);
+  --gradient-glow: radial-gradient(ellipse at center, rgba(201, 164, 86, 0.08) 0%, transparent 70%);
+  --shadow-dramatic: 0 24px 80px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 60px rgba(201, 164, 86, 0.12);
 }
 
-:root[data-theme='dark'] {
-  color-scheme: dark;
-  --color-ink: #f3ead5;
-  --color-muted: #d2c4a9;
-  --color-background: #100d08;
-  --color-panel: #1f1911;
-  --color-accent: #d8b26c;
-  --color-accent-soft: rgba(216, 178, 108, 0.2);
-  --color-border: rgba(244, 227, 197, 0.22);
-  --color-nav: rgba(20, 16, 11, 0.92);
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-ink: #1f1f1f;
+  --color-muted: #5c5549;
+  --color-background: #faf8f4;
+  --color-panel: #ffffff;
+  --color-panel-elevated: #ffffff;
+  --color-accent: #8b6f3d;
+  --color-accent-warm: #9a7d45;
+  --color-accent-soft: rgba(139, 111, 61, 0.1);
+  --color-border: rgba(47, 37, 21, 0.1);
+  --color-nav: rgba(250, 248, 244, 0.92);
+  --shadow-dramatic: 0 24px 60px rgba(47, 37, 21, 0.12);
+  --shadow-card: 0 8px 28px rgba(47, 37, 21, 0.08);
+  --shadow-glow: 0 0 40px rgba(139, 111, 61, 0.08);
 }
 
 body {
@@ -36,6 +53,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-ink);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -46,4 +64,15 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--color-accent);
+  color: #0a0806;
 }

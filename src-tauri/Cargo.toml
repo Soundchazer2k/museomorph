@@ -20,3 +20,5 @@ tauri = { version = "2.4.1", features = [] }
 reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
 keyring = "2.0"
 base64 = "0.22"
+gray_matter = "0.2"
+serde_yaml = "0.9"

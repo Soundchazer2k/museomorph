@@ -7,6 +7,8 @@ export interface UploadPayload {
   dataBase64: string;
 }
 
+export type ImageSize = '1K' | '2K' | '4K';
+
 export interface GenerateArtworkRequest {
   prompt: string;
   ratio: SupportedNanoBananaRatio;
@@ -17,6 +19,7 @@ export interface GenerateArtworkRequest {
   uploads: UploadPayload[];
   additionalContext?: string;
   ratioTemplate?: UploadPayload;
+  imageSize?: ImageSize; // NanoBanana Pro resolution: 1K, 2K (default), or 4K
 }
 
 export interface GenerateArtworkResponse {

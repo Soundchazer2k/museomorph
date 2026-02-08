@@ -26,6 +26,8 @@ export interface ParsedStyleMarkdown {
   preface?: string;
   rendererAdapter?: string;
   sections: Record<string, string>;
+  /** True if this is a 6-component format style (vs legacy numbered sections) */
+  is6Component?: boolean;
 }
 
 export interface PromptBuildOptions {

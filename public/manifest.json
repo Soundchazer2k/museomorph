@@ -163,10 +163,25 @@
       ]
     },
     {
+      "id": "Modern Illustration",
+      "styles": [
+        "midcentury_cocktail_6c"
+      ]
+    },
+    {
+      "id": "Movie Poster Illustration",
+      "styles": [
+        "blockbuster_montage_6c"
+      ]
+    },
+    {
       "id": "Movie Posters",
       "styles": [
         "al_hirschfeld_linear_calligraphic_poster",
         "bill_gold_conceptual_campaign",
+        "blockbuster-montage-poster",
+        "drew-struzan-minimal",
+        "drew-struzan-optimized",
         "drew_struzan_cinematic_poster",
         "frank_mccarthy_action_panorama",
         "hans_hillmann_modernist_collage",
@@ -175,8 +190,33 @@
         "reynold_brown_realist_thriller",
         "richard_amsel_illustrated_montage",
         "robert_mcginnis_gouache_spy_poster",
+        "saul-bass-minimal",
+        "saul-bass-optimized",
         "saul_bass_graphic_motion_poster",
         "tom_jung_storyboard_collage"
+      ]
+    },
+    {
+      "id": "Photography",
+      "styles": [
+        "annie_leibovitz_fashion",
+        "baron_adolph_de_meyer",
+        "david_lachapelle",
+        "edward_steichen",
+        "guy_bourdin",
+        "helmut_newton",
+        "irving_penn",
+        "julia_margaret_cameron",
+        "neil_leifer",
+        "peter_lindbergh",
+        "peter_robinson",
+        "pierson_castiglione",
+        "richard_avedon",
+        "steve_mccurry",
+        "steven_meisel",
+        "tim_walker_fashion",
+        "walter_iooss_jr",
+        "william_eggleston"
       ]
     },
     {
@@ -252,6 +292,12 @@
         "raymond_pettibon_punk_brutalism",
         "reid_miles_blue_note_modernism",
         "vaughan_oliver_4ad_mysticism"
+      ]
+    },
+    {
+      "id": "Renaissance Masters",
+      "styles": [
+        "renaissance_portrait_6c"
       ]
     },
     {
@@ -337,176 +383,6 @@
     }
   ],
   "styles": {
-    "steampunk_victorian_engraving": {
-      "id": "steampunk_victorian_engraving",
-      "group": "Steampunk",
-      "display_name": "Steampunk Victorian Engraving Portrait",
-      "file": "styles/steampunk/steampunk_victorian_engraving.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "Technical Illustration"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Victorian engravers etched burin lines into steel, turning inventors and apparatus into precise cross-hatched plates. This steampunk variant keeps the 19th-century draftsmanship while threading in speculative gadgets and workshop ephemera.\n",
-      "artist": "Steampunk Atelier",
-      "movement": "Victorian Technical Illustration",
-      "style_scope": "movement"
-    },
-    "steampunk_tintype_portrait": {
-      "id": "steampunk_tintype_portrait",
-      "group": "Steampunk",
-      "display_name": "Steampunk Tintype Portrait",
-      "file": "styles/steampunk/steampunk_tintype_portrait.md",
-      "ratios": [
-        "3:4"
-      ],
-      "modes": [
-        "Historical Photograph"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Steampunk tintypes mimic wet-plate chemistry—silver nitrate drips, solarized highlights, and shallow depth of field hugging brass goggles and boilers. Costumes stay era-correct while inventions peek through the patina. We tune the lab artifacts and imperfections for credibility.\n",
-      "artist": "Steampunk Atelier",
-      "movement": "Neo-Victorian Photography",
-      "style_scope": "movement"
-    },
-    "steampunk_mixed_media_assemblage": {
-      "id": "steampunk_mixed_media_assemblage",
-      "group": "Steampunk",
-      "display_name": "Steampunk Mixed Media Assemblage Portrait",
-      "file": "styles/steampunk/steampunk_mixed_media_assemblage.md",
-      "ratios": [
-        "4:5"
-      ],
-      "modes": [
-        "Industrial Assemblage"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Physical steampunk assemblage layers found brass, Bakelite knobs, portrait photography, and hand-tooled leather into reliquaries. Riveted frames, oxidized patina, and resin-cast cogs push the portrait into sculptural territory. We guide the layout so every bolt earns its place.\n",
-      "artist": "Steampunk Atelier",
-      "movement": "Assemblage Steampunk Portraiture",
-      "style_scope": "movement"
-    },
-    "steampunk_imaginative_digital": {
-      "id": "steampunk_imaginative_digital",
-      "group": "Steampunk",
-      "display_name": "Steampunk Imaginative Digital Portrait",
-      "file": "styles/steampunk/steampunk_imaginative_digital.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "Fantasy Character Poster"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Imaginative digital steampunk blends painterly lighting, leather, brass, and billowing steam into high-polish key art. Think cover-ready hero shots with luminous atmospherics and cinematic rim light. We keep it aspirational while refreshing silhouettes and contraptions.\n",
-      "artist": "Steampunk Atelier",
-      "movement": "Digital Steampunk Concept Art",
-      "style_scope": "movement"
-    },
-    "steampunk_gothic_ink_wash": {
-      "id": "steampunk_gothic_ink_wash",
-      "group": "Steampunk",
-      "display_name": "Steampunk Gothic Ink Wash Portrait",
-      "file": "styles/steampunk/steampunk_gothic_ink_wash.md",
-      "ratios": [
-        "3:4"
-      ],
-      "modes": [
-        "Dark Romantic Illustration"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Gothic ink-wash steampunk drapes characters in Victorian mourning couture, soot-stained gears, and rain-smeared glass. Wet brush, raven-black pools, and selective copper highlights create a melancholic ballroom of machines. Expect wraithlike poses and intricate filigree.\n",
-      "artist": "Steampunk Atelier",
-      "movement": "Dark Romantic Steampunk Illustration",
-      "style_scope": "movement"
-    },
     "ukiyoe_yakusha_portrait": {
       "id": "ukiyoe_yakusha_portrait",
       "group": "Ukiyo-e",
@@ -1149,6 +1025,368 @@
       "about": "Kahlo’s ex-voto paintings confront pain, identity, and politics with folk-art clarity. This card recreates her 1938–1954 practice: Tehuana dress, medical corsets, retablo inscriptions, and confrontational gazes set against Mexican landscapes.\n",
       "artist": "Frida Kahlo",
       "movement": "Mexican Ex-Voto Surrealism",
+      "style_scope": "single-artist"
+    },
+    "steampunk_victorian_engraving": {
+      "id": "steampunk_victorian_engraving",
+      "group": "Steampunk",
+      "display_name": "Steampunk Victorian Engraving Portrait",
+      "file": "styles/steampunk/steampunk_victorian_engraving.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Technical Illustration"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Victorian engravers etched burin lines into steel, turning inventors and apparatus into precise cross-hatched plates. This steampunk variant keeps the 19th-century draftsmanship while threading in speculative gadgets and workshop ephemera.\n",
+      "artist": "Steampunk Atelier",
+      "movement": "Victorian Technical Illustration",
+      "style_scope": "movement"
+    },
+    "steampunk_tintype_portrait": {
+      "id": "steampunk_tintype_portrait",
+      "group": "Steampunk",
+      "display_name": "Steampunk Tintype Portrait",
+      "file": "styles/steampunk/steampunk_tintype_portrait.md",
+      "ratios": [
+        "3:4"
+      ],
+      "modes": [
+        "Historical Photograph"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Steampunk tintypes mimic wet-plate chemistry—silver nitrate drips, solarized highlights, and shallow depth of field hugging brass goggles and boilers. Costumes stay era-correct while inventions peek through the patina. We tune the lab artifacts and imperfections for credibility.\n",
+      "artist": "Steampunk Atelier",
+      "movement": "Neo-Victorian Photography",
+      "style_scope": "movement"
+    },
+    "steampunk_mixed_media_assemblage": {
+      "id": "steampunk_mixed_media_assemblage",
+      "group": "Steampunk",
+      "display_name": "Steampunk Mixed Media Assemblage Portrait",
+      "file": "styles/steampunk/steampunk_mixed_media_assemblage.md",
+      "ratios": [
+        "4:5"
+      ],
+      "modes": [
+        "Industrial Assemblage"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Physical steampunk assemblage layers found brass, Bakelite knobs, portrait photography, and hand-tooled leather into reliquaries. Riveted frames, oxidized patina, and resin-cast cogs push the portrait into sculptural territory. We guide the layout so every bolt earns its place.\n",
+      "artist": "Steampunk Atelier",
+      "movement": "Assemblage Steampunk Portraiture",
+      "style_scope": "movement"
+    },
+    "steampunk_imaginative_digital": {
+      "id": "steampunk_imaginative_digital",
+      "group": "Steampunk",
+      "display_name": "Steampunk Imaginative Digital Portrait",
+      "file": "styles/steampunk/steampunk_imaginative_digital.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Fantasy Character Poster"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Imaginative digital steampunk blends painterly lighting, leather, brass, and billowing steam into high-polish key art. Think cover-ready hero shots with luminous atmospherics and cinematic rim light. We keep it aspirational while refreshing silhouettes and contraptions.\n",
+      "artist": "Steampunk Atelier",
+      "movement": "Digital Steampunk Concept Art",
+      "style_scope": "movement"
+    },
+    "steampunk_gothic_ink_wash": {
+      "id": "steampunk_gothic_ink_wash",
+      "group": "Steampunk",
+      "display_name": "Steampunk Gothic Ink Wash Portrait",
+      "file": "styles/steampunk/steampunk_gothic_ink_wash.md",
+      "ratios": [
+        "3:4"
+      ],
+      "modes": [
+        "Dark Romantic Illustration"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Gothic ink-wash steampunk drapes characters in Victorian mourning couture, soot-stained gears, and rain-smeared glass. Wet brush, raven-black pools, and selective copper highlights create a melancholic ballroom of machines. Expect wraithlike poses and intricate filigree.\n",
+      "artist": "Steampunk Atelier",
+      "movement": "Dark Romantic Steampunk Illustration",
+      "style_scope": "movement"
+    },
+    "renaissance_stained_glass_naturalism": {
+      "id": "renaissance_stained_glass_naturalism",
+      "group": "Stained Glass",
+      "display_name": "Renaissance Naturalist Stained Glass",
+      "file": "styles/stained_glass/renaissance_stained_glass_naturalism.md",
+      "ratios": [
+        "3:4",
+        "4:5",
+        "5:2"
+      ],
+      "modes": [
+        "Chapel Panel",
+        "Civic Portrait",
+        "Narrative Frieze"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 5,
+        "layout_hint": "Arrange figures in classical perspective with architectural depth; reserve clear glass for luminous atmosphere.",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "classical-proportion"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Renaissance glaziers adopted humanist portraiture, linear perspective, and silver-stain modelling to modernize sacred windows. This card recreates their 1400–1600 panels—tempera-precise faces, contrapposto bodies, and clear-glass luminosity balanced with jewel accents.\n",
+      "artist": "Italian & Northern Workshops",
+      "movement": "Renaissance",
+      "style_scope": "movement"
+    },
+    "preraphaelite_arts_crafts_stained_glass": {
+      "id": "preraphaelite_arts_crafts_stained_glass",
+      "group": "Stained Glass",
+      "display_name": "Pre-Raphaelite Arts & Crafts Panel",
+      "file": "styles/stained_glass/preraphaelite_arts_crafts_stained_glass.md",
+      "ratios": [
+        "2:3",
+        "4:5",
+        "1:1"
+      ],
+      "modes": [
+        "Domestic Aesthetic Panel",
+        "Ecclesiastical Triptych",
+        "Decorative Medallion"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Graceful Pre-Raphaelite figures framed by Morris botanical patterns; prefer trios or fewer.",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "decorative-unity"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Morris & Co. translated Pre-Raphaelite beauty into opalescent glass—flowing figures, botanical borders, and hand-lettered poetry between 1860 and 1920. This card recreates their domestic, ecclesiastical, and medallion formats with authentic ratios and Kelmscott-inspired lettering.\n",
+      "artist": "Morris & Co. Workshop",
+      "movement": "Pre-Raphaelite & Arts and Crafts",
+      "style_scope": "movement"
+    },
+    "medieval_cathedral_stained_glass": {
+      "id": "medieval_cathedral_stained_glass",
+      "group": "Stained Glass",
+      "display_name": "Gothic Cathedral Stained Glass",
+      "file": "styles/stained_glass/medieval_cathedral_stained_glass.md",
+      "ratios": [
+        "2:7",
+        "5:2",
+        "1:1"
+      ],
+      "modes": [
+        "Lancet Saint Panel",
+        "Clerestory Narrative",
+        "Rose Window Medallion"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 6,
+        "layout_hint": "Stack saints hieratically or distribute apostles around radial Christ medallions; obey sacred geometry.",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "sacred-symbols"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "12th–13th century cathedral workshops fused jewel-toned crown glass, 2–4 mm cames, and theological storytelling to flood Gothic interiors with divine light. This framework recreates those lancets, clerestories, and rose windows with authentic iconography and sacred proportions.\n",
+      "artist": "Cathedral Workshops",
+      "movement": "High Gothic",
+      "style_scope": "movement"
+    },
+    "harry_clarke_art_deco_stained_glass": {
+      "id": "harry_clarke_art_deco_stained_glass",
+      "group": "Stained Glass",
+      "display_name": "Harry Clarke — Art Deco Psychodrama",
+      "file": "styles/stained_glass/harry_clarke_art_deco_stained_glass.md",
+      "ratios": [
+        "2:3",
+        "5:2",
+        "1:1"
+      ],
+      "modes": [
+        "Dramatic Lancet",
+        "Literary Narrative Band",
+        "Psychological Medallion"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Stage a central protagonist with up to two secondary apparitions; pattern density must remain high.",
+        "identity_priority": [
+          "silhouette",
+          "psychological-expression",
+          "decorative-density"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Harry Clarke fused Celtic revival ornament, acid-etched plating, and Art Deco theatricality to create stained glass charged with psychological tension. This card brings his 1900–1930 studio grammar—elongated saints, black glass silhouettes, horror-vacui patterns—into our prompt framework.\n",
+      "artist": "Harry Clarke",
+      "movement": "Art Deco",
       "style_scope": "single-artist"
     },
     "steve_ditko_psych_mystery": {
@@ -2068,7 +2306,7 @@
       "file": "styles/record_covers/hipgnosis_surrealist_staging.md",
       "ratios": [
         "1:1",
-        "2:1"
+        "16:9"
       ],
       "modes": [
         "Surreal Tableau",
@@ -2095,7 +2333,7 @@
       "about": "Hipgnosis built impossible album covers in-camera—burning handshakes, floating monoliths, deserts full of props—and printed them with dye-transfer saturation. Every illusion was staged with Hasselblad precision and stunt logistics instead of digital tricks. We preserve that practical surrealism while inventing new puzzles and keeping the band iconography original.\n",
       "artist": "Hipgnosis (Storm Thorgerson & Aubrey Powell)",
       "movement": "Surrealist Photographic Album Art",
-      "style_scope": "single-artist"
+      "style_scope": "collaboration"
     },
     "barney_bubbles_optical_play": {
       "id": "barney_bubbles_optical_play",
@@ -2368,7 +2606,7 @@
       "about": "Stanley Mouse and Alton Kelley fused Art Nouveau loops, spiritual iconography, and photographic collage into the Family Dog poster house style. We keep their hand-cut lettering and sinuous borders while celebrating brand-new ballrooms and headliners.\n",
       "artist": "Stanley Mouse & Alton Kelley",
       "movement": "Mouse & Kelley Psychedelic Collage",
-      "style_scope": "single-artist"
+      "style_scope": "collaboration"
     },
     "bonnie_maclean_psychedelic_type": {
       "id": "bonnie_maclean_psychedelic_type",
@@ -3245,6 +3483,883 @@
       "about": "Alberto Vargas painted airbrushed morale girls for Esquire—porcelain skin, pin-sharp heels, and patriotic poise that toured USO lockers. This style keeps his gouache gradients, tight posing, and wartime optimism.\n",
       "artist": "Alberto Vargas",
       "movement": "Vargas Girl Illustration",
+      "style_scope": "single-artist"
+    },
+    "william_eggleston": {
+      "id": "william_eggleston",
+      "group": "Photography",
+      "display_name": "William Eggleston — Dye-Transfer Documentary Color",
+      "file": "styles/photography/William_Eggleston_Framework_v1.0.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "16:9"
+      ],
+      "modes": [
+        "Domestic Interiors",
+        "Automotive/Street",
+        "Portraiture"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "layout_hint": "Democratic equality; subject given no more visual weight than background elements",
+        "identity_priority": [
+          "deadpan-directness",
+          "psychological-distance",
+          "indexical-documentation"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "William Eggleston (b. 1939, Memphis, TN) revolutionized photography by elevating color film to fine art status circa 1976. Working in dye-transfer printing, he captured the mundane American South with unprecedented chromatic richness and philosophical detachment. His \"democratic\" approach grants visual equality to all subjects—a discarded parking lot holds the same compositional weight as a portrait. His work challenges hierarchical notions of photographic beauty, treating the everyday as a site of profound visual and emotional complexity. Eggleston's influence fundamentally reshaped contemporary photography, legitimizing color as a serious artistic medium equal to any traditional fine art practice.\n",
+      "artist": "William Eggleston",
+      "movement": "Color Photography Revolution / Democratic Realism",
+      "style_scope": "single-artist"
+    },
+    "walter_iooss_jr": {
+      "id": "walter_iooss_jr",
+      "group": "Photography",
+      "display_name": "Walter Iooss Jr. — Sports Photography & Swimsuit Issue Aesthetic",
+      "file": "styles/photography/Walter_Iooss_Jr_Framework_v1_0.md",
+      "ratios": [
+        "16:9",
+        "3:4",
+        "4:3",
+        "2:3",
+        "4:5"
+      ],
+      "modes": [
+        "Dynamic Action Sports",
+        "Intimate Athletic Portrait",
+        "Decisive Moment Environmental"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "layout_hint": "Single athlete primary focus; no multi-subject composites",
+        "identity_priority": [
+          "face-proportions",
+          "gesture",
+          "kinetic-energy"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Walter Iooss Jr. (b. 1943) is the preeminent sports photographer of the modern era, with five decades at Sports Illustrated establishing the visual language of athletic excellence. His work synthesizes documentary precision with humanistic portraiture, capturing athletes at peak physical and emotional intensity. The framework preserves his signature aesthetics: Kodak Ektachrome color science (film era), Nikon digital warmth (contemporary), dramatic yet natural lighting, telephoto compression, and the decisive moment philosophy. Period-authentic from 1961 to present.\n",
+      "artist": "Walter Iooss Jr.",
+      "movement": "Sports Photojournalism & Editorial Fashion",
+      "style_scope": "single-artist"
+    },
+    "tim_walker_fashion": {
+      "id": "tim_walker_fashion",
+      "group": "Photography",
+      "display_name": "Tim Walker — Theatrical Fashion & Narrative Photography",
+      "file": "styles/photography/Tim_Walker_Framework_v4_4.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "16:9"
+      ],
+      "modes": [
+        "FASHION_EDITORIAL",
+        "ENVIRONMENTAL_SPECTACLE",
+        "SURREAL_NARRATIVE"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Primary figure left/center; secondary figure right or embedded in background. Maintain clear visual hierarchy—model(s) dominate narrative despite elaborate staging.",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "face-proportions",
+          "wardrobe-character"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Tim Walker (born 1970) is a British fashion photographer celebrated for transforming editorial photography into theatrical visual storytelling. Working primarily with film (Kodak Portra 400) and practical effects rather than digital manipulation, Walker constructs elaborate, often monumental sets that evoke fairytales, surrealism, and historical narratives. His photographs blend fashion with fine art, costume with character development, and environmental narrative with intimate portraiture. Since 1995, he has defined contemporary fashion photography through imaginative scope, meticulous craftsmanship, and a persistent sense of wonder—placing models within dreamlike scenarios that prioritize emotional resonance and artistic authenticity over commercial minimalism.\n",
+      "artist": "Tim Walker",
+      "movement": "Theatrical Editorial Photography (1995–Present)",
+      "style_scope": "single-artist"
+    },
+    "steve_mccurry": {
+      "id": "steve_mccurry",
+      "group": "Photography",
+      "display_name": "Steve McCurry — Golden Hour Documentary Portraiture",
+      "file": "styles/photography/Steve_McCurry_Framework_v1.0.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "2:3"
+      ],
+      "modes": [
+        "Close Intimate Portrait",
+        "Cultural Documentary",
+        "Landscape with Figure"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Environmental mode tolerates multiple figures; portrait mode single focus",
+        "identity_priority": [
+          "direct_gaze",
+          "facial_architecture",
+          "contextual_authenticity"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Steve McCurry (b. 1950) pioneered color photojournalism through decades covering global conflict, cultural documentation, and humanistic portraiture. His signature approach combines golden-hour natural lighting, saturated Kodachrome color palette, and profound empathy for subjects, creating images that transcend reporting to achieve fine art resonance. This framework captures his three primary working modes: intimate psychological portraiture, cultural-contextual documentation, and landscape-scale environmental integration. Active 1979-present; Magnum member since 1986.\n",
+      "artist": "Steve McCurry",
+      "movement": "Color Photojournalism / Humanistic Documentary",
+      "style_scope": "single-artist"
+    },
+    "steven_meisel": {
+      "id": "steven_meisel",
+      "group": "Photography",
+      "display_name": "Steven Meisel — Studio Fashion Photography & Model Direction (1985-2025)",
+      "file": "styles/photography/Steven_Meisel_Framework_v4.4.md",
+      "ratios": [
+        "3:4",
+        "4:5",
+        "2:3"
+      ],
+      "modes": [
+        "Supermodel Portrait Glamour",
+        "Editorial Narrative & Conceptual",
+        "Contemporary Campaign/Commercial",
+        "Intimate Portrait Study"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Primary figure dominant; secondary figure contextual or interacting",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "face-proportions",
+          "makeup"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Steven Meisel (b. 1954) revolutionized fashion photography through technical mastery of studio lighting, precision model direction, and strategic retouching that preserves skin texture while eliminating distractions. His work defines the aesthetic of 1990s-contemporary high fashion, spanning supermodel glamour (Supermodel portrait mode), conceptual fashion editorials with narrative depth (Editorial mode), commercial campaigns for luxury brands (Contemporary Campaign mode), and intimate close-crop portrait studies where makeup becomes the subject (Intimate mode). His signature combines technical studio perfection with authentic model expression—never overly polished, always psychologically present.\n",
+      "artist": "Steven Meisel",
+      "movement": "Studio Fashion Portraiture & Editorial",
+      "style_scope": "single-artist"
+    },
+    "richard_avedon": {
+      "id": "richard_avedon",
+      "group": "Photography",
+      "display_name": "Richard Avedon — White-Background Psychological Portraiture (1950–1985)",
+      "file": "styles/photography/Richard_Avedon_Framework_v4_4.md",
+      "ratios": [
+        "3:4",
+        "4:5",
+        "4:3",
+        "16:9"
+      ],
+      "modes": [
+        "White Background Studio Portrait",
+        "Dynamic Fashion Editorial",
+        "In-the-American-West Portrait"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "layout_hint": "Single subject centered or staged; fashion editorial allows 2-3 subjects in narrative context",
+        "identity_priority": [
+          "face-expression",
+          "gesture",
+          "silhouette"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Richard Avedon (1923–2004) revolutionized portrait and fashion photography through psychological intensity and technical mastery.  His white-background studio technique stripped away artifice to reveal raw human presence; his large-format 8x10 negatives captured unprecedented facial detail.  From fashion to \"In the American West,\" Avedon democratized the monumental portrait, applying gallery-scale presentation to celebrities and marginalized Americans alike.  His work elevated commercial photography to fine art, emphasizing confrontational authenticity over idealized beauty.\n",
+      "artist": "Richard Avedon",
+      "movement": "Post-War American Photography / Fine Art Portraiture",
+      "style_scope": "single-artist"
+    },
+    "pierson_castiglione": {
+      "id": "pierson_castiglione",
+      "group": "Photography",
+      "display_name": "Pierre-Louis Pierson – Countess of Castiglione Studio Portraiture",
+      "file": "styles/photography/Pierre_Louis_Pierson_Framework.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "4:3"
+      ],
+      "modes": [
+        "MODE_1_intimate_headshot",
+        "MODE_2_dramatic_pose",
+        "MODE_3_psychological_tableau"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "layout_hint": "Single subject focus per Nadar studio convention",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "facial_identity",
+          "psychological_state"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Pierre-Louis Pierson (1822-1913) was a French photographer and chief operator of Nadar's studio in Paris. His most significant achievement was a nearly four-decade collaboration with Countess of Castiglione (1837-1899), producing over 400 photographs characterized by theatrical intensity, dramatic lighting, and psychological depth. The Castiglione series pioneered performance photography, blurring boundaries between portraiture, conceptual art, and self-directed identity exploration. Pierson's work exemplifies wet collodion negative and albumen print aesthetics with gold chloride toning, hand-retouched refinement, and studio lighting mastery. The photographs remain canonical in photography history for their daring exploration of identity, narcissism, and the psychological dimensions of the photographic image.\n",
+      "artist": "Pierre-Louis Pierson (1822-1913)",
+      "movement": "Romantic-Era Studio Portraiture",
+      "style_scope": "single-artist"
+    },
+    "peter_robinson": {
+      "id": "peter_robinson",
+      "group": "Photography",
+      "display_name": "Peter Robinson — Decisive Moment Sports Photojournalism (1968–2024)",
+      "file": "styles/photography/peter_robinson_framework_v4_4.md",
+      "ratios": [
+        "3:2",
+        "4:3",
+        "16:9"
+      ],
+      "modes": [
+        "Mode A: Peak-Action Isolation",
+        "Mode B: Environmental Context",
+        "Mode C: Candid Transition Moment"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Primary athlete left-center, secondary or crowd blur background",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "body-language"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Peter Robinson (1948–2024) was a British sports photojournalist whose five-decade career with The Guardian elevated sports photography to fine art. Inspired by Henri Cartier-Bresson's decisive moment theory, Robinson created emotionally resonant black-and-white images emphasizing human drama, athletic struggle, and compositional precision. His commitment to B&W film (Kodak Tri-X, Ilford HP5 Plus) in the color era established his unique artistic voice. Working with Nikon SLRs and telephoto lenses (300–600mm), he mastered darkroom techniques—dodging, burning, tonal control—to achieve museum-grade prints from dynamic sporting moments. This framework captures his late-career aesthetic across three operational modes.\n",
+      "artist": "Peter Robinson",
+      "movement": "Black & White Documentary Sports Photography",
+      "style_scope": "single-artist"
+    },
+    "peter_lindbergh": {
+      "id": "peter_lindbergh",
+      "group": "Photography",
+      "display_name": "Peter Lindbergh — Unretouched Black & White Fashion Photography",
+      "file": "styles/photography/Peter_Lindbergh_Framework_v4.4.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "1:1",
+        "4:5",
+        "16:9"
+      ],
+      "modes": [
+        "Editorial Portrait",
+        "Commercial Campaign",
+        "Fine Art Portrait"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "layout_hint": "Single subject, frontal or 3/4 turn",
+        "identity_priority": [
+          "psychological_depth",
+          "character_expression",
+          "gaze_authenticity"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Peter Lindbergh (1944-2019) was a German fashion photographer who revolutionized the industry through his  uncompromising commitment to authenticity. Rather than airbrushing and retouching, Lindbergh captured subjects  with wrinkles, character marks, and emotional truth intact—creating a visual language that valued human  humanity over artificial perfection. His signature black-and-white aesthetic, achieved through Kodak Tri-X film,  baryta paper gelatin silver prints, and minimal darkroom manipulation (dodging/burning only), became instantly  recognizable. His 1990 Vogue cover featuring five supermodels sparked the supermodel era and proved that  authenticity, not retouching, could define beauty. Lindbergh's work spans editorial portraits, luxury brand  campaigns, and fine art monographs—all united by his humanist philosophy: \"If you take out the wrinkles, you  take out the life.\"\n",
+      "artist": "Peter Lindbergh",
+      "movement": "Humanist Photojournalism / Anti-Retouching Movement",
+      "style_scope": "single-artist"
+    },
+    "neil_leifer": {
+      "id": "neil_leifer",
+      "group": "Photography",
+      "display_name": "Neil Leifer — 1960–1990 Sports Photography",
+      "file": "styles/photography/Neil_Leifer_Photography_Framework_v1_0.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "4:3",
+        "16:9",
+        "1:1"
+      ],
+      "modes": [
+        "Decisive Moment (Action Apex)",
+        "Portrait Isolation (Studio/Close)",
+        "Environmental Narrative (Wide Context)"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "pose-authenticity"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Neil Leifer (b. 1942) revolutionized sports photography through masterful integration of strobe lighting, Kodachrome color mastery, and innovative camera placement. Active 1960–1990, he elevated photojournalism to fine art by capturing peak-action moments with dramatic composition and technical precision. His work defines an era of color sports photography before digital transformation.\n",
+      "artist": "Neil Leifer",
+      "movement": "Sports Photography Golden Age",
+      "style_scope": "single-artist"
+    },
+    "julia_margaret_cameron": {
+      "id": "julia_margaret_cameron",
+      "group": "Photography",
+      "display_name": "Julia Margaret Cameron — Heroic Portraiture & Allegorical Tableau (1864–1875)",
+      "file": "styles/photography/Julia_Margaret_Cameron_Framework.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "2:3"
+      ],
+      "modes": [
+        "Heroic Portraiture — Distinguished subjects, close-crop busts, psychological intensity",
+        "Allegorical Tableau — Full-figure narrative staging, costumes, mythological/literary references",
+        "Intimate Domestic — Family and household subjects, softer psychological focus, diffused light"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Primary centered or left; secondary figures positioned supporting narrative context",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "face-proportions",
+          "costume-period-accuracy"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Julia Margaret Cameron (1815–1879) pioneered art photography in the mid-Victorian era,  transforming portraiture through deliberate soft focus, psychological intensity, and theatrical staging.  Working with wet collodion negatives and albumen prints (1864–1875), she created monumental contact prints  that merged photography with Pre-Raphaelite aesthetics. Her practice rejected technical perfection in favor  of emotional truth, casting distinguished friends (Tennyson, Darwin, Herschel) and household staff in  elaborate allegorical tableaux. This framework ensures period-authentic reproduction of her three primary  operational modes through quantified material specifications and hard constraints.\n",
+      "artist": "Julia Margaret Cameron",
+      "movement": "Art Photography / Victorian Portraiture",
+      "style_scope": "single-artist"
+    },
+    "irving_penn": {
+      "id": "irving_penn",
+      "group": "Photography",
+      "display_name": "Irving Penn — Studio Elegance & Psychological Portraiture",
+      "file": "styles/photography/Irving_Penn_Framework_v4_4.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "1:1",
+        "4:5"
+      ],
+      "modes": [
+        "Fashion Editorial",
+        "Celebrity Portrait — Corner Studio"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "layout_hint": "Single figure dominates frame; props secondary",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "face-proportions"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Irving Penn (1917–2009) revolutionized fashion and portrait photography through meticulous studio discipline, minimalist aesthetics, and mastery of platinum/palladium printing. His work blurred boundaries between commercial photography and fine art, establishing new standards for psychological intensity and technical perfection. This framework captures his signature elegance: soft sfumato lighting, carefully controlled tonal ranges, refined anatomical proportions, and iconic studio environments—whether the austere flat backgrounds of fashion editorials or the psychologically charged corner studio where countless cultural figures were immortalized. Penn's prints remain archival masterworks, their tonal richness and surface quality impossible to achieve through conventional digital means. This framework honors both his commercial vision and his obsessive pursuit of the perfect print.\n",
+      "artist": "Irving Penn",
+      "movement": "Commercial Fashion & Fine Art Photography (1943-2009)",
+      "style_scope": "single-artist"
+    },
+    "helmut_newton": {
+      "id": "helmut_newton",
+      "group": "Photography",
+      "display_name": "Helmut Newton — Cinematic Fashion & Power Dynamics",
+      "file": "styles/photography/Helmut_Newton_Framework_v4.4.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "4:5",
+        "16:9",
+        "2:3",
+        "1:1"
+      ],
+      "modes": [
+        "Fashion Editorial — Narrative Staging",
+        "Celebrity Portrait — Psychological Intensity",
+        "Narrative/Theatrical — Surrealist Scenarios",
+        "Monumental Figure Study — Architectural Body"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Primary subject dominant; secondary subjects in power-dynamic tension",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "psychological_intensity",
+          "face-proportions"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Helmut Newton (1920–2004) redefined fashion photography as cinematic narrative,  subverting conventions through hard lighting, psychological tension, and  power-dynamic exploration. His chiaroscuro-dramatic aesthetic—rooted in film noir—transforms  garments and bodies into psychological markers rather than product display. Newton's signature  \"Big Nudes\" series reimagined the body as architecture; his celebrity portraits pierce  psychological vulnerability; his fashion editorials embed ambiguous narratives into luxury settings.  This framework translates his uncompromising vision into compliant visual storytelling:  erotic without explicit nudity, psychological without psychological damage, provocative through  composition and lighting rather than content. All work honors Newton's mandate: \"My work is  not about fashion, it's about women\"—and by extension, power itself.\n",
+      "artist": "Helmut Newton",
+      "movement": "Cinematic Fashion Photography & Portraiture",
+      "style_scope": "single-artist"
+    },
+    "guy_bourdin": {
+      "id": "guy_bourdin",
+      "group": "Photography",
+      "display_name": "Guy Bourdin — Surrealist Fashion Photography 1950-1990",
+      "file": "styles/photography/Guy_Bourdin_Framework_v4.4_Complete.md",
+      "ratios": [
+        "4:3",
+        "3:2",
+        "16:9",
+        "3:4",
+        "4:5"
+      ],
+      "modes": [
+        "SATURATED_EDITORIAL_FASHION",
+        "DARK_SURREALIST_CONCEPTUAL",
+        "MINIMALIST_GRAPHIC_EDITORIAL"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Guy Bourdin (1928–1991) revolutionized fashion photography by infusing surrealist narrative and psychological tension into commercial imagery. Mentored by Man Ray, Bourdin's work transcends product display, employing mannequins, fragmented figures, dramatic theatrical lighting, and hyperreal color saturation to explore themes of alienation, voyeurism, and desire. His meticulous medium-format approach—using Hasselblad 500C, Kodachrome/ Ektachrome film, and precise studio strobes—created instantly recognizable aesthetic that challenged commercial photography conventions while maintaining technical mastery. His work for Vogue Paris (1955+) and Charles Jourdan campaigns established the template for conceptual fashion advertising.\n",
+      "artist": "Guy Bourdin",
+      "movement": "Surrealist Commercial Photography",
+      "style_scope": "single-artist"
+    },
+    "edward_steichen": {
+      "id": "edward_steichen",
+      "group": "Photography",
+      "display_name": "Edward Steichen – Pictorialist to Commercial Modernist Photography (1900–1973)",
+      "file": "styles/photography/Edward_Steichen_Framework_v4_4.md",
+      "ratios": [
+        "3:4",
+        "4:5",
+        "2:3"
+      ],
+      "modes": [
+        "Studio Portrait – Vanity Fair Era (1920–1940)",
+        "Commercial/Editorial Fashion (1925–1940)",
+        "Documentary/Character Study (1940–1955)"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false,
+        "max_subjects": 1,
+        "layout_hint": "Single-subject focus mandatory; no multi-figure compositions",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "face-proportions"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Edward Steichen (1879–1973) revolutionized photography across three distinct careers: Pictorialist pioneer (soft-focus, handcrafted platinum prints); commercial modernist (Vogue/Vanity Fair, 1923–1938, establishing fashion photography as art); and documentary curator (MoMA director, \"The Family of Man\" 1955). His studio portraits synthesized fine art aesthetics with commercial precision, using sophisticated multi-light systems and psychological depth to elevate celebrity and fashion photography. His technical mastery— from darkroom chemistry to lighting design—and aesthetic authority established photography's legitimacy as a primary modern art form.\n",
+      "artist": "Edward Steichen",
+      "movement": "Pictorialism → Straight Photography → Commercial Photography",
+      "style_scope": "single-artist"
+    },
+    "david_lachapelle": {
+      "id": "david_lachapelle",
+      "group": "Photography",
+      "display_name": "David LaChapelle — Hyper-Real Theatrical Celebrity Photography (1987-Present)",
+      "file": "styles/photography/David_LaChapelle_Framework_v4.4.md",
+      "ratios": [
+        "3:4",
+        "4:5",
+        "16:9"
+      ],
+      "modes": [
+        "Celebrity Portrait Glamour",
+        "Tableau Allegory & Narrative",
+        "Environmental Surrealism"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Primary celebrity dominant; secondary figures contextual or symbolic",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "face-proportions",
+          "makeup"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "David LaChapelle (b. 1963) revolutionized celebrity photography through hyper-real theatrical staging, digitally constructed surrealist narratives, and psychological intensity. His work merges fine art conceptualism with commercial celebrity aesthetics—transcending documentary portraiture into constructed psychological spaces. His signature combines flawless skin rendering (L: 88-95% highlights), hypersat backgrounds (S: 85-100%), baroque dual-eye-reflections, renaissance volumetric face modeling, and split-complementary color theory. LaChapelle's images function as psychological documents, blending fashion editorial precision with allegorical narrative depth. All modes emphasize handcrafted theatrical environments (practical props, set design) that create metaphorical contexts for psychological portraiture.\n",
+      "artist": "David LaChapelle",
+      "movement": "Hyper-Real Theatrical Studio Photography (1987-Present)",
+      "style_scope": "single-artist"
+    },
+    "baron_adolph_de_meyer": {
+      "id": "baron_adolph_de_meyer",
+      "group": "Photography",
+      "display_name": "Baron Adolph de Meyer — Pictorialist Theatrical & Fashion Photography 1900-1927",
+      "file": "styles/photography/Baron_Adolph_de_Meyer_Framework_v4_4.md",
+      "ratios": [
+        "3:4",
+        "4:3",
+        "16:9"
+      ],
+      "modes": [
+        "Theatrical Portraiture",
+        "Fashion & Commercial",
+        "Personal Documentary"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Primary figure centered or rule-of-thirds positioned; secondary figures recessive or vignette-softened",
+        "identity_priority": [
+          "silhouette",
+          "pose-grammar",
+          "facial-architecture"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Baron Adolph de Meyer (1868–1946) was the founding master of twentieth-century fashion and theatrical photography, pioneering the gum bichromate printing process to achieve museum-quality pictorial softness and emotional depth. Active 1900–1927, de Meyer transformed photography from documentary record into fine art through deliberate diffusion, dramatic side-lighting, and period-appropriate costuming that emphasized theatrical narrative over mere likeness. His work defined the aesthetic language of Vogue, the Ballets Russes, and the artistic elite of Belle Époque Paris and 1920s New York. De Meyer's signature technique combined soft-focus optics with hand-applied pigmentation in gum printing, creating luminous surfaces that feel painterly rather than photographic. This framework preserves his three primary operational modes: theatrical portraiture of stage performers, commercial fashion photography emphasizing textile detail and elegance, and intimate documentary work exploring psychological space and environmental narrative. Historical fidelity requires strict adherence to 1900–1927 material authenticity, period-appropriate costuming, and the characteristic diffuse lighting that defined his era-specific aesthetic.\n",
+      "artist": "Baron Adolph de Meyer",
+      "movement": "Pictorialism & Art Photography",
+      "style_scope": "single-artist"
+    },
+    "annie_leibovitz_fashion": {
+      "id": "annie_leibovitz_fashion",
+      "group": "Photography",
+      "display_name": "Annie Leibovitz — Fashion & Celebrity Photography",
+      "file": "styles/photography/Annie_Leibovitz_Fashion_Photography_Framework_v4_4.md",
+      "ratios": [
+        "3:4",
+        "4:5",
+        "16:9",
+        "4:3",
+        "1:1"
+      ],
+      "modes": [
+        "Rolling Stone Era — Intimate Documentary Portraiture (1970–1983)",
+        "Vanity Fair Era — Theatrical Staged Narratives (1983–2000)",
+        "Commercial & Fashion Campaigns — Conceptual Brand Narratives (1990s–2010s)",
+        "Personal Work — Domestic Intimacy & Family Study (ongoing)"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 4,
+        "layout_hint": "Primary figure dominant, secondary figures supporting or framing narrative",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "expression",
+          "clothing"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Annie Leibovitz revolutionized celebrity portraiture by transforming it into  conceptual fine art. Moving beyond documentary snapshots, she crafted elaborate  staged narratives that reveal psychological depth, cultural moment, and emotional  vulnerability. Her signature technique combines theatrical lighting, meticulous  art direction, and intimate subject interaction to produce images that transcend  commercial work into museum-quality artistic statements. This framework captures  four distinct operational modes spanning her evolution from Rolling Stone's raw  documentary aesthetic to Vanity Fair's grand theatrical staging, commercial  campaigns' conceptual sophistication, and deeply personal intimate family work.\n",
+      "artist": "Annie Leibovitz",
+      "movement": "Fashion & Celebrity Portraiture",
       "style_scope": "single-artist"
     },
     "tom_jung_storyboard_collage": {
@@ -4186,198 +5301,6 @@
       "movement": "Photorealistic Superhero Painting",
       "style_scope": "single-artist"
     },
-    "renaissance_stained_glass_naturalism": {
-      "id": "renaissance_stained_glass_naturalism",
-      "group": "Stained Glass",
-      "display_name": "Renaissance Naturalist Stained Glass",
-      "file": "styles/stained_glass/renaissance_stained_glass_naturalism.md",
-      "ratios": [
-        "3:4",
-        "4:5",
-        "5:2"
-      ],
-      "modes": [
-        "Chapel Panel",
-        "Civic Portrait",
-        "Narrative Frieze"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 5,
-        "layout_hint": "Arrange figures in classical perspective with architectural depth; reserve clear glass for luminous atmosphere.",
-        "identity_priority": [
-          "silhouette",
-          "gesture",
-          "classical-proportion"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Renaissance glaziers adopted humanist portraiture, linear perspective, and silver-stain modelling to modernize sacred windows. This card recreates their 1400–1600 panels—tempera-precise faces, contrapposto bodies, and clear-glass luminosity balanced with jewel accents.\n",
-      "artist": "Italian & Northern Workshops",
-      "movement": "Renaissance",
-      "style_scope": "movement"
-    },
-    "preraphaelite_arts_crafts_stained_glass": {
-      "id": "preraphaelite_arts_crafts_stained_glass",
-      "group": "Stained Glass",
-      "display_name": "Pre-Raphaelite Arts & Crafts Panel",
-      "file": "styles/stained_glass/preraphaelite_arts_crafts_stained_glass.md",
-      "ratios": [
-        "2:3",
-        "4:5",
-        "1:1"
-      ],
-      "modes": [
-        "Domestic Aesthetic Panel",
-        "Ecclesiastical Triptych",
-        "Decorative Medallion"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 3,
-        "layout_hint": "Graceful Pre-Raphaelite figures framed by Morris botanical patterns; prefer trios or fewer.",
-        "identity_priority": [
-          "silhouette",
-          "gesture",
-          "decorative-unity"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Morris & Co. translated Pre-Raphaelite beauty into opalescent glass—flowing figures, botanical borders, and hand-lettered poetry between 1860 and 1920. This card recreates their domestic, ecclesiastical, and medallion formats with authentic ratios and Kelmscott-inspired lettering.\n",
-      "artist": "Morris & Co. Workshop",
-      "movement": "Pre-Raphaelite & Arts and Crafts",
-      "style_scope": "movement"
-    },
-    "medieval_cathedral_stained_glass": {
-      "id": "medieval_cathedral_stained_glass",
-      "group": "Stained Glass",
-      "display_name": "Gothic Cathedral Stained Glass",
-      "file": "styles/stained_glass/medieval_cathedral_stained_glass.md",
-      "ratios": [
-        "2:7",
-        "5:2",
-        "1:1"
-      ],
-      "modes": [
-        "Lancet Saint Panel",
-        "Clerestory Narrative",
-        "Rose Window Medallion"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 6,
-        "layout_hint": "Stack saints hieratically or distribute apostles around radial Christ medallions; obey sacred geometry.",
-        "identity_priority": [
-          "silhouette",
-          "gesture",
-          "sacred-symbols"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "12th–13th century cathedral workshops fused jewel-toned crown glass, 2–4 mm cames, and theological storytelling to flood Gothic interiors with divine light. This framework recreates those lancets, clerestories, and rose windows with authentic iconography and sacred proportions.\n",
-      "artist": "Cathedral Workshops",
-      "movement": "High Gothic",
-      "style_scope": "movement"
-    },
-    "harry_clarke_art_deco_stained_glass": {
-      "id": "harry_clarke_art_deco_stained_glass",
-      "group": "Stained Glass",
-      "display_name": "Harry Clarke — Art Deco Psychodrama",
-      "file": "styles/stained_glass/harry_clarke_art_deco_stained_glass.md",
-      "ratios": [
-        "2:3",
-        "5:2",
-        "1:1"
-      ],
-      "modes": [
-        "Dramatic Lancet",
-        "Literary Narrative Band",
-        "Psychological Medallion"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 3,
-        "layout_hint": "Stage a central protagonist with up to two secondary apparitions; pattern density must remain high.",
-        "identity_priority": [
-          "silhouette",
-          "psychological-expression",
-          "decorative-density"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Harry Clarke fused Celtic revival ornament, acid-etched plating, and Art Deco theatricality to create stained glass charged with psychological tension. This card brings his 1900–1930 studio grammar—elongated saints, black glass silhouettes, horror-vacui patterns—into our prompt framework.\n",
-      "artist": "Harry Clarke",
-      "movement": "Art Deco",
-      "style_scope": "single-artist"
-    },
     "romanesque_manuscript_illumination": {
       "id": "romanesque_manuscript_illumination",
       "group": "Medieval Illumination",
@@ -4565,6 +5488,556 @@
       "artist": "Gothic Court Workshops",
       "movement": "15th-Century International Gothic",
       "style_scope": "movement"
+    },
+    "rumiko_takahashi_romantic_manga": {
+      "id": "rumiko_takahashi_romantic_manga",
+      "group": "Manga",
+      "display_name": "Rumiko Takahashi - Romantic Comedy Dynamo",
+      "file": "styles/manga/rumiko_takahashi_romantic_manga.md",
+      "ratios": [
+        "2:3",
+        "4:5",
+        "4:3"
+      ],
+      "modes": [
+        "Romantic Cover",
+        "Dynamic Ensemble"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 4,
+        "layout_hint": "Give the lead 60 percent of the frame with friends orbiting in comedic motion lines.",
+        "identity_priority": [
+          "silhouette",
+          "expression",
+          "gesture"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Rumiko Takahashi pairs slapstick kinetics with heartfelt romance, rendering big eyes, voluminous hair, and pastel washes. This card keeps that 1980s watercolor charm while inventing new cast lineups.\n",
+      "artist": "Rumiko Takahashi",
+      "movement": "Romantic Comedy Shonen Manga",
+      "style_scope": "single-artist"
+    },
+    "riyoko_ikeda_historical_shojo": {
+      "id": "riyoko_ikeda_historical_shojo",
+      "group": "Manga",
+      "display_name": "Riyoko Ikeda - Revolutionary Shoujo Romance",
+      "file": "styles/manga/riyoko_ikeda_historical_shojo.md",
+      "ratios": [
+        "3:4"
+      ],
+      "modes": [
+        "Romantic Portrait",
+        "Historical Tableau"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Let two protagonists overlap within rose-laden emotion-scapes or Versailles interiors.",
+        "identity_priority": [
+          "expression",
+          "costume",
+          "gesture"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Riyoko Ikeda turns French revolution melodrama into cascading screentone roses and tear-bright eyes. This card safeguards that operatic intensity while chronicling new courts and rebellions.\n",
+      "artist": "Riyoko Ikeda",
+      "movement": "Year 24 Group Shoujo",
+      "style_scope": "single-artist"
+    },
+    "osamu_tezuka_showa_cinematic_manga": {
+      "id": "osamu_tezuka_showa_cinematic_manga",
+      "group": "Manga",
+      "display_name": "Osamu Tezuka - Showa Cinematic Humanism",
+      "file": "styles/manga/osamu_tezuka_showa_cinematic_manga.md",
+      "ratios": [
+        "4:5",
+        "2:3",
+        "1:1"
+      ],
+      "modes": [
+        "Character Study",
+        "Adventure Scene"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Center the star-system lead with supporting silhouettes sweeping along cinematic arcs.",
+        "identity_priority": [
+          "silhouette",
+          "expression",
+          "gesture"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Osamu Tezuka married Disney timing with postwar optimism, bathing big-eyed heroes in flat gouache color. This card keeps that hopeful cinema while introducing new archetypes and companions.\n",
+      "artist": "Osamu Tezuka",
+      "movement": "Showa Cinematic Manga",
+      "style_scope": "single-artist"
+    },
+    "naoki_urasawa_psychological_thriller": {
+      "id": "naoki_urasawa_psychological_thriller",
+      "group": "Manga",
+      "display_name": "Naoki Urasawa - Psychological Thriller Realism",
+      "file": "styles/manga/naoki_urasawa_psychological_thriller.md",
+      "ratios": [
+        "2:3",
+        "4:5",
+        "3:2"
+      ],
+      "modes": [
+        "Character Study",
+        "Investigative Scene"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Frame a contemplative protagonist chest-up with period-authentic urban cues in the midground.",
+        "identity_priority": [
+          "expression",
+          "asymmetry",
+          "context"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Naoki Urasawa sketches ordinary faces with micro-expressions, asymmetry, and thriller tension. This card preserves his forensic realism while spinning new conspiracies.\n",
+      "artist": "Naoki Urasawa",
+      "movement": "Psychological Seinen Manga",
+      "style_scope": "single-artist"
+    },
+    "masakazu_katsura_realistic_manga": {
+      "id": "masakazu_katsura_realistic_manga",
+      "group": "Manga",
+      "display_name": "Masakazu Katsura - Realist Youth Illustration",
+      "file": "styles/manga/masakazu_katsura_realistic_manga.md",
+      "ratios": [
+        "3:4",
+        "2:3",
+        "4:3"
+      ],
+      "modes": [
+        "Youth Romance",
+        "Urban Portrait",
+        "Slice of Life"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Pair the lead with a partner or environment anchor inside relaxed 1990s fashion.",
+        "identity_priority": [
+          "silhouette",
+          "fashion",
+          "expression"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Masakazu Katsura paints 1990s youth with cinematic lighting, baggy silhouettes, and grounded anatomy. This card keeps his realist polish while writing new street-level dramas.\n",
+      "artist": "Masakazu Katsura",
+      "movement": "1990s Realist Youth Manga",
+      "style_scope": "single-artist"
+    },
+    "kentaro_miura_dark_fantasy_hyperdetail": {
+      "id": "kentaro_miura_dark_fantasy_hyperdetail",
+      "group": "Manga",
+      "display_name": "Kentaro Miura - Gothic Hyperdetail",
+      "file": "styles/manga/kentaro_miura_dark_fantasy_hyperdetail.md",
+      "ratios": [
+        "2:3",
+        "3:2",
+        "1:1"
+      ],
+      "modes": [
+        "Color Mode",
+        "Black and White Mode"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Set the armored lead against towering Gothic masonry with an optional adversary in shadow.",
+        "identity_priority": [
+          "armor",
+          "gesture",
+          "atmosphere"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Kentaro Miura carved every rivet, scar, and arch into Berserk's Gothic apocalypse. This card enforces that hyperdetail while forging new legends and cathedrals.\n",
+      "artist": "Kentaro Miura",
+      "movement": "Dark Fantasy Hyperrealism",
+      "style_scope": "single-artist"
+    },
+    "katsuhiro_otomo_cyberpunk_manga": {
+      "id": "katsuhiro_otomo_cyberpunk_manga",
+      "group": "Manga",
+      "display_name": "Katsuhiro Otomo - Dystopian Screentone Realism",
+      "file": "styles/manga/katsuhiro_otomo_cyberpunk_manga.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Monochrome Screentone",
+        "Single-Hue Accent"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Anchor a power-stance lead at 70 percent height with a support silhouette in depth.",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "compressed-face-proportions"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Katsuhiro Otomo fused metabolist skylines, compressed faces, and halftone machinery into tense Akira-era covers. This card preserves the industrial realism while inventing new dystopian subjects and tech.\n",
+      "artist": "Katsuhiro Otomo",
+      "movement": "1980s Cyberpunk Manga",
+      "style_scope": "single-artist"
+    },
+    "kaoru_mori_historical_textile_manga": {
+      "id": "kaoru_mori_historical_textile_manga",
+      "group": "Manga",
+      "display_name": "Kaoru Mori - Historical Textile Chronicle",
+      "file": "styles/manga/kaoru_mori_historical_textile_manga.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "1:1"
+      ],
+      "modes": [
+        "Color Cover",
+        "Documentary Monochrome"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Show the protagonist with a cultural counterpart amid period architecture and textiles.",
+        "identity_priority": [
+          "costume",
+          "gesture",
+          "setting"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Kaoru Mori documents Victorian parlors and Central Asian caravans with thread-by-thread accuracy. This card sustains her research obsession while exploring new households and ceremonies.\n",
+      "artist": "Kaoru Mori",
+      "movement": "Research-Driven Historical Manga",
+      "style_scope": "single-artist"
+    },
+    "kamome_shirahama_european_fantasy": {
+      "id": "kamome_shirahama_european_fantasy",
+      "group": "Manga",
+      "display_name": "Kamome Shirahama - European Fantasy Hybrid",
+      "file": "styles/manga/kamome_shirahama_european_fantasy.md",
+      "ratios": [
+        "2:3",
+        "4:5",
+        "1:1"
+      ],
+      "modes": [
+        "Ornamental Portrait",
+        "Decorative Tableau"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 3,
+        "layout_hint": "Stage the protagonist amid Art Nouveau framing with retainers or familiars at lower tiers.",
+        "identity_priority": [
+          "silhouette",
+          "costume",
+          "gesture"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Kamome Shirahama blends copperplate hatching with European fantasy couture, building worlds from ink alone. This card maintains her printmaking precision while conjuring new guilds and spellbooks.\n",
+      "artist": "Kamome Shirahama",
+      "movement": "European Fantasy Illustration",
+      "style_scope": "single-artist"
+    },
+    "clamp_prismatic_shoujo_seinen": {
+      "id": "clamp_prismatic_shoujo_seinen",
+      "group": "Manga",
+      "display_name": "CLAMP - Prismatic Elongation",
+      "file": "styles/manga/clamp_prismatic_shoujo_seinen.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Elongated Portrait",
+        "Decorative Spread"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Stack flowing protagonists with diagonal overlap and floral screentone breathing room.",
+        "identity_priority": [
+          "silhouette",
+          "elongation",
+          "costume"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "CLAMP stretches limbs, layers filigree, and blends shoujo sentiment with seinen drama. This card keeps the Copic gradients and screentone lace while inventing new storylines.\n",
+      "artist": "CLAMP",
+      "movement": "Prismatic Shoujo-Seinen Fusion",
+      "style_scope": "movement"
+    },
+    "akira_toriyama_dynamic_adventure": {
+      "id": "akira_toriyama_dynamic_adventure",
+      "group": "Manga",
+      "display_name": "Akira Toriyama - Dynamic Adventure",
+      "file": "styles/manga/akira_toriyama_dynamic_adventure.md",
+      "ratios": [
+        "3:4"
+      ],
+      "modes": [
+        "Power Portrait",
+        "Action Splash"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": true,
+        "max_subjects": 2,
+        "layout_hint": "Center the energetic lead at 70 percent height with minimal tech motifs orbiting the pose.",
+        "identity_priority": [
+          "silhouette",
+          "gesture",
+          "pattern"
+        ]
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Akira Toriyama inks angular anatomy, parallel armor stripes, and watercolor pops for jump-ready heroes. This card keeps that kinetic charm while avoiding Dragon Ball canon.\n",
+      "artist": "Akira Toriyama",
+      "movement": "Shonen Adventure Illustration",
+      "style_scope": "single-artist"
+    },
+    "ai_yazawa_fashion_illustration": {
+      "id": "ai_yazawa_fashion_illustration",
+      "group": "Manga",
+      "display_name": "Ai Yazawa - Fashion Illustration Drama",
+      "file": "styles/manga/ai_yazawa_fashion_illustration.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "4:5"
+      ],
+      "modes": [
+        "Color Fashion",
+        "Monochrome Fashion"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "multi_subject": {
+        "allowed": false
+      },
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Ai Yazawa sketches fashion idols with elongated necks, watercolor washes, and anti-anime restraint. This card insists on that editorial sophistication while exploring new wardrobe stories.\n",
+      "artist": "Ai Yazawa",
+      "movement": "Fashion Narrative Illustration",
+      "style_scope": "single-artist"
     },
     "the_new_porker_magazine_parody": {
       "id": "the_new_porker_magazine_parody",
@@ -5379,7 +6852,7 @@
       "about": "Siegel and Shuster defined the superhero silhouette: capes billowing, primary colors blazing, and bold mastheads screaming hope on cheap newsprint. We keep that fearless simplicity while drafting brand-new icons for a fresh “Nano Comics” universe.\n",
       "artist": "Jerry Siegel & Joe Shuster",
       "movement": "Golden Age Superhero Foundations",
-      "style_scope": "single-artist"
+      "style_scope": "collaboration"
     },
     "jack_cole_cartoon_comedy": {
       "id": "jack_cole_cartoon_comedy",
@@ -5554,6 +7027,469 @@
       "about": "Alex Raymond staged rocket-age opera with Art Deco anatomy, satin capes, and cliffhanger layouts. His brush lines were as sleek as his rocketships. We revive that pulp glamour with new planets, villains, and imperiled explorers.\n",
       "artist": "Alex Raymond",
       "movement": "Golden Age Pulp Adventure",
+      "style_scope": "single-artist"
+    },
+    "todd_lockwood_dragon_epic": {
+      "id": "todd_lockwood_dragon_epic",
+      "group": "Fantasy Illustration",
+      "display_name": "Todd Lockwood — Dragon Mastery Epic Fantasy",
+      "file": "styles/fantasy_illustration/todd_lockwood_dragon_epic.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Dragon Mastery"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Todd Lockwood paints dragons as plausible biology—wing tendons, gleaming scales, and knightly tack engineered to fly. His compositions are cinematic yet readable. We honor that naturalistic grandeur while introducing new flights, riders, and battlefield weather.\n",
+      "artist": "Todd Lockwood",
+      "movement": "Contemporary Dragon Illustration",
+      "style_scope": "single-artist"
+    },
+    "rowena_morrill_fantasy_vision": {
+      "id": "rowena_morrill_fantasy_vision",
+      "group": "Fantasy Illustration",
+      "display_name": "Rowena Morrill — Pioneering Female Fantasy Vision",
+      "file": "styles/fantasy_illustration/rowena_morrill_fantasy_vision.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "High-Gloss Empowerment"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Rowena Morrill fused airbrush gradients with chrome surfaces, spotlighting powerful women amid pulp sci-fantasy mashups. Her covers shimmer like vinyl sleeves. We carry that glamorous energy forward with new protagonists, creatures, and jewel-toned cities.\n",
+      "artist": "Rowena Morrill",
+      "movement": "Chromatic Romantic Fantasy",
+      "style_scope": "single-artist"
+    },
+    "michael_whelan_luminous_atmosphere": {
+      "id": "michael_whelan_luminous_atmosphere",
+      "group": "Fantasy Illustration",
+      "display_name": "Michael Whelan — Luminous Atmospheric Realism",
+      "file": "styles/fantasy_illustration/michael_whelan_luminous_atmosphere.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "16:9"
+      ],
+      "modes": [
+        "Luminous Character",
+        "Ethereal Cosmic Scene"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Michael Whelan paints light as a character—iridescent skies, translucent fabrics, and dreamlike architecture. His covers glow with quiet awe. We sustain that atmospheric lyricism while unveiling new worlds, apparitions, and color harmonies.\n",
+      "artist": "Michael Whelan",
+      "movement": "Luminous Sci-Fantasy Illustration",
+      "style_scope": "single-artist"
+    },
+    "larry_elmore_classic_fantasy": {
+      "id": "larry_elmore_classic_fantasy",
+      "group": "Fantasy Illustration",
+      "display_name": "Larry Elmore — Classic Gaming Fantasy",
+      "file": "styles/fantasy_illustration/larry_elmore_classic_fantasy.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Gaming Character"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Larry Elmore defined the friendly face of 1980s D&D—suncatcher dragons, approachable heroes, and Kentucky-warm lighting. His scenes invite you to roll initiative. We preserve that welcoming high-fantasy vibe while inventing fresh parties, mounts, and spell effects.\n",
+      "artist": "Larry Elmore",
+      "movement": "TSR Classic Fantasy Illustration",
+      "style_scope": "single-artist"
+    },
+    "keith_parkinson_epic_realism": {
+      "id": "keith_parkinson_epic_realism",
+      "group": "Fantasy Illustration",
+      "display_name": "Keith Parkinson — Epic Fantasy Realism",
+      "file": "styles/fantasy_illustration/keith_parkinson_epic_realism.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "16:9"
+      ],
+      "modes": [
+        "Epic Character",
+        "Fantasy Landscape"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Keith Parkinson balanced hulking heroes with matte-painted horizons, giving TSR worlds a believable scale. His palette glows without going neon, and every prop feels table-ready. MuseoMorph continues that grounded epic tone with new factions, relics, and weather systems.\n",
+      "artist": "Keith Parkinson",
+      "movement": "High Fantasy Realism",
+      "style_scope": "single-artist"
+    },
+    "jim_roslof_classic_dd_foundation": {
+      "id": "jim_roslof_classic_dd_foundation",
+      "group": "Fantasy Illustration",
+      "display_name": "Jim Roslof — Classic D&D Foundation",
+      "file": "styles/fantasy_illustration/jim_roslof_classic_dd_foundation.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "17:22"
+      ],
+      "modes": [
+        "Classic D&D Character",
+        "Traditional Gaming Scene"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Jim Roslof gave early D&D its grassroots charm—ink-wash lines, bold primaries, and parties framed for table play. His art feels like a weekend module come alive. We echo that approachable energy while drafting new dungeon crawls, mascots, and sidebar vignettes.\n",
+      "artist": "Jim Roslof",
+      "movement": "Classic D&D Module Illustration",
+      "style_scope": "single-artist"
+    },
+    "jeff_easley_dynamic_action": {
+      "id": "jeff_easley_dynamic_action",
+      "group": "Fantasy Illustration",
+      "display_name": "Jeff Easley — Dynamic Gaming Action",
+      "file": "styles/fantasy_illustration/jeff_easley_dynamic_action.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Atmospheric Action"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Jeff Easley blows wind through every cape—thunderbolt dragons, lightning logos, and heroes braced mid-swing. His oil surfaces crackle with TSR-era drama. MuseoMorph keeps that stormy choreography alive with new villains, spell effects, and crumbling set pieces.\n",
+      "artist": "Jeff Easley",
+      "movement": "High-Energy TSR Illustration",
+      "style_scope": "single-artist"
+    },
+    "frank_frazetta_barbarian_power": {
+      "id": "frank_frazetta_barbarian_power",
+      "group": "Fantasy Illustration",
+      "display_name": "Frank Frazetta — Barbarian Power",
+      "file": "styles/fantasy_illustration/frank_frazetta_barbarian_power.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "16:9"
+      ],
+      "modes": [
+        "Barbarian Power",
+        "Savage Fantasy Scene"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Frank Frazetta sculpted muscle and mist with palette knives—charging steeds, snarled hair, and volcanic backdrops. Each piece hits like a Heavy Metal gatefold. We keep that sweaty ferocity while inventing fresh warlords, beasts, and storm-lit citadels.\n",
+      "artist": "Frank Frazetta",
+      "movement": "Sword-and-Sorcery Pulp",
+      "style_scope": "single-artist"
+    },
+    "don_maitz_maritime_realism": {
+      "id": "don_maitz_maritime_realism",
+      "group": "Fantasy Illustration",
+      "display_name": "Don Maitz — Narrative Maritime Realism",
+      "file": "styles/fantasy_illustration/don_maitz_maritime_realism.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "16:9"
+      ],
+      "modes": [
+        "Adventure Portrait",
+        "Maritime Scene"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Don Maitz marries romantic oil technique with salt-stained authenticity—rigging diagrams, plein-air skies, and swaggering privateers. His canvas feels like a historical novel mid-climax. We keep that seaworthy realism while rotating in new crews, ports, and treasure myths.\n",
+      "artist": "Don Maitz",
+      "movement": "Maritime Adventure Illustration",
+      "style_scope": "single-artist"
+    },
+    "donato_giancola_classical_realism": {
+      "id": "donato_giancola_classical_realism",
+      "group": "Fantasy Illustration",
+      "display_name": "Donato Giancola — Classical Narrative Realism",
+      "file": "styles/fantasy_illustration/donato_giancola_classical_realism.md",
+      "ratios": [
+        "3:4"
+      ],
+      "modes": [
+        "Classical Narrative"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Donato Giancola pulls Tolkien legends through a Renaissance lens—layered oil glazes, life-cast armor, and Caravaggio lighting. The results feel canonical. MuseoMorph continues that museum-ready storytelling with fresh mythic tableaus and bespoke props.\n",
+      "artist": "Donato Giancola",
+      "movement": "Classical Narrative Fantasy",
+      "style_scope": "single-artist"
+    },
+    "clyde_caldwell_warm_fantasy": {
+      "id": "clyde_caldwell_warm_fantasy",
+      "group": "Fantasy Illustration",
+      "display_name": "Clyde Caldwell — Warm Fantasy Appeal",
+      "file": "styles/fantasy_illustration/clyde_caldwell_warm_fantasy.md",
+      "ratios": [
+        "2:3"
+      ],
+      "modes": [
+        "Warm Fantasy Character"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Clyde Caldwell bathes adventurers in sunset golds and satin capes, striking that sweet spot between pin-up and hero worship. His palette feels like a Ren Faire at golden hour. We retain that inviting warmth while cycling through new classes, familiars, and infernal foes.\n",
+      "artist": "Clyde Caldwell",
+      "movement": "TSR Warm Fantasy Illustration",
+      "style_scope": "single-artist"
+    },
+    "brom_gothic_dark_fantasy": {
+      "id": "brom_gothic_dark_fantasy",
+      "group": "Fantasy Illustration",
+      "display_name": "Brom — Gothic Dark Fantasy",
+      "file": "styles/fantasy_illustration/brom_gothic_dark_fantasy.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "16:9"
+      ],
+      "modes": [
+        "Gothic Character",
+        "Macabre Scene"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Brom blends tattoo-ink linework with oil glazes, conjuring witches, wasteland angels, and biomechanical beasts. The mood is always baroque, bruised, and beautiful. MuseoMorph keeps that ritualistic dread while crafting new sigils, species, and rusted cathedrals.\n",
+      "artist": "Gerald Brom",
+      "movement": "Dark Gothic Fantasy",
+      "style_scope": "single-artist"
+    },
+    "boris_vallejo_muscular_hyperrealism": {
+      "id": "boris_vallejo_muscular_hyperrealism",
+      "group": "Fantasy Illustration",
+      "display_name": "Boris Vallejo — Muscular Hyperrealism",
+      "file": "styles/fantasy_illustration/boris_vallejo_muscular_hyperrealism.md",
+      "ratios": [
+        "2:3",
+        "3:4",
+        "1:1"
+      ],
+      "modes": [
+        "Muscular Perfection",
+        "Hyperrealistic Fantasy"
+      ],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "no_watermarks",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {
+        "1": "Core Instruction & Likeness Mandate",
+        "2": "Canvas Strategy & Aspect Ratio Control",
+        "3": "Style Context & Material Authenticity",
+        "4": "Technical Method & Mark-Making",
+        "5": "Wardrobe, Props & Setting Conventions",
+        "6": "Safety & IP Constraints (Hard Rules)",
+        "7": "Composition & Lighting Patterns",
+        "8": "Typography & Text Integration (If Historically Present)"
+      },
+      "about": "Boris Vallejo airbrushed bodybuilders into myth—chrome highlights, oiled skin, and cosmic backdrops. His hyperreal figures feel sculpted more than painted. We continue that polished spectacle with new heroes, creatures, and neon nebulae.\n",
+      "artist": "Boris Vallejo",
+      "movement": "Airbrushed Heroic Fantasy",
       "style_scope": "single-artist"
     },
     "vincent_van_gogh": {
@@ -5777,555 +7713,150 @@
       "movement": "Norwegian Symbolist Expressionism",
       "style_scope": "single-artist"
     },
-    "rumiko_takahashi_romantic_manga": {
-      "id": "rumiko_takahashi_romantic_manga",
-      "group": "Manga",
-      "display_name": "Rumiko Takahashi - Romantic Comedy Dynamo",
-      "file": "styles/manga/rumiko_takahashi_romantic_manga.md",
+    "saul-bass-optimized": {
+      "id": "saul-bass-optimized",
+      "group": "Movie Posters",
+      "display_name": "Saul Bass — Kinetic Minimalism",
+      "file": "styles/experimental/saul_bass_optimized.md",
       "ratios": [
         "2:3",
-        "4:5",
-        "4:3"
+        "16:9"
       ],
-      "modes": [
-        "Romantic Cover",
-        "Dynamic Ensemble"
-      ],
+      "modes": [],
       "safety_profile": [
         "no_nudity",
         "no_gore",
         "no_logos",
-        "no_watermarks",
         "minors_modest",
         "gender_respect"
       ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 4,
-        "layout_hint": "Give the lead 60 percent of the frame with friends orbiting in comedic motion lines.",
-        "identity_priority": [
-          "silhouette",
-          "expression",
-          "gesture"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Rumiko Takahashi pairs slapstick kinetics with heartfelt romance, rendering big eyes, voluminous hair, and pastel washes. This card keeps that 1980s watercolor charm while inventing new cast lineups.\n",
-      "artist": "Rumiko Takahashi",
-      "movement": "Romantic Comedy Shonen Manga",
-      "style_scope": "single-artist"
+      "sections_index": {},
+      "about": "Saul Bass revolutionized film title design, transforming static credits into dynamic visual overtures. His minimalist aesthetic—bold geometric shapes, limited color palettes, and kinetic typography—created iconic imagery for Hitchcock, Preminger, and Scorsese.\n",
+      "artist": "Saul Bass"
     },
-    "riyoko_ikeda_historical_shojo": {
-      "id": "riyoko_ikeda_historical_shojo",
-      "group": "Manga",
-      "display_name": "Riyoko Ikeda - Revolutionary Shoujo Romance",
-      "file": "styles/manga/riyoko_ikeda_historical_shojo.md",
-      "ratios": [
-        "3:4"
-      ],
-      "modes": [
-        "Romantic Portrait",
-        "Historical Tableau"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Let two protagonists overlap within rose-laden emotion-scapes or Versailles interiors.",
-        "identity_priority": [
-          "expression",
-          "costume",
-          "gesture"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Riyoko Ikeda turns French revolution melodrama into cascading screentone roses and tear-bright eyes. This card safeguards that operatic intensity while chronicling new courts and rebellions.\n",
-      "artist": "Riyoko Ikeda",
-      "movement": "Year 24 Group Shoujo",
-      "style_scope": "single-artist"
-    },
-    "osamu_tezuka_showa_cinematic_manga": {
-      "id": "osamu_tezuka_showa_cinematic_manga",
-      "group": "Manga",
-      "display_name": "Osamu Tezuka - Showa Cinematic Humanism",
-      "file": "styles/manga/osamu_tezuka_showa_cinematic_manga.md",
-      "ratios": [
-        "4:5",
-        "2:3",
-        "1:1"
-      ],
-      "modes": [
-        "Character Study",
-        "Adventure Scene"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 3,
-        "layout_hint": "Center the star-system lead with supporting silhouettes sweeping along cinematic arcs.",
-        "identity_priority": [
-          "silhouette",
-          "expression",
-          "gesture"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Osamu Tezuka married Disney timing with postwar optimism, bathing big-eyed heroes in flat gouache color. This card keeps that hopeful cinema while introducing new archetypes and companions.\n",
-      "artist": "Osamu Tezuka",
-      "movement": "Showa Cinematic Manga",
-      "style_scope": "single-artist"
-    },
-    "naoki_urasawa_psychological_thriller": {
-      "id": "naoki_urasawa_psychological_thriller",
-      "group": "Manga",
-      "display_name": "Naoki Urasawa - Psychological Thriller Realism",
-      "file": "styles/manga/naoki_urasawa_psychological_thriller.md",
+    "saul-bass-minimal": {
+      "id": "saul-bass-minimal",
+      "group": "Movie Posters",
+      "display_name": "Saul Bass — Kinetic Minimalism",
+      "file": "styles/experimental/saul_bass_minimal.md",
       "ratios": [
         "2:3",
-        "4:5",
-        "3:2"
+        "16:9"
       ],
-      "modes": [
-        "Character Study",
-        "Investigative Scene"
-      ],
+      "modes": [],
       "safety_profile": [
         "no_nudity",
         "no_gore",
         "no_logos",
-        "no_watermarks",
         "minors_modest",
         "gender_respect"
       ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Frame a contemplative protagonist chest-up with period-authentic urban cues in the midground.",
-        "identity_priority": [
-          "expression",
-          "asymmetry",
-          "context"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Naoki Urasawa sketches ordinary faces with micro-expressions, asymmetry, and thriller tension. This card preserves his forensic realism while spinning new conspiracies.\n",
-      "artist": "Naoki Urasawa",
-      "movement": "Psychological Seinen Manga",
-      "style_scope": "single-artist"
+      "sections_index": {},
+      "about": "Saul Bass revolutionized film title design, transforming static credits into dynamic visual overtures. His minimalist aesthetic—bold geometric shapes, limited color palettes, and kinetic typography—created iconic imagery for Hitchcock, Preminger, and Scorsese. His philosophy: distill complexity into a single, powerful symbol.\n",
+      "artist": "Saul Bass"
     },
-    "masakazu_katsura_realistic_manga": {
-      "id": "masakazu_katsura_realistic_manga",
-      "group": "Manga",
-      "display_name": "Masakazu Katsura - Realist Youth Illustration",
-      "file": "styles/manga/masakazu_katsura_realistic_manga.md",
+    "renaissance_portrait_6c": {
+      "id": "renaissance_portrait_6c",
+      "group": "Renaissance Masters",
+      "display_name": "Renaissance Portrait - Sfumato Master",
+      "file": "styles/experimental/renaissance_portrait_6c.md",
       "ratios": [
         "3:4",
-        "2:3",
-        "4:3"
-      ],
-      "modes": [
-        "Youth Romance",
-        "Urban Portrait",
-        "Slice of Life"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Pair the lead with a partner or environment anchor inside relaxed 1990s fashion.",
-        "identity_priority": [
-          "silhouette",
-          "fashion",
-          "expression"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Masakazu Katsura paints 1990s youth with cinematic lighting, baggy silhouettes, and grounded anatomy. This card keeps his realist polish while writing new street-level dramas.\n",
-      "artist": "Masakazu Katsura",
-      "movement": "1990s Realist Youth Manga",
-      "style_scope": "single-artist"
-    },
-    "kentaro_miura_dark_fantasy_hyperdetail": {
-      "id": "kentaro_miura_dark_fantasy_hyperdetail",
-      "group": "Manga",
-      "display_name": "Kentaro Miura - Gothic Hyperdetail",
-      "file": "styles/manga/kentaro_miura_dark_fantasy_hyperdetail.md",
-      "ratios": [
-        "2:3",
-        "3:2",
+        "4:5",
         "1:1"
       ],
-      "modes": [
-        "Color Mode",
-        "Black and White Mode"
+      "modes": [],
+      "safety_profile": [],
+      "sections_index": {},
+      "about": "High Renaissance portrait technique featuring sfumato (smoke-like) transitions between tones and colors. Multiple thin transparent oil glazes over tinted gesso create inner luminosity. Atmospheric landscapes with aerial perspective recede into mysterious blue distances. Psychological depth through subtle expression and contemplative poses.\n",
+      "artist": "Leonardo da Vinci"
+    },
+    "midcentury_cocktail_6c": {
+      "id": "midcentury_cocktail_6c",
+      "group": "Modern Illustration",
+      "display_name": "Mid-Century Modern Cocktail Culture",
+      "file": "styles/experimental/midcentury_cocktail_6c.md",
+      "ratios": [
+        "1:1",
+        "4:3",
+        "16:9"
       ],
+      "modes": [],
+      "safety_profile": [],
+      "sections_index": {},
+      "about": "Flat graphic illustration inspired by mid-century modern aesthetics, tiki culture, and the perpetual cocktail party. Characterized by elongated stylized figures, crisp black outlines, solid unblended color fields, and UPA animation influence. Evokes 1950s-60s sophisticated leisure and retro-futurism.\n",
+      "artist": "Shag (Josh Agle)"
+    },
+    "drew-struzan-optimized": {
+      "id": "drew-struzan-optimized",
+      "group": "Movie Posters",
+      "display_name": "Drew Struzan — Blockbuster Montage",
+      "file": "styles/experimental/drew_struzan_optimized.md",
+      "ratios": [
+        "2:3",
+        "3:4"
+      ],
+      "modes": [],
       "safety_profile": [
         "no_nudity",
         "no_gore",
         "no_logos",
-        "no_watermarks",
         "minors_modest",
         "gender_respect"
       ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Set the armored lead against towering Gothic masonry with an optional adversary in shadow.",
-        "identity_priority": [
-          "armor",
-          "gesture",
-          "atmosphere"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Kentaro Miura carved every rivet, scar, and arch into Berserk's Gothic apocalypse. This card enforces that hyperdetail while forging new legends and cathedrals.\n",
-      "artist": "Kentaro Miura",
-      "movement": "Dark Fantasy Hyperrealism",
-      "style_scope": "single-artist"
+      "sections_index": {},
+      "about": "Drew Struzan defined Hollywood's blockbuster era through hand-painted posters for Star Wars, Indiana Jones, and Back to the Future. His signature technique marries airbrush ethereal softness with colored pencil precision, creating heroic portraits that feel both cinematic and warmly nostalgic.\n",
+      "artist": "Drew Struzan"
     },
-    "katsuhiro_otomo_cyberpunk_manga": {
-      "id": "katsuhiro_otomo_cyberpunk_manga",
-      "group": "Manga",
-      "display_name": "Katsuhiro Otomo - Dystopian Screentone Realism",
-      "file": "styles/manga/katsuhiro_otomo_cyberpunk_manga.md",
+    "drew-struzan-minimal": {
+      "id": "drew-struzan-minimal",
+      "group": "Movie Posters",
+      "display_name": "Drew Struzan — Blockbuster Montage",
+      "file": "styles/experimental/drew_struzan_minimal.md",
+      "ratios": [
+        "2:3",
+        "3:4"
+      ],
+      "modes": [],
+      "safety_profile": [
+        "no_nudity",
+        "no_gore",
+        "no_logos",
+        "minors_modest",
+        "gender_respect"
+      ],
+      "sections_index": {},
+      "about": "Drew Struzan defined the visual marketing of Hollywood's blockbuster era. His hand-painted posters for Star Wars, Indiana Jones, and Back to the Future blend photorealistic precision with painterly idealism, creating iconic images that feel both larger-than-life and warmly nostalgic.\n",
+      "artist": "Drew Struzan"
+    },
+    "blockbuster-montage-poster": {
+      "id": "blockbuster-montage-poster",
+      "group": "Movie Posters",
+      "display_name": "Blockbuster Montage — Heroic Cinema Illustration",
+      "file": "styles/experimental/blockbuster_montage_params.md",
       "ratios": [
         "2:3"
       ],
-      "modes": [
-        "Monochrome Screentone",
-        "Single-Hue Accent"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Anchor a power-stance lead at 70 percent height with a support silhouette in depth.",
-        "identity_priority": [
-          "silhouette",
-          "gesture",
-          "compressed-face-proportions"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Katsuhiro Otomo fused metabolist skylines, compressed faces, and halftone machinery into tense Akira-era covers. This card preserves the industrial realism while inventing new dystopian subjects and tech.\n",
-      "artist": "Katsuhiro Otomo",
-      "movement": "1980s Cyberpunk Manga",
-      "style_scope": "single-artist"
+      "modes": [],
+      "safety_profile": [],
+      "sections_index": {},
+      "artist": "Drew Struzan"
     },
-    "kaoru_mori_historical_textile_manga": {
-      "id": "kaoru_mori_historical_textile_manga",
-      "group": "Manga",
-      "display_name": "Kaoru Mori - Historical Textile Chronicle",
-      "file": "styles/manga/kaoru_mori_historical_textile_manga.md",
+    "blockbuster_montage_6c": {
+      "id": "blockbuster_montage_6c",
+      "group": "Movie Poster Illustration",
+      "display_name": "Blockbuster Movie Poster Montage",
+      "file": "styles/experimental/blockbuster_montage_6c.md",
       "ratios": [
         "2:3",
         "3:4",
         "1:1"
       ],
-      "modes": [
-        "Color Cover",
-        "Documentary Monochrome"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Show the protagonist with a cultural counterpart amid period architecture and textiles.",
-        "identity_priority": [
-          "costume",
-          "gesture",
-          "setting"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Kaoru Mori documents Victorian parlors and Central Asian caravans with thread-by-thread accuracy. This card sustains her research obsession while exploring new households and ceremonies.\n",
-      "artist": "Kaoru Mori",
-      "movement": "Research-Driven Historical Manga",
-      "style_scope": "single-artist"
-    },
-    "kamome_shirahama_european_fantasy": {
-      "id": "kamome_shirahama_european_fantasy",
-      "group": "Manga",
-      "display_name": "Kamome Shirahama - European Fantasy Hybrid",
-      "file": "styles/manga/kamome_shirahama_european_fantasy.md",
-      "ratios": [
-        "2:3",
-        "4:5",
-        "1:1"
-      ],
-      "modes": [
-        "Ornamental Portrait",
-        "Decorative Tableau"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 3,
-        "layout_hint": "Stage the protagonist amid Art Nouveau framing with retainers or familiars at lower tiers.",
-        "identity_priority": [
-          "silhouette",
-          "costume",
-          "gesture"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Kamome Shirahama blends copperplate hatching with European fantasy couture, building worlds from ink alone. This card maintains her printmaking precision while conjuring new guilds and spellbooks.\n",
-      "artist": "Kamome Shirahama",
-      "movement": "European Fantasy Illustration",
-      "style_scope": "single-artist"
-    },
-    "clamp_prismatic_shoujo_seinen": {
-      "id": "clamp_prismatic_shoujo_seinen",
-      "group": "Manga",
-      "display_name": "CLAMP - Prismatic Elongation",
-      "file": "styles/manga/clamp_prismatic_shoujo_seinen.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "Elongated Portrait",
-        "Decorative Spread"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Stack flowing protagonists with diagonal overlap and floral screentone breathing room.",
-        "identity_priority": [
-          "silhouette",
-          "elongation",
-          "costume"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "CLAMP stretches limbs, layers filigree, and blends shoujo sentiment with seinen drama. This card keeps the Copic gradients and screentone lace while inventing new storylines.\n",
-      "artist": "CLAMP",
-      "movement": "Prismatic Shoujo-Seinen Fusion",
-      "style_scope": "movement"
-    },
-    "akira_toriyama_dynamic_adventure": {
-      "id": "akira_toriyama_dynamic_adventure",
-      "group": "Manga",
-      "display_name": "Akira Toriyama - Dynamic Adventure",
-      "file": "styles/manga/akira_toriyama_dynamic_adventure.md",
-      "ratios": [
-        "3:4"
-      ],
-      "modes": [
-        "Power Portrait",
-        "Action Splash"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": true,
-        "max_subjects": 2,
-        "layout_hint": "Center the energetic lead at 70 percent height with minimal tech motifs orbiting the pose.",
-        "identity_priority": [
-          "silhouette",
-          "gesture",
-          "pattern"
-        ]
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Akira Toriyama inks angular anatomy, parallel armor stripes, and watercolor pops for jump-ready heroes. This card keeps that kinetic charm while avoiding Dragon Ball canon.\n",
-      "artist": "Akira Toriyama",
-      "movement": "Shonen Adventure Illustration",
-      "style_scope": "single-artist"
-    },
-    "ai_yazawa_fashion_illustration": {
-      "id": "ai_yazawa_fashion_illustration",
-      "group": "Manga",
-      "display_name": "Ai Yazawa - Fashion Illustration Drama",
-      "file": "styles/manga/ai_yazawa_fashion_illustration.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "4:5"
-      ],
-      "modes": [
-        "Color Fashion",
-        "Monochrome Fashion"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "multi_subject": {
-        "allowed": false
-      },
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Ai Yazawa sketches fashion idols with elongated necks, watercolor washes, and anti-anime restraint. This card insists on that editorial sophistication while exploring new wardrobe stories.\n",
-      "artist": "Ai Yazawa",
-      "movement": "Fashion Narrative Illustration",
-      "style_scope": "single-artist"
+      "modes": [],
+      "safety_profile": [],
+      "sections_index": {},
+      "about": "Classic blockbuster movie poster style featuring heroic central figures with dynamic montage backgrounds. Combines airbrush underpainting with colored pencil detail work for photorealistic faces and painterly energy. Iconic technique used for Star Wars, Indiana Jones, and countless 80s films.\n",
+      "artist": "Drew Struzan"
     },
     "sergio_toppi_ornamental": {
       "id": "sergio_toppi_ornamental",
@@ -6876,469 +8407,6 @@
       "about": "Frans Hals painted like a jazz solo—loaded brush, one-take bravado, and laughter still wet on the canvas. His Haarlem patrons appear mid-toast, mid-song, mid-life. MuseoMorph channels that bravura while inventing new revelers and tavern props.\n",
       "artist": "Frans Hals",
       "movement": "Haarlem Lively Portraiture",
-      "style_scope": "single-artist"
-    },
-    "todd_lockwood_dragon_epic": {
-      "id": "todd_lockwood_dragon_epic",
-      "group": "Fantasy Illustration",
-      "display_name": "Todd Lockwood — Dragon Mastery Epic Fantasy",
-      "file": "styles/fantasy_illustration/todd_lockwood_dragon_epic.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "Dragon Mastery"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Todd Lockwood paints dragons as plausible biology—wing tendons, gleaming scales, and knightly tack engineered to fly. His compositions are cinematic yet readable. We honor that naturalistic grandeur while introducing new flights, riders, and battlefield weather.\n",
-      "artist": "Todd Lockwood",
-      "movement": "Contemporary Dragon Illustration",
-      "style_scope": "single-artist"
-    },
-    "rowena_morrill_fantasy_vision": {
-      "id": "rowena_morrill_fantasy_vision",
-      "group": "Fantasy Illustration",
-      "display_name": "Rowena Morrill — Pioneering Female Fantasy Vision",
-      "file": "styles/fantasy_illustration/rowena_morrill_fantasy_vision.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "High-Gloss Empowerment"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Rowena Morrill fused airbrush gradients with chrome surfaces, spotlighting powerful women amid pulp sci-fantasy mashups. Her covers shimmer like vinyl sleeves. We carry that glamorous energy forward with new protagonists, creatures, and jewel-toned cities.\n",
-      "artist": "Rowena Morrill",
-      "movement": "Chromatic Romantic Fantasy",
-      "style_scope": "single-artist"
-    },
-    "michael_whelan_luminous_atmosphere": {
-      "id": "michael_whelan_luminous_atmosphere",
-      "group": "Fantasy Illustration",
-      "display_name": "Michael Whelan — Luminous Atmospheric Realism",
-      "file": "styles/fantasy_illustration/michael_whelan_luminous_atmosphere.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "16:9"
-      ],
-      "modes": [
-        "Luminous Character",
-        "Ethereal Cosmic Scene"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Michael Whelan paints light as a character—iridescent skies, translucent fabrics, and dreamlike architecture. His covers glow with quiet awe. We sustain that atmospheric lyricism while unveiling new worlds, apparitions, and color harmonies.\n",
-      "artist": "Michael Whelan",
-      "movement": "Luminous Sci-Fantasy Illustration",
-      "style_scope": "single-artist"
-    },
-    "larry_elmore_classic_fantasy": {
-      "id": "larry_elmore_classic_fantasy",
-      "group": "Fantasy Illustration",
-      "display_name": "Larry Elmore — Classic Gaming Fantasy",
-      "file": "styles/fantasy_illustration/larry_elmore_classic_fantasy.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "Gaming Character"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Larry Elmore defined the friendly face of 1980s D&D—suncatcher dragons, approachable heroes, and Kentucky-warm lighting. His scenes invite you to roll initiative. We preserve that welcoming high-fantasy vibe while inventing fresh parties, mounts, and spell effects.\n",
-      "artist": "Larry Elmore",
-      "movement": "TSR Classic Fantasy Illustration",
-      "style_scope": "single-artist"
-    },
-    "keith_parkinson_epic_realism": {
-      "id": "keith_parkinson_epic_realism",
-      "group": "Fantasy Illustration",
-      "display_name": "Keith Parkinson — Epic Fantasy Realism",
-      "file": "styles/fantasy_illustration/keith_parkinson_epic_realism.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "16:9"
-      ],
-      "modes": [
-        "Epic Character",
-        "Fantasy Landscape"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Keith Parkinson balanced hulking heroes with matte-painted horizons, giving TSR worlds a believable scale. His palette glows without going neon, and every prop feels table-ready. MuseoMorph continues that grounded epic tone with new factions, relics, and weather systems.\n",
-      "artist": "Keith Parkinson",
-      "movement": "High Fantasy Realism",
-      "style_scope": "single-artist"
-    },
-    "jim_roslof_classic_dd_foundation": {
-      "id": "jim_roslof_classic_dd_foundation",
-      "group": "Fantasy Illustration",
-      "display_name": "Jim Roslof — Classic D&D Foundation",
-      "file": "styles/fantasy_illustration/jim_roslof_classic_dd_foundation.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "17:22"
-      ],
-      "modes": [
-        "Classic D&D Character",
-        "Traditional Gaming Scene"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Jim Roslof gave early D&D its grassroots charm—ink-wash lines, bold primaries, and parties framed for table play. His art feels like a weekend module come alive. We echo that approachable energy while drafting new dungeon crawls, mascots, and sidebar vignettes.\n",
-      "artist": "Jim Roslof",
-      "movement": "Classic D&D Module Illustration",
-      "style_scope": "single-artist"
-    },
-    "jeff_easley_dynamic_action": {
-      "id": "jeff_easley_dynamic_action",
-      "group": "Fantasy Illustration",
-      "display_name": "Jeff Easley — Dynamic Gaming Action",
-      "file": "styles/fantasy_illustration/jeff_easley_dynamic_action.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "Atmospheric Action"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Jeff Easley blows wind through every cape—thunderbolt dragons, lightning logos, and heroes braced mid-swing. His oil surfaces crackle with TSR-era drama. MuseoMorph keeps that stormy choreography alive with new villains, spell effects, and crumbling set pieces.\n",
-      "artist": "Jeff Easley",
-      "movement": "High-Energy TSR Illustration",
-      "style_scope": "single-artist"
-    },
-    "frank_frazetta_barbarian_power": {
-      "id": "frank_frazetta_barbarian_power",
-      "group": "Fantasy Illustration",
-      "display_name": "Frank Frazetta — Barbarian Power",
-      "file": "styles/fantasy_illustration/frank_frazetta_barbarian_power.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "16:9"
-      ],
-      "modes": [
-        "Barbarian Power",
-        "Savage Fantasy Scene"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Frank Frazetta sculpted muscle and mist with palette knives—charging steeds, snarled hair, and volcanic backdrops. Each piece hits like a Heavy Metal gatefold. We keep that sweaty ferocity while inventing fresh warlords, beasts, and storm-lit citadels.\n",
-      "artist": "Frank Frazetta",
-      "movement": "Sword-and-Sorcery Pulp",
-      "style_scope": "single-artist"
-    },
-    "donato_giancola_classical_realism": {
-      "id": "donato_giancola_classical_realism",
-      "group": "Fantasy Illustration",
-      "display_name": "Donato Giancola — Classical Narrative Realism",
-      "file": "styles/fantasy_illustration/donato_giancola_classical_realism.md",
-      "ratios": [
-        "3:4"
-      ],
-      "modes": [
-        "Classical Narrative"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Donato Giancola pulls Tolkien legends through a Renaissance lens—layered oil glazes, life-cast armor, and Caravaggio lighting. The results feel canonical. MuseoMorph continues that museum-ready storytelling with fresh mythic tableaus and bespoke props.\n",
-      "artist": "Donato Giancola",
-      "movement": "Classical Narrative Fantasy",
-      "style_scope": "single-artist"
-    },
-    "don_maitz_maritime_realism": {
-      "id": "don_maitz_maritime_realism",
-      "group": "Fantasy Illustration",
-      "display_name": "Don Maitz — Narrative Maritime Realism",
-      "file": "styles/fantasy_illustration/don_maitz_maritime_realism.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "16:9"
-      ],
-      "modes": [
-        "Adventure Portrait",
-        "Maritime Scene"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Don Maitz marries romantic oil technique with salt-stained authenticity—rigging diagrams, plein-air skies, and swaggering privateers. His canvas feels like a historical novel mid-climax. We keep that seaworthy realism while rotating in new crews, ports, and treasure myths.\n",
-      "artist": "Don Maitz",
-      "movement": "Maritime Adventure Illustration",
-      "style_scope": "single-artist"
-    },
-    "clyde_caldwell_warm_fantasy": {
-      "id": "clyde_caldwell_warm_fantasy",
-      "group": "Fantasy Illustration",
-      "display_name": "Clyde Caldwell — Warm Fantasy Appeal",
-      "file": "styles/fantasy_illustration/clyde_caldwell_warm_fantasy.md",
-      "ratios": [
-        "2:3"
-      ],
-      "modes": [
-        "Warm Fantasy Character"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Clyde Caldwell bathes adventurers in sunset golds and satin capes, striking that sweet spot between pin-up and hero worship. His palette feels like a Ren Faire at golden hour. We retain that inviting warmth while cycling through new classes, familiars, and infernal foes.\n",
-      "artist": "Clyde Caldwell",
-      "movement": "TSR Warm Fantasy Illustration",
-      "style_scope": "single-artist"
-    },
-    "brom_gothic_dark_fantasy": {
-      "id": "brom_gothic_dark_fantasy",
-      "group": "Fantasy Illustration",
-      "display_name": "Brom — Gothic Dark Fantasy",
-      "file": "styles/fantasy_illustration/brom_gothic_dark_fantasy.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "16:9"
-      ],
-      "modes": [
-        "Gothic Character",
-        "Macabre Scene"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Brom blends tattoo-ink linework with oil glazes, conjuring witches, wasteland angels, and biomechanical beasts. The mood is always baroque, bruised, and beautiful. MuseoMorph keeps that ritualistic dread while crafting new sigils, species, and rusted cathedrals.\n",
-      "artist": "Gerald Brom",
-      "movement": "Dark Gothic Fantasy",
-      "style_scope": "single-artist"
-    },
-    "boris_vallejo_muscular_hyperrealism": {
-      "id": "boris_vallejo_muscular_hyperrealism",
-      "group": "Fantasy Illustration",
-      "display_name": "Boris Vallejo — Muscular Hyperrealism",
-      "file": "styles/fantasy_illustration/boris_vallejo_muscular_hyperrealism.md",
-      "ratios": [
-        "2:3",
-        "3:4",
-        "1:1"
-      ],
-      "modes": [
-        "Muscular Perfection",
-        "Hyperrealistic Fantasy"
-      ],
-      "safety_profile": [
-        "no_nudity",
-        "no_gore",
-        "no_logos",
-        "no_watermarks",
-        "minors_modest",
-        "gender_respect"
-      ],
-      "sections_index": {
-        "1": "Core Instruction & Likeness Mandate",
-        "2": "Canvas Strategy & Aspect Ratio Control",
-        "3": "Style Context & Material Authenticity",
-        "4": "Technical Method & Mark-Making",
-        "5": "Wardrobe, Props & Setting Conventions",
-        "6": "Safety & IP Constraints (Hard Rules)",
-        "7": "Composition & Lighting Patterns",
-        "8": "Typography & Text Integration (If Historically Present)"
-      },
-      "about": "Boris Vallejo airbrushed bodybuilders into myth—chrome highlights, oiled skin, and cosmic backdrops. His hyperreal figures feel sculpted more than painted. We continue that polished spectacle with new heroes, creatures, and neon nebulae.\n",
-      "artist": "Boris Vallejo",
-      "movement": "Airbrushed Heroic Fantasy",
       "style_scope": "single-artist"
     },
     "yoshiyuki_sadamoto_precision": {

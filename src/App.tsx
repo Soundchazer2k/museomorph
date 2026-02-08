@@ -1,7 +1,8 @@
-import { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
+import { Fragment, useCallback, useEffect, useMemo, useState, createContext, useContext } from 'react';
 import type { DragEvent, Dispatch, SetStateAction } from 'react';
 import './App.css';
 import { ApiKeyModal } from './components/ApiKeyModal';
+import { StyleImporterModal } from './components/StyleImporterModal';
 import { loadNanoBananaApiKey } from './lib/nanobanana/apiKey';
 import { generateArtwork } from './lib/nanobanana/client';
 import { chooseNanoBananaRatio } from './lib/nanobanana/ratios';
@@ -9,6 +10,8 @@ import type { RatioDecision } from './lib/nanobanana/ratios';
 import { buildPrompt } from './lib/prompt/buildPrompt';
 import type { ParsedStyleMarkdown, ManifestStyleEntry as PromptManifestStyle } from './lib/prompt/types';
 import { parseStyleMarkdown as parsePromptMarkdown } from './lib/prompt/parseStyle';
+import { useRecentStyles, type RecentStyleEntry } from './hooks/useRecentStyles';
+import { useFavorites } from './hooks/useFavorites';
 
 type ManifestCollection = { id: string; styles: string[] };
 
@@ -33,6 +36,37 @@ type Manifest = {
 };
 
 const HERO_IMAGE_FALLBACK = 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810"%3E%3Crect width="1440" height="810" fill="%231f1f1f"/%3E%3Ctext x="50%25" y="50%25" dominant-baseline="middle" text-anchor="middle" fill="%23f6f2eb" font-family="Georgia, serif" font-size="42"%3EMuseoMorph Gallery%3C/text%3E%3C/svg%3E';
+
+// Context for favorites
+type FavoritesContextType = {
+  favorites: Set<string>;
+  toggleFavorite: (styleId: string) => void;
+  isFavorite: (styleId: string) => boolean;
+};
+const FavoritesContext = createContext<FavoritesContextType | null>(null);
+
+function useFavoritesContext() {
+  const context = useContext(FavoritesContext);
+  if (!context) {
+    throw new Error('useFavoritesContext must be used within FavoritesContext.Provider');
+  }
+  return context;
+}
+
+// Context for recent styles
+type RecentStylesContextType = {
+  recentStyles: RecentStyleEntry[];
+  addRecentStyle: (entry: Omit<RecentStyleEntry, 'timestamp'>) => void;
+};
+const RecentStylesContext = createContext<RecentStylesContextType | null>(null);
+
+function useRecentStylesContext() {
+  const context = useContext(RecentStylesContext);
+  if (!context) {
+    throw new Error('useRecentStylesContext must be used within RecentStylesContext.Provider');
+  }
+  return context;
+}
 
 const HERO_IMAGE_FILES = ['hero_1.png', 'hero_2.png', 'hero_3.png', 'hero_4.png', 'hero_5.png'];
 
@@ -223,13 +257,19 @@ export default function App() {
   const { route, navigate } = useMuseoRoute();
   const [apiKey, setApiKey] = useState<string | null>(null);
   const [apiKeyModalOpen, setApiKeyModalOpen] = useState(false);
+  const [styleImporterModalOpen, setStyleImporterModalOpen] = useState(false);
   const [apiKeyLoaded, setApiKeyLoaded] = useState(false);
   const [theme, setTheme] = useState(() => {
-    if (typeof window === 'undefined') return 'light';
+    if (typeof window === 'undefined') return 'dark';
     const stored = window.localStorage.getItem('museomorph-theme');
     if (stored === 'light' || stored === 'dark') return stored;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    // Default to dark for gallery aesthetic, unless user explicitly prefers light
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   });
+
+  // Favorites and recent styles hooks
+  const { favorites, toggleFavorite, isFavorite } = useFavorites();
+  const { recentStyles, addRecentStyle } = useRecentStyles();
 
   useEffect(() => {
     loadNanoBananaApiKey()
@@ -272,25 +312,34 @@ export default function App() {
   }, [apiKey, apiKeyLoaded, error, loading, manifest, navigate, route]);
 
   return (
-    <div className="app-shell">
-      <MuseumNav
-        onNavigate={navigate}
-        theme={theme}
-        onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-        onRequestApiKeyModal={() => setApiKeyModalOpen(true)}
-        hasApiKey={Boolean(apiKey)}
-        apiKeyLoaded={apiKeyLoaded}
-      />
-      <main className="app-main" role="main">
-        {content}
-      </main>
-      <MuseumFooter />
-      <ApiKeyModal
-        open={apiKeyModalOpen}
-        onClose={() => setApiKeyModalOpen(false)}
-        onKeySaved={(key) => setApiKey(key)}
-      />
-    </div>
+    <FavoritesContext.Provider value={{ favorites, toggleFavorite, isFavorite }}>
+      <RecentStylesContext.Provider value={{ recentStyles, addRecentStyle }}>
+        <div className="app-shell">
+          <MuseumNav
+            onNavigate={navigate}
+            theme={theme}
+            onToggleTheme={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onRequestApiKeyModal={() => setApiKeyModalOpen(true)}
+            hasApiKey={Boolean(apiKey)}
+            apiKeyLoaded={apiKeyLoaded}
+            onRequestStyleImporterModal={() => setStyleImporterModalOpen(true)}
+          />
+          <main className="app-main" role="main">
+            {content}
+          </main>
+          <MuseumFooter />
+          <ApiKeyModal
+            open={apiKeyModalOpen}
+            onClose={() => setApiKeyModalOpen(false)}
+            onKeySaved={(key) => setApiKey(key)}
+          />
+          <StyleImporterModal
+            open={styleImporterModalOpen}
+            onClose={() => setStyleImporterModalOpen(false)}
+          />
+        </div>
+      </RecentStylesContext.Provider>
+    </FavoritesContext.Provider>
   );
 }
 
@@ -301,6 +350,7 @@ function MuseumNav({
   onRequestApiKeyModal,
   hasApiKey,
   apiKeyLoaded,
+  onRequestStyleImporterModal,
 }: {
   onNavigate: (to: string) => void;
   theme: string;
@@ -308,6 +358,7 @@ function MuseumNav({
   onRequestApiKeyModal: () => void;
   hasApiKey: boolean;
   apiKeyLoaded: boolean;
+  onRequestStyleImporterModal: () => void;
 }) {
   return (
     <header className="museum-nav">
@@ -327,10 +378,16 @@ function MuseumNav({
         <span className="brand-sub">AI Art Interpretation Lab</span>
       </div>
       <nav aria-label="Primary" className="nav-links">
-        <button type="button" onClick={() => onNavigate('/')}>Collections</button>
-        <a href="/docs/PRD.md" target="_blank" rel="noreferrer">PRD</a>
-        <a href="/docs/ratio_policy.md" target="_blank" rel="noreferrer">Ratio Policy</a>
+        <button type="button" onClick={() => onNavigate('/')}>Gallery</button>
       </nav>
+      <button
+        type="button"
+        className="nav-secondary"
+        onClick={onRequestStyleImporterModal}
+        disabled={!apiKeyLoaded}
+      >
+        Import Styles
+      </button>
       <button
         type="button"
         className="nav-secondary"
@@ -345,7 +402,10 @@ function MuseumNav({
         onClick={onToggleTheme}
         aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
       >
-        {theme === 'dark' ? '☀️' : '🌙'}
+        <span aria-hidden="true" className="theme-toggle__icon">
+          {theme === 'dark' ? '☾' : '☀'}
+        </span>
+        <span className="theme-toggle__label">{theme === 'dark' ? 'Night' : 'Day'}</span>
       </button>
       <button
         type="button"
@@ -397,6 +457,8 @@ function HomeView({ manifest, onNavigate }: { manifest: Manifest; onNavigate: (t
   const totalStyles = manifest.collections.reduce((acc, collection) => acc + collection.styles.length, 0);
   const [query, setQuery] = useState('');
   const normalizedQuery = query.trim().toLowerCase();
+  const { recentStyles } = useRecentStylesContext();
+  const { favorites } = useFavoritesContext();
 
   const heroSlides = useMemo(() => {
     return HERO_IMAGE_FILES.map((file) => resolveWithBase(`hero/${file}`));
@@ -411,12 +473,28 @@ function HomeView({ manifest, onNavigate }: { manifest: Manifest; onNavigate: (t
         style.artist ?? '',
         style.movement ?? '',
         style.about ?? '',
+        // Include ratios in search
+        ...style.ratios,
       ]
         .join(' ')
         .toLowerCase();
       return haystack.includes(normalizedQuery);
     });
   }, [manifest.styles, normalizedQuery]);
+
+  // Get favorite styles as StyleEntry objects
+  const favoriteStyles = useMemo(() => {
+    return Array.from(favorites)
+      .map((id) => manifest.styles[id])
+      .filter((style): style is StyleEntry => Boolean(style));
+  }, [favorites, manifest.styles]);
+
+  // Get recent styles as StyleEntry objects
+  const recentStyleEntries = useMemo(() => {
+    return recentStyles
+      .map((recent) => manifest.styles[recent.id])
+      .filter((style): style is StyleEntry => Boolean(style));
+  }, [recentStyles, manifest.styles]);
 
   return (
     <Fragment>
@@ -450,7 +528,7 @@ function HomeView({ manifest, onNavigate }: { manifest: Manifest; onNavigate: (t
             <p>
               {searchResults.length === 0
                 ? 'No styles matched your query. Try a different name or movement.'
-                : `${searchResults.length} style${searchResults.length === 1 ? '' : 's'} mentioning “${query.trim()}”.`}
+                : `${searchResults.length} style${searchResults.length === 1 ? '' : 's'} mentioning "${query.trim()}".`}
             </p>
           </header>
           {searchResults.length > 0 && (
@@ -460,6 +538,43 @@ function HomeView({ manifest, onNavigate }: { manifest: Manifest; onNavigate: (t
               ))}
             </div>
           )}
+        </section>
+      )}
+
+      {/* Favorites Section */}
+      {favoriteStyles.length > 0 && (
+        <section className="favorites-section" aria-labelledby="favorites-heading">
+          <div className="gallery-heading">
+            <h2 id="favorites-heading">
+              <span className="favorites-star" aria-hidden="true">★</span>
+              {' '}Your Favorites
+            </h2>
+            <p>{favoriteStyles.length} style{favoriteStyles.length === 1 ? '' : 's'} you've saved for quick access.</p>
+          </div>
+          <div className="horizontal-scroll-container">
+            <div className="horizontal-scroll">
+              {favoriteStyles.map((style) => (
+                <StyleCard key={style.id} style={style} onNavigate={onNavigate} compact />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Recent Styles Section */}
+      {recentStyleEntries.length > 0 && (
+        <section className="recent-styles-section" aria-labelledby="recent-heading">
+          <div className="gallery-heading">
+            <h2 id="recent-heading">Recently Viewed</h2>
+            <p>Pick up where you left off.</p>
+          </div>
+          <div className="horizontal-scroll-container">
+            <div className="horizontal-scroll">
+              {recentStyleEntries.map((style) => (
+                <StyleCard key={style.id} style={style} onNavigate={onNavigate} compact />
+              ))}
+            </div>
+          </div>
         </section>
       )}
 
@@ -519,12 +634,13 @@ function Hero({
           ))
         )}
         <div className="hero-visual__overlay" />
+        <div className="hero-visual__vignette" />
       </div>
       <div className="hero-copy">
-        <p className="hero-eyebrow">Playful Art Lab · Museum Grade</p>
-        <h1>Curate new works without losing the artist’s fingerprint.</h1>
+        <p className="hero-eyebrow">AI Art Interpretation Lab</p>
+        <h1>Transform portraits into museum-worthy masterpieces.</h1>
         <p>
-          MuseoMorph orchestrates detailed, renderer-agnostic prompt frameworks so every generation feels like it stepped from a curated exhibition—no generic filter sheen, no flattened history.
+          Every style captures an artist's authentic fingerprint—no generic filters, no flattened history.
         </p>
         <div className="hero-actions">
           <button
@@ -537,20 +653,15 @@ function Hero({
               });
             }}
           >
-            Start exploring
-          </button>
-          <button
-            type="button"
-            className="secondary"
-            onClick={() => window.open('/docs/Universal_Prompt_Framework_v4.2.md', '_blank', 'noopener')}
-          >
-            View framework canon
+            Explore the gallery
           </button>
         </div>
       </div>
       <div className="hero-meta" aria-hidden="true">
-        <div className="hero-meta__badge">{styleCount} styles curated</div>
-        <div className="hero-meta__caption">Ratios, modes, and safety guardrails tailored to each artist.</div>
+        <div className="hero-meta__badge">{styleCount} curated styles</div>
+      </div>
+      <div className="hero-scroll-indicator" aria-hidden="true">
+        <span className="scroll-arrow">↓</span>
       </div>
     </section>
   );
@@ -659,10 +770,34 @@ function CollectionView({
   );
 }
 
-function StyleCard({ style, onNavigate }: { style: StyleEntry; onNavigate: (to: string) => void }) {
+function StyleCard({
+  style,
+  onNavigate,
+  compact = false
+}: {
+  style: StyleEntry;
+  onNavigate: (to: string) => void;
+  compact?: boolean;
+}) {
+  const { isFavorite, toggleFavorite } = useFavoritesContext();
+  const favorite = isFavorite(style.id);
+
+  const handleFavoriteClick = (evt: React.MouseEvent) => {
+    evt.stopPropagation();
+    toggleFavorite(style.id);
+  };
+
+  const handleFavoriteKeyDown = (evt: React.KeyboardEvent) => {
+    if (evt.key === 'Enter' || evt.key === ' ') {
+      evt.stopPropagation();
+      evt.preventDefault();
+      toggleFavorite(style.id);
+    }
+  };
+
   return (
     <article
-      className="style-card"
+      className={`style-card${compact ? ' style-card--compact' : ''}`}
       role="button"
       tabIndex={0}
       onClick={() => onNavigate(`/styles/${encodeURIComponent(style.id)}`)}
@@ -673,29 +808,46 @@ function StyleCard({ style, onNavigate }: { style: StyleEntry; onNavigate: (to: 
         }
       }}
     >
+      <button
+        type="button"
+        className={`style-card__favorite${favorite ? ' style-card__favorite--active' : ''}`}
+        onClick={handleFavoriteClick}
+        onKeyDown={handleFavoriteKeyDown}
+        aria-label={favorite ? `Remove ${style.display_name} from favorites` : `Add ${style.display_name} to favorites`}
+        aria-pressed={favorite}
+      >
+        {favorite ? '★' : '☆'}
+      </button>
       <div className="style-card__header">
         <h3>{style.display_name}</h3>
         <span className="style-group">{style.group}</span>
       </div>
-      {style.about && <p className="style-about">{style.about}</p>}
-      <div className="style-meta">
-        <div>
-          <span className="meta-label">Ratios</span>
-          <div className="meta-chips">
-            {style.ratios.slice(0, 3).map((ratio) => (
-              <span key={ratio} className="chip">{ratio}</span>
-            ))}
+      {!compact && style.about && <p className="style-about">{style.about}</p>}
+      {!compact && (
+        <div className="style-meta">
+          <div>
+            <span className="meta-label">Ratios</span>
+            <div className="meta-chips">
+              {style.ratios.slice(0, 3).map((ratio) => (
+                <span key={ratio} className="chip">{ratio}</span>
+              ))}
+            </div>
+          </div>
+          <div>
+            <span className="meta-label">Modes</span>
+            <div className="meta-chips">
+              {style.modes.map((mode) => (
+                <span key={mode} className="chip chip--subtle">{mode}</span>
+              ))}
+            </div>
           </div>
         </div>
-        <div>
-          <span className="meta-label">Modes</span>
-          <div className="meta-chips">
-            {style.modes.map((mode) => (
-              <span key={mode} className="chip chip--subtle">{mode}</span>
-            ))}
-          </div>
+      )}
+      {compact && (
+        <div className="style-card__compact-meta">
+          {style.artist && <span className="style-artist">{style.artist}</span>}
         </div>
-      </div>
+      )}
       <span className="style-link" aria-hidden="true">View style →</span>
     </article>
   );
@@ -717,6 +869,8 @@ function StyleView({
   onRequestApiKeyModal: () => void;
 }) {
   const style = manifest.styles[styleId];
+  const { addRecentStyle } = useRecentStylesContext();
+  const { isFavorite, toggleFavorite } = useFavoritesContext();
 
   const [sections, setSections] = useState<MarkdownSection[] | null>(null);
   const [loading, setLoading] = useState(true);
@@ -726,6 +880,17 @@ function StyleView({
   const [selectedMode, setSelectedMode] = useState<string>('');
   const [creativeAddOn, setCreativeAddOn] = useState('');
   const [parsedMarkdown, setParsedMarkdown] = useState<ParsedStyleMarkdown | null>(null);
+
+  // Add to recent styles when viewing
+  useEffect(() => {
+    if (style) {
+      addRecentStyle({
+        id: style.id,
+        displayName: style.display_name,
+        group: style.group,
+      });
+    }
+  }, [style, addRecentStyle]);
 
   useEffect(() => {
     if (!style) return;
@@ -794,17 +959,32 @@ function StyleView({
           </figure>
           <div className="style-hero__copy">
             <p className="style-eyebrow">{style.group}</p>
-            <h1>{style.display_name}</h1>
+            <div className="style-hero__title-row">
+              <h1>{style.display_name}</h1>
+              <button
+                type="button"
+                className={`style-detail__favorite${isFavorite(style.id) ? ' style-detail__favorite--active' : ''}`}
+                onClick={() => toggleFavorite(style.id)}
+                aria-label={isFavorite(style.id) ? 'Remove from favorites' : 'Add to favorites'}
+                aria-pressed={isFavorite(style.id)}
+              >
+                {isFavorite(style.id) ? '★ Favorited' : '☆ Add to favorites'}
+              </button>
+            </div>
             <StyleMetaSummary style={style} />
             {style.about && <p className="style-detail__about">{style.about}</p>}
-            <div className="style-hours">
+            <div className="style-infobar">
               <div>
-                <span className="hours-label">Open hours</span>
-                <span>Thurs - Mon · 10—5pm</span>
+                <span className="style-infobar__label">Ratios</span>
+                <strong>{style.ratios.length}</strong>
               </div>
               <div>
-                <span className="hours-label">Today’s balance</span>
-                <span>5 of 5</span>
+                <span className="style-infobar__label">Modes</span>
+                <strong>{style.modes.length}</strong>
+              </div>
+              <div>
+                <span className="style-infobar__label">Subjects</span>
+                <strong>{style.multi_subject?.allowed ? `Up to ${style.multi_subject?.max_subjects ?? 3}` : 'Single'}</strong>
               </div>
             </div>
           </div>
@@ -871,6 +1051,96 @@ function StyleView({
 );
 }
 
+function RatioTileGroup({
+  ratios,
+  selectedRatio,
+  onChange,
+}: {
+  ratios: string[];
+  selectedRatio: string;
+  onChange: (ratio: string) => void;
+}) {
+  return (
+    <div className="ratio-grid">
+      {ratios.map((ratio) => {
+        const meta = describeRatio(ratio);
+        const active = selectedRatio === ratio;
+        return (
+          <button
+            key={ratio}
+            type="button"
+            className={`ratio-tile${active ? ' ratio-tile--active' : ''}`}
+            onClick={() => onChange(ratio)}
+            aria-pressed={active}
+          >
+            <span className="ratio-tile__ratio">{ratio}</span>
+            <span className="ratio-tile__meta">{meta.orientation}</span>
+            {meta.resolution && <span className="ratio-tile__resolution">{meta.resolution}</span>}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function ModePills({
+  modes,
+  selectedMode,
+  onChange,
+}: {
+  modes: string[];
+  selectedMode: string;
+  onChange: (mode: string) => void;
+}) {
+  return (
+    <div className="mode-pills">
+      {modes.map((mode) => {
+        const active = selectedMode === mode;
+        return (
+          <button
+            key={mode}
+            type="button"
+            className={`mode-pill${active ? ' mode-pill--active' : ''}`}
+            onClick={() => onChange(mode)}
+            aria-pressed={active}
+          >
+            {mode}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function describeRatio(ratio: string): { orientation: string; resolution?: string } {
+  try {
+    const decision = chooseNanoBananaRatio(ratio);
+    const orientation =
+      decision.orientation === 'portrait'
+        ? 'Portrait'
+        : decision.orientation === 'landscape'
+        ? 'Landscape'
+        : 'Square';
+    const resolution = `${decision.resolution[0]}×${decision.resolution[1]}`;
+    return { orientation, resolution };
+  } catch {
+    return { orientation: 'Custom' };
+  }
+}
+
+function makeUploadKey(file: File, index: number) {
+  return `${file.name}-${file.size}-${file.lastModified}-${index}`;
+}
+
+function formatFileSize(size: number) {
+  if (size >= 1024 * 1024) {
+    return `${(size / (1024 * 1024)).toFixed(1)} MB`;
+  }
+  if (size >= 1024) {
+    return `${(size / 1024).toFixed(1)} KB`;
+  }
+  return `${size} B`;
+}
 function StyleMetaSummary({ style }: { style: StyleEntry }) {
   if (!style.artist && !style.movement) return null;
   return (
@@ -1018,6 +1288,7 @@ function StyleComposer({
   const [isResultPreviewOpen, setIsResultPreviewOpen] = useState(false);
   const [ratioDecisionState, setRatioDecisionState] = useState<RatioDecision | null>(null);
   const [tokenCost, setTokenCost] = useState<number | null>(null);
+  const [previewUrls, setPreviewUrls] = useState<Record<string, string>>({});
 
   const activeRatioDecision = useMemo(() => {
     const fallback = style.ratios[0] ?? '1:1';
@@ -1029,6 +1300,25 @@ function StyleComposer({
       return null;
     }
   }, [selectedRatio, style.ratios]);
+
+  useEffect(() => {
+    if (uploads.length === 0) {
+      setPreviewUrls({});
+      return;
+    }
+    const created: string[] = [];
+    const next: Record<string, string> = {};
+    uploads.forEach((file, index) => {
+      const key = makeUploadKey(file, index);
+      const objectUrl = URL.createObjectURL(file);
+      next[key] = objectUrl;
+      created.push(objectUrl);
+    });
+    setPreviewUrls(next);
+    return () => {
+      created.forEach((url) => URL.revokeObjectURL(url));
+    };
+  }, [uploads]);
 
   const handleFiles = (files: FileList | File[] | null) => {
     if (!files) return;
@@ -1169,6 +1459,7 @@ function StyleComposer({
               dataBase64: ratioTemplateBase64,
             }
           : undefined,
+        imageSize: '2K', // NanoBanana Pro: 1K, 2K, or 4K
       });
 
       const dataUrl = `data:${response.mimeType};base64,${response.imageBase64}`;
@@ -1230,46 +1521,54 @@ function StyleComposer({
             multiple={style.multi_subject?.allowed ?? true}
             onChange={(event) => handleFiles(event.target.files)}
           />
-          <span className="upload-icon" aria-hidden="true">⬆</span>
+          <span className="upload-icon" aria-hidden="true">?</span>
           <p>Drag an image here or click to upload</p>
           {style.multi_subject?.allowed && style.multi_subject.max_subjects && (
             <small>Up to {style.multi_subject.max_subjects} subjects recommended.</small>
           )}
         </div>
         {uploads.length > 0 && (
-          <ul className="upload-preview" aria-label="Uploaded images">
-            {uploads.map((file, index) => (
-              <li key={`${file.name}-${index}`}>
-                <span>{file.name}</span>
-                <button type="button" onClick={() => removeFile(index)} aria-label={`Remove ${file.name}`}>
-                  Remove
-                </button>
-              </li>
-            ))}
-          </ul>
+          <div className="upload-preview-grid" aria-label="Uploaded images">
+            {uploads.map((file, index) => {
+              const key = makeUploadKey(file, index);
+              const preview = previewUrls[key];
+              return (
+                <figure key={key} className="upload-preview-card">
+                  {preview ? (
+                    <img src={preview} alt={`Reference ${file.name || `upload ${index + 1}`}`} />
+                  ) : (
+                    <div className="upload-preview-card__placeholder" aria-hidden="true" />
+                  )}
+                  <figcaption className="upload-preview-card__meta">
+                    <span>{file.name || `upload-${index + 1}`}</span>
+                    <small>{formatFileSize(file.size)}</small>
+                  </figcaption>
+                  <button
+                    type="button"
+                    onClick={() => removeFile(index)}
+                    aria-label={`Remove ${file.name || `upload ${index + 1}`}`}
+                  >
+                    ✕
+                  </button>
+                </figure>
+              );
+            })}
+          </div>
         )}
       </div>
       <aside className="composer-sidebar">
-        <label className="composer-field">
+        <div className="composer-field">
           <span>Preferred ratio</span>
-          <select value={selectedRatio} onChange={(event) => onRatioChange(event.target.value)}>
-            {style.ratios.map((ratio) => (
-              <option key={ratio} value={ratio}>
-                {ratio}
-              </option>
-            ))}
-          </select>
-        </label>
-        <label className="composer-field">
+          <RatioTileGroup
+            ratios={style.ratios}
+            selectedRatio={selectedRatio}
+            onChange={onRatioChange}
+          />
+        </div>
+        <div className="composer-field">
           <span>Mode</span>
-          <select value={selectedMode} onChange={(event) => onModeChange(event.target.value)}>
-            {style.modes.map((mode) => (
-              <option key={mode} value={mode}>
-                {mode}
-              </option>
-            ))}
-          </select>
-        </label>
+          <ModePills modes={style.modes} selectedMode={selectedMode} onChange={onModeChange} />
+        </div>
         <label className="composer-field">
           <span>Add creative direction (optional)</span>
           <textarea

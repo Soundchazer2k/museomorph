@@ -2,7 +2,12 @@ const STORAGE_KEY = 'museomorph.nanobanana.api_key';
 
 declare global {
   interface Window {
-    __TAURI__?: { invoke?: (cmd: string, args?: Record<string, unknown>) => Promise<any> };
+    __TAURI__?: {
+      invoke?: (cmd: string, args?: Record<string, unknown>) => Promise<any>;
+      dialog?: {
+        open?: (options: Record<string, unknown>) => Promise<string | string[] | null>;
+      };
+    };
     __TAURI_IPC__?: unknown;
     __TAURI_INTERNALS__?: unknown;
   }

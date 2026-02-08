@@ -1,6 +1,12 @@
-import { ManifestStyleEntry, ParsedStyleMarkdown, PromptBuildOptions, PromptBuildResult } from './types';
+import {
+  ManifestStyleEntry,
+  ParsedStyleMarkdown,
+  PromptBuildOptions,
+  PromptBuildResult,
+} from './types';
 
 const SECTION_ORDER = ['1', '2', '3', '4', '5', '6', '7', '8'];
+const SECTION_ORDER_6C = ['style_direction', 'technical_notes', 'constraints'];
 
 function assertRatio(style: ManifestStyleEntry, ratio: string): void {
   if (!style.ratios.includes(ratio)) {
@@ -87,18 +93,37 @@ export function buildPrompt(options: PromptBuildOptions): PromptBuildResult {
     sections.push(`About the Style:\n${style.about.trim()}`);
   }
 
-  if (markdown.preface) {
-    sections.push(markdown.preface.trim());
-  }
+  // Handle 6-component format vs legacy numbered format
+  if (markdown.is6Component) {
+    // 6-component format: Style Direction, Technical Notes, Constraints
+    for (const key of SECTION_ORDER_6C) {
+      const section = markdown.sections[key];
+      if (section) {
+        // Add section headers for clarity
+        if (key === 'style_direction') {
+          sections.push(`## Style Direction\n\n${section.trim()}`);
+        } else if (key === 'technical_notes') {
+          sections.push(`## Technical Notes\n\n${section.trim()}`);
+        } else if (key === 'constraints') {
+          sections.push(`## Constraints\n\n${section.trim()}`);
+        }
+      }
+    }
+  } else {
+    // Legacy numbered section format
+    if (markdown.preface) {
+      sections.push(markdown.preface.trim());
+    }
 
-  if (markdown.rendererAdapter) {
-    sections.push(markdown.rendererAdapter.trim());
-  }
+    if (markdown.rendererAdapter) {
+      sections.push(markdown.rendererAdapter.trim());
+    }
 
-  for (const key of SECTION_ORDER) {
-    const section = markdown.sections[key];
-    if (section) {
-      sections.push(section.trim());
+    for (const key of SECTION_ORDER) {
+      const section = markdown.sections[key];
+      if (section) {
+        sections.push(section.trim());
+      }
     }
   }
 
